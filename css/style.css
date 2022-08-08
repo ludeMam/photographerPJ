@@ -1,7 +1,13 @@
-body{
-  font-family: 'Montserrat','Elephant',
-  'NanumSquareLight','NanumSquare','NanumSquareBold','NanumSquareExtraBold','NanumSquareAcb','NanumSquareAceb','NanumSquareAcl','NanumSquareAcr',
-   sans-serif;;
+@font-face {
+  font-family: 'ele';
+  src: url("../font/ELEPHNT.woff");  
+}
+
+body {
+  font-family: 'Montserrat', 'Elephant',
+    'NanumSquareLight', 'NanumSquare', 'NanumSquareBold', 'NanumSquareExtraBold', 'NanumSquareAcb', 'NanumSquareAceb', 'NanumSquareAcl', 'NanumSquareAcr',
+    sans-serif;
+  ;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;

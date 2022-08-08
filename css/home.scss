@@ -1,0 +1,30 @@
+.haHomesection{
+  padding-top: 30px;
+  .haSection1{
+    .haHome1{
+      min-height: 800px;
+      border: 1px solid red;
+      position: relative;
+      figure{
+        position: absolute;
+        right: -5%;
+        top: 0;
+        width: 70%;
+        max-width: 1200px;
+        .home1img{
+         width: 100%;
+        }
+      }
+      h3{
+        position: absolute;
+        font-family: 'ele';
+        font-size:15em;
+        top: 0;
+        left: -10px;
+      }
+      p.home1box{
+        border: 1px solid saddlebrown;
+      }
+    }
+  }
+}
