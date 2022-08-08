@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "ROEHOE-CHAN";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/ROEHOE-CHAN.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+section.yj-introduce-section div.profile-background {
+  background-image: url(../img/aboutme/introduceBackground.png);
+  background-position: -400px 0;
+}
+section.yj-introduce-section div.profile-background div.profile-container {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+  min-height: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+section.yj-introduce-section div.profile-background div.profile-container figure.profile-img-container {
+  position: relative;
+  margin: 50px auto;
+  max-width: 600px;
+  width: 70%;
+  transform: translateX(-20%);
+}
+section.yj-introduce-section div.profile-background div.profile-container figure.profile-img-container img.profile-img {
+  width: 120%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  -webkit-mask-image: url(../img/aboutme/profileMask.png);
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url(../img/aboutme/profileMask.png);
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+section.yj-introduce-section div.profile-background div.profile-container figcaption {
+  max-width: 450px;
+  width: 95%;
+}
+section.yj-introduce-section div.profile-background div.profile-container figcaption div.profile-text h3 {
+  font-family: "ele";
+}
+section.yj-introduce-section div.profile-background div.profile-container figcaption div.profile-text h4 {
+  font-family: "ROEHOE-CHAN";
+  font-size: 3em;
+  font-weight: bold;
+}
+@media screen and (min-width: 1000px) {
+  section.yj-introduce-section div.profile-background div.profile-container div.profile-text {
+    margin-top: 300px;
+  }
+  section.yj-introduce-section div.profile-background div.profile-container div.profile-text h3 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.yj-introduce-section div.profile-background div.profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.yj-introduce-section div.profile-background div.profile-container figure.profile-img-container {
+    width: 120%;
+    padding-bottom: 20%;
+  }
+  section.yj-introduce-section div.profile-background div.profile-container figure.profile-img-container img.profile-img {
+    width: 100%;
+  }
+  section.yj-introduce-section div.profile-background div.profile-container div.profile-text {
+    transform: translateY(-40%);
+  }
+  section.yj-introduce-section div.profile-background div.profile-container div.profile-text h3 {
+    font-size: 7vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  section.yj-introduce-section div.profile-background div.profile-container {
+    justify-content: stretch;
+  }
+  section.yj-introduce-section div.profile-background div.profile-container div.profile-text {
+    margin-top: 80%;
+  }
+}
