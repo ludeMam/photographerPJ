@@ -16,7 +16,7 @@
           <img class="home1img" src="./img/home/home1-1.png" alt="">
         </figure>
         <figcaption>
-          <h3>Making 123</h3>
+          <h3>Making</h3>
           <p class="home1box">
             <em>MAKING PHOTOGRAPHY</em> <br>
               제가 원하는 컨셉의 사진을을 만드는 과정을 담은 영상입니다.
