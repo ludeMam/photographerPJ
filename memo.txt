@@ -1,0 +1,5 @@
+-window.js , smoothScroll수정
+boxt =  $('.test').offset().top + scrt
+404페이지제작
+첫번째 동영상 섹션은 youtube주소 id만 수정해서 사용
+svg 커버 제작
