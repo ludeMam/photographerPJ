@@ -2,9 +2,15 @@
   padding-top: 30px;
   .haSection1{
     .haHome1{
-      min-height: 800px;
+      height: 100%;
+      min-height: 1200px; /* 미디어쿼리분기해야함! */
       border: 1px solid red;
       position: relative;
+      div.haSectionvideo{
+        position: absolute;
+        top: 930px;
+        left: 68%;
+      }
       figure{
         position: absolute;
         right: -5%;
@@ -15,16 +21,48 @@
          width: 100%;
         }
       }
-      h3{
+      figcaption{
         position: absolute;
-        font-family: 'ele';
-        font-size:340px;
-        top: 0;
-        left: -10px;
-      }
-      p.home1box{
-        border: 1px solid saddlebrown;
-      }
+        width: 100%;
+        h3{
+          position: absolute;
+          font-family: 'ele';
+          font-size: 22vw;/* 미디어쿼리분기! */
+          top: 0;
+          left: -5%;
+          box-sizing: border-box;
+          @media screen and (max-width:1400px){
+            font-size: 22vw;
+          }
+        }
+        div{
+          border: 1px solid red;
+          position: absolute;
+          left: 200px; /* 미디어쿼리 분기! width 1100px일때, 100으로 줄여야함 */
+          top: 410px;
+          width: 40%;
+          min-width: 400px;
+          box-sizing: border-box;
+          padding: 30px;
+          @media screen and(min-width:1100px) and (max-width:1400px){
+            top: 400px;
+          }
+          @media screen and(min-width:1100px) and (max-width:800px){
+            left: 100px;
+            top: 380px;
+          }
+        }
+        p.home1box{
+          position: relative;
+          em{
+            font-size: 45pt;
+            font-weight: bold;
+          }
+          p{
+            font-family: 'NanumSquareLight';
+          }
+        }
+      }   
     }
   }
 }

@@ -17,15 +17,18 @@
         </figure>
         <figcaption>
           <h3>Making</h3>
+          <div>
           <p class="home1box">
             <em>MAKING PHOTOGRAPHY</em> <br>
-              제가 원하는 컨셉의 사진을을 만드는 과정을 담은 영상입니다.
+              <p>제가 원하는 컨셉의 사진을을 만드는 과정을 담은 영상입니다.
               여행을 다니며 자연스러운 분위기 속에서 주로 작업하며,
               사진을 좋아하는 모든 사람들에게 귀감이 되는 작업영상이 되도록 하겠습니다.
+              </p>
           </p>
+          </div>
         </figcaption>
         <div class="haSectionvideo">
-          <a href="https://www.youtube.com/watch?v=s2xF2lm64HM">Making photography</a>
+          <a href="https://www.youtube.com/watch?v=s2xF2lm64HM">Making video</a>
         </div>
       </div><!-- home1 -->
     </section><!-- Sec1 -->
