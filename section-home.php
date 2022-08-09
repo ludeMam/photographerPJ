@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="./css/home.css">
 
   <section class="ha-Homesection-1">
+    <figure class="bg-slider">
+      <img src="./img/home/home2.png" alt="">
+    </figure>
     <h2 class="hidden">Making photo</h2>
     <b class="title">Making</b>
     <div class="center">
@@ -23,10 +26,17 @@
           사람들에게 귀감이 되는 작업영상이 되도록
           하겠습니다.
         </p>
-      </div>
-    </div>
-    <!--center-->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div><!--textbox-->
+      <div class="summary">
+        <h4>
+          <i class="fa-solid fa-camera-retro"></i> Make Used
+        </h4>
+        <p>
+          매크로 렌즈는 기존의 줌 렌즈와 다릅니다. 매크로 렌즈를 사용하면 피사체에 가까이
+          다가가서 줌 렌즈가 원하는 만큼 가까이 접근하기 어려울 수 있는 곳에 초점을 맞출 수 있습니다.
+        </p>
+      </div><!-- summary -->
+    </div><!--center-->
   </section><!-- homeS -->
 
 </section><!-- section-home section-container  section-container1 -->

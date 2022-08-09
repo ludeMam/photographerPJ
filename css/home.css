@@ -7,7 +7,9 @@
 회색#F2F2F2
  */
 .ha-Homesection-1 {
+  position: relative;
   background: #FFF;
+  /* slider */
 }
 @media screen and (min-width: 800px) {
   .ha-Homesection-1 {
@@ -19,10 +21,27 @@
     padding: 50px 0;
   }
 }
+.ha-Homesection-1 .bg-slider {
+  position: absolute;
+  right: -10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70%;
+  -webkit-mask-image: url(../img/home/home1-1-mask.png);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+.ha-Homesection-1 .bg-slider img {
+  width: 100%;
+}
 .ha-Homesection-1 .title {
+  position: relative;
+  z-index: 1;
   font-family: "ele";
   font-size: 22vw;
-  color: #211E18;
+  color: #dee1e7;
+  mix-blend-mode: exclusion;
 }
 @media screen and (min-width: 1100px) {
   .ha-Homesection-1 .title {
@@ -35,20 +54,20 @@
   }
 }
 .ha-Homesection-1 .center {
-  border: 1px solid red; /* dd */
   width: 90%;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .ha-Homesection-1 .center .textbox {
   box-sizing: border-box;
   border-radius: 50px 0 50px 0;
-  background: #211E18;
+  background: #403A2F;
 }
 @media screen and (min-width: 1100px) {
   .ha-Homesection-1 .center .textbox {
     width: 60%;
     padding: 50px;
+    transform: translateY(-50%);
   }
 }
 @media screen and (max-width: 1100px) {
@@ -56,6 +75,7 @@
     margin: 0 auto;
     width: 80%;
     padding: 30px;
+    transform: translateY(-30%);
   }
 }
 .ha-Homesection-1 .center .textbox h3 {
@@ -89,4 +109,26 @@
 }
 .ha-Homesection-1 .center .textbox p {
   color: rgba(255, 255, 255, 0.7);
+}
+@media screen and (min-width: 1100px) {
+  .ha-Homesection-1 .center .summary {
+    width: 40%;
+    transform: translateX(-50px);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .ha-Homesection-1 .center .summary {
+    width: 70%;
+  }
+}
+.ha-Homesection-1 .center .summary h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: #403A2F;
+  border-bottom: 1px dotted #403A2F;
+}
+.ha-Homesection-1 .center .summary p {
+  color: rgba(64, 58, 47, 0.7);
 }
