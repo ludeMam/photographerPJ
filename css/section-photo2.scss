@@ -1,7 +1,51 @@
 .ys-section-1{
-  border: 2px solid red;
-  h6 *{
-    font-size: 4em;
+  h6{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-family: 'ele';
+    font-size: 55px;
+    mix-blend-mode: exclusion;
   }
-
+}
+.ys-section-2{
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid yellow;
+  @media screen and (min-width:800px){
+    padding:100px 0;
+  }
+  @media screen and (max-width:800px){
+    padding:50px 0;
+  }
+  figure{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid blue;
+    h6{
+      font-size: 45px;
+      z-index: 1;
+    }
+    .ys-imgcontainer1{
+      position: absolute;
+      div{
+        display: block;
+        width: 50%;
+        img{
+          height: 100%;
+        }
+      }
+    }
+    div.text{
+      border: 1px solid green;
+      em{
+        display: block;
+        font-size: 2em;
+      }
+    }
+  }
 }

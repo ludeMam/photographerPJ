@@ -1,6 +1,54 @@
-.ys-section-1 {
-  border: 2px solid red;
+.ys-section-1 h6 {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-family: "ele";
+  font-size: 55px;
+  mix-blend-mode: exclusion;
 }
-.ys-section-1 h6 * {
-  font-size: 4em;
+
+.ys-section-2 {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid yellow;
+}
+@media screen and (min-width: 800px) {
+  .ys-section-2 {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ys-section-2 {
+    padding: 50px 0;
+  }
+}
+.ys-section-2 figure {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+.ys-section-2 figure h6 {
+  font-size: 45px;
+  z-index: 1;
+}
+.ys-section-2 figure .ys-imgcontainer1 {
+  position: absolute;
+}
+.ys-section-2 figure .ys-imgcontainer1 div {
+  display: block;
+  width: 50%;
+}
+.ys-section-2 figure .ys-imgcontainer1 div img {
+  height: 100%;
+}
+.ys-section-2 figure div.text {
+  border: 1px solid green;
+}
+.ys-section-2 figure div.text em {
+  display: block;
+  font-size: 2em;
 }
