@@ -1,0 +1,25 @@
+section.yj-main-section div img.main-background {
+  width: 100%;
+  transform: translate(-20%, -10%);
+}
+section.yj-main-section div figure {
+  position: relative;
+}
+section.yj-main-section div figure img {
+  width: 100%;
+}
+section.yj-main-section div figure img.mainImg2 {
+  position: absolute;
+  top: 0;
+  left: -100px;
+}
+@media (orientation: landscape) {
+  section.yj-main-section div {
+    height: 70%;
+  }
+}
+@media (orientation: portrait) {
+  section.yj-main-section div {
+    height: 40%;
+  }
+}

@@ -4,6 +4,10 @@
   font-weight: normal;
   font-style: normal;
 }
+section.yj-introduce-section {
+  padding: 30px 0;
+  overflow: hidden;
+}
 section.yj-introduce-section div.profile-background {
   background-image: url(../img/aboutme/introduceBackground.png);
   background-position: -400px 0;
@@ -13,7 +17,7 @@ section.yj-introduce-section div.profile-background div.profile-container {
   max-width: 1200px;
   width: 95%;
   margin: 0 auto;
-  min-height: 700px;
+  min-height: 600px;
   display: flex;
   justify-content: space-between;
 }
@@ -25,23 +29,28 @@ section.yj-introduce-section div.profile-background div.profile-container figure
   transform: translateX(-20%);
 }
 section.yj-introduce-section div.profile-background div.profile-container figure.profile-img-container img.profile-img {
+  position: absolute;
+  width: 100%;
+  top: 0;
   width: 120%;
   object-fit: cover;
   object-position: center;
-  position: absolute;
-  top: 0;
   -webkit-mask-image: url(../img/aboutme/profileMask.png);
-  -webkit-mask-size: 100% 100%;
+  -webkit-mask-size: 85% 85%;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   mask-image: url(../img/aboutme/profileMask.png);
-  mask-size: 100% 100%;
+  mask-size: 85% 85%;
   mask-repeat: no-repeat;
   mask-position: center;
 }
 section.yj-introduce-section div.profile-background div.profile-container figcaption {
+  position: relative;
   max-width: 450px;
   width: 95%;
+}
+section.yj-introduce-section div.profile-background div.profile-container figcaption div.profile-text {
+  position: absolute;
 }
 section.yj-introduce-section div.profile-background div.profile-container figcaption div.profile-text h3 {
   font-family: "ele";
@@ -63,31 +72,25 @@ section.yj-introduce-section div.profile-background div.profile-container figcap
 }
 @media screen and (max-width: 1000px) {
   section.yj-introduce-section div.profile-background div.profile-container {
+    padding-bottom: 10%;
     flex-direction: column;
     align-items: center;
   }
   section.yj-introduce-section div.profile-background div.profile-container figure.profile-img-container {
+    flex: 1;
     width: 120%;
     padding-bottom: 20%;
   }
   section.yj-introduce-section div.profile-background div.profile-container figure.profile-img-container img.profile-img {
     width: 100%;
   }
-  section.yj-introduce-section div.profile-background div.profile-container div.profile-text {
-    transform: translateY(-40%);
+  section.yj-introduce-section div.profile-background div.profile-container figcaption {
+    flex: 1;
   }
-  section.yj-introduce-section div.profile-background div.profile-container div.profile-text h3 {
+  section.yj-introduce-section div.profile-background div.profile-container figcaption div.profile-text h3 {
     font-size: 8vw;
   }
-  section.yj-introduce-section div.profile-background div.profile-container div.profile-text h4 {
+  section.yj-introduce-section div.profile-background div.profile-container figcaption div.profile-text h4 {
     font-size: 5vw;
-  }
-}
-@media screen and (max-width: 600px) {
-  section.yj-introduce-section div.profile-background div.profile-container {
-    justify-content: stretch;
-  }
-  section.yj-introduce-section div.profile-background div.profile-container div.profile-text {
-    margin-top: 80%;
   }
 }
