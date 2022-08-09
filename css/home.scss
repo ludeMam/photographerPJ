@@ -1,68 +1,46 @@
-.haHomesection{
-  padding-top: 30px;
-  .haSection1{
-    .haHome1{
-      height: 100%;
-      min-height: 1200px; /* 미디어쿼리분기해야함! */
-      border: 1px solid red;
-      position: relative;
-      div.haSectionvideo{
-        position: absolute;
-        margin-top: 65%;
-        left: 68%;
-      }
-      figure{
-        position: absolute;
-        right: -5%;
-        top: 0;
-        width: 70%;
-        max-width: 1200px;
-        .home1img{
-         width: 100%;
-        }
-      }
-      figcaption{
-        position: absolute;
-        width: 100%;
-        h3{
-          position: absolute;
-          font-family: 'ele';
-          font-size: 22vw;/* 미디어쿼리분기! */
-          top: 0;
-          left: -5%;
-          box-sizing: border-box;
-          @media screen and (max-width:1400px){
-            font-size: 22vw;
-          }
-        }
-        div.haex1{
-          border: 1px solid red;
-          position: absolute;
-          margin-left: 10%; /* 미디어쿼리 분기! width 1100px일때, 100으로 줄여야함 */
-          margin-top: 20%;
-          width: 40%;
-          min-width: 400px;
-          box-sizing: border-box;
-          padding: 30px;
-          @media screen and (max-width:1000px) {
-            margin-top: 18%;
-          }
-          p.home1box{
-            position: relative;
-            em{
-              font-size: 3vw;
-              font-weight: bold;
-            }
-            i{
-              font-family: 'NanumSquareLight';
-              font-size: 1.3vw;
-              @media screen and (max-width:1000px){
-                font-size: 0.8vw;
-              }
-            }
-          }
-        }
-      }   
-    }
-  }
-}
+@import "./common";
+
+.ha-Homesection-1{
+  background: #FFF;
+  @media screen and (min-width:800px){
+    padding:100px 0;
+  }//lg
+  @media screen and (max-width:800px){
+    padding:50px 0;
+  }//sm
+
+  .title{
+    @include mainFont;
+    color:$darkbrown-color;
+    @media screen and (min-width:1100px){
+      font-size: 270px;
+    }//lg
+    @media screen and (max-width:1100px){
+      font-size: 22vw;
+    }//sm
+  }//b
+
+  .center{
+    border:1px solid red;/* dd */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    .textbox{
+      box-sizing: border-box;
+      border-radius: 50px 0 50px 0;
+      background: $darkbrown-color;
+      @media screen and (min-width:1100px){
+        width: 60%;
+        padding:50px;
+        font-size: 270px;
+      }//lg
+      @media screen and (max-width:1100px){
+        margin: 0 auto;
+        width: 80%;
+        padding:30px;
+        font-size: 22vw;
+      }//sm
+    }//textbox
+  }//center 
+
+}//section
