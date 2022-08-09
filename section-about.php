@@ -6,6 +6,7 @@
     <img class="white-cover" src="./img/icons/white-cover.png" alt="">
   </section>
   <link rel="stylesheet" href="./css/section-about-introduce.css">
+  <script src="./js/section-about-introduce.js"></script>
   <section class="yj-introduce-section">
     <div class="profile-background">
       <h2 class="hidden">introduce section</h2>

@@ -7,6 +7,7 @@
 section.yj-introduce-section div.profile-background {
   background-image: url(../img/aboutme/introduceBackground.png);
   background-position: -400px 0;
+  background-repeat: no-repeat;
 }
 section.yj-introduce-section div.profile-background div.profile-container {
   max-width: 1200px;
@@ -47,7 +48,6 @@ section.yj-introduce-section div.profile-background div.profile-container figcap
 }
 section.yj-introduce-section div.profile-background div.profile-container figcaption div.profile-text h4 {
   font-family: "ROEHOE-CHAN";
-  font-size: 3em;
   font-weight: bold;
 }
 @media screen and (min-width: 1000px) {
@@ -56,6 +56,9 @@ section.yj-introduce-section div.profile-background div.profile-container figcap
   }
   section.yj-introduce-section div.profile-background div.profile-container div.profile-text h3 {
     font-size: 70px;
+  }
+  section.yj-introduce-section div.profile-background div.profile-container div.profile-text h4 {
+    font-size: 3em;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -74,7 +77,10 @@ section.yj-introduce-section div.profile-background div.profile-container figcap
     transform: translateY(-40%);
   }
   section.yj-introduce-section div.profile-background div.profile-container div.profile-text h3 {
-    font-size: 7vw;
+    font-size: 8vw;
+  }
+  section.yj-introduce-section div.profile-background div.profile-container div.profile-text h4 {
+    font-size: 5vw;
   }
 }
 @media screen and (max-width: 600px) {

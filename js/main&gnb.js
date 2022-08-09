@@ -68,6 +68,7 @@ $(function(){
       $(this).css({'animation':'de-active'+sectionNumber+' 2s both'})
     })
     setTimeout(function(){
+      initialState = 'content'
       $('.btn-menu').stop().fadeIn()
       history.pushState(null,null,'/'+urlParam)
     },2000)
