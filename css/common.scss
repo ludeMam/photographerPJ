@@ -1,0 +1,38 @@
+$darkbrown-color: #211E18;
+$brown-color: #403A2F ;
+$dark-mint-color: #798C7A ;
+$mint-color: #A8BFAA ;
+$gray-color: #F2F2F2 ;
+/* 
+짙은갈색 #211E18
+갈색 #403A2F
+진한민트#798C7A
+옅은민트#A8BFAA
+회색#F2F2F2
+ */
+
+@mixin underbar { /* width 는 변수로 본인이 글자수에 맞게 적용 */
+  padding: 2px 0;
+  box-sizing: border-box;
+  height: 16px;
+  background: $mint-color;
+	opacity:0.7;
+  clip-path: polygon((5% 0%, 100% 0%, 95% 100%, 0% 100%));
+  /* 폴리곤에서 5% 95% 로 된 이 두부분만 건들여야함
+    ex 25% 로 설정하면 100에서 25% 뺀75% 적용하세용!!!! */
+}
+
+@mixin mainFont {
+  font-family: 'ele';
+  font-size: 22vw;
+}
+
+@mixin krtitleFont {
+  font-family: 'NanumSquareExtraBold';
+  font-size: 3vw;
+}
+
+@mixin krexpFont {
+  font-family: 'NanumSquareLight';
+  font-size: 1.3vw; /* 미디어쿼리는 더 작게 만들어야해요! 0.8정도 하면될듯 */
+}

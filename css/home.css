@@ -10,7 +10,7 @@
 }
 .haHomesection .haSection1 .haHome1 div.haSectionvideo {
   position: absolute;
-  top: 930px;
+  margin-top: 65%;
   left: 68%;
 }
 .haHomesection .haSection1 .haHome1 figure {
@@ -40,34 +40,34 @@
     font-size: 22vw;
   }
 }
-.haHomesection .haSection1 .haHome1 figcaption div {
+.haHomesection .haSection1 .haHome1 figcaption div.haex1 {
   border: 1px solid red;
   position: absolute;
-  left: 200px; /* 미디어쿼리 분기! width 1100px일때, 100으로 줄여야함 */
-  top: 410px;
+  margin-left: 10%; /* 미디어쿼리 분기! width 1100px일때, 100으로 줄여야함 */
+  margin-top: 20%;
   width: 40%;
   min-width: 400px;
   box-sizing: border-box;
   padding: 30px;
 }
-@media screen and (min-width: 1100px) and (max-width: 1400px) {
-  .haHomesection .haSection1 .haHome1 figcaption div {
-    top: 400px;
+@media screen and (max-width: 1000px) {
+  .haHomesection .haSection1 .haHome1 figcaption div.haex1 {
+    margin-top: 18%;
   }
 }
-@media screen and (min-width: 1100px) and (max-width: 800px) {
-  .haHomesection .haSection1 .haHome1 figcaption div {
-    left: 100px;
-    top: 380px;
-  }
-}
-.haHomesection .haSection1 .haHome1 figcaption p.home1box {
+.haHomesection .haSection1 .haHome1 figcaption div.haex1 p.home1box {
   position: relative;
 }
-.haHomesection .haSection1 .haHome1 figcaption p.home1box em {
-  font-size: 45pt;
+.haHomesection .haSection1 .haHome1 figcaption div.haex1 p.home1box em {
+  font-size: 3vw;
   font-weight: bold;
 }
-.haHomesection .haSection1 .haHome1 figcaption p.home1box p {
+.haHomesection .haSection1 .haHome1 figcaption div.haex1 p.home1box i {
   font-family: "NanumSquareLight";
+  font-size: 1.3vw;
+}
+@media screen and (max-width: 1000px) {
+  .haHomesection .haSection1 .haHome1 figcaption div.haex1 p.home1box i {
+    font-size: 0.8vw;
+  }
 }
