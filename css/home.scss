@@ -1,116 +1,138 @@
 @import "./common";
 
-.ha-Homesection-1{
+.ha-Homesection-1 {
   position: relative;
-  background: #FFF;
-  @media screen and (min-width:800px){
-    padding:100px 0;
-  }//lg
-  @media screen and (max-width:800px){
-    padding:50px 0;
-  }//sm
-  .bg-slider{
+  background: #fff;
+  @media screen and (min-width: 800px) {
+    padding: 100px 0;
+  } //lg
+  @media screen and (max-width: 800px) {
+    padding: 50px 0;
+  } //sm
+  .bg-slider {
     position: absolute;
     right: -10%;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
     width: 70%;
     -webkit-mask-image: url(../img/home/home1-1-mask.png);
     -webkit-mask-size: contain;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
-    img{
+    img {
       width: 100%;
     }
-  }/* slider */
-  .title{
+  } /* slider */
+  .title {
     position: relative;
     z-index: 1;
     @include mainFont;
-    color:#dee1e7;
+    color: #dee1e7;
     mix-blend-mode: exclusion;
-    @media screen and (min-width:1100px){
+    @media screen and (min-width: 1100px) {
       font-size: 270px;
-    }//lg
-    @media screen and (max-width:1100px){
+    } //lg
+    @media screen and (max-width: 1100px) {
       font-size: 22vw;
-    }//sm
-  }//b
+    } //sm
+  } //b
 
-  .center{
-    
+  .center {
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
-    .textbox{
+    .textbox {
       box-sizing: border-box;
       border-radius: 50px 0 50px 0;
       background: $brown-color;
-     
-      @media screen and (min-width:1100px){
+
+      @media screen and (min-width: 1100px) {
         width: 60%;
-        padding:50px;
+        padding: 50px;
         transform: translateY(-50%);
-      }//lg
-      @media screen and (max-width:1100px){ 
+      } //lg
+      @media screen and (max-width: 1100px) {
         margin: 0 auto;
         width: 80%;
-        padding:30px;
+        padding: 30px;
         transform: translateY(-30%);
-      }//sm
-      h3{
+      } //sm
+      h3 {
         position: relative;
-        display: inline-block; 
+        display: inline-block;
         margin-bottom: 20px;
         padding-bottom: 20px;
         font-size: 1.5em;
-        color:#FFF;
-        border-bottom: 1px solid rgba(#FFF,0.5);
-        &::before{
-          content: '';
+        color: #fff;
+        border-bottom: 1px solid rgba(#fff, 0.5);
+        &::before {
+          content: "";
           position: absolute;
-          left:0;
+          left: 0;
           bottom: 10px;
           width: 100%;
           height: 20px;
           background: $mint-color;
           transform: skew(-30deg);
         }
-        small,strong{
+        small,
+        strong {
           position: relative;
           display: block;
         }
-        small{
+        small {
           font-size: 0.5em;
         }
-        strong{
+        strong {
           font-weight: bold;
         }
       }
-      p{
-        color:rgba(#FFF,0.7);
+      p {
+        color: rgba(#fff, 0.7);
       }
-    }//textbox
-    .summary{
-      @media screen and (min-width:1100px){
+    } //textbox
+    .summary {
+      @media screen and (min-width: 1100px) {
         width: 40%;
         transform: translateX(-50px);
-      }//lg
-      @media screen and (max-width:1100px){ 
+      } //lg
+      @media screen and (max-width: 1100px) {
         width: 70%;
-      }//sm
-      h4{
+      } //sm
+      h4 {
         font-size: 1.2em;
         font-weight: bold;
         margin-bottom: 10px;
         padding-bottom: 10px;
-        color:$brown-color;
+        color: $brown-color;
         border-bottom: 1px dotted $brown-color;
       }
-      p{
-        color:rgba($brown-color,0.7);
+      a {
+        transform: translateX(20px);
+        color: rgba($brown-color, 0.7);
       }
-    }//summary
-  }//center 
-
-}//section
+    } //summary
+    div.video {
+      width: 100%;
+      transform: translate(80%,-20%);
+      .videolink1 {
+        display: block;
+        width: 18%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 3px solid $darkbrown-color;
+        text-align: center;
+        i {
+          line-height: inherit;
+          width: 100%;
+          font-size: 5em;
+          padding-bottom: 10px;
+          color: $darkbrown-color;
+        }
+        em{
+          color: $darkbrown-color;
+        }
+      }
+    }
+  } //center
+} //section

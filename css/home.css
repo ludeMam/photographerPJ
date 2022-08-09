@@ -8,7 +8,7 @@
  */
 .ha-Homesection-1 {
   position: relative;
-  background: #FFF;
+  background: #fff;
   /* slider */
 }
 @media screen and (min-width: 800px) {
@@ -84,7 +84,7 @@
   margin-bottom: 20px;
   padding-bottom: 20px;
   font-size: 1.5em;
-  color: #FFF;
+  color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .ha-Homesection-1 .center .textbox h3::before {
@@ -97,7 +97,8 @@
   background: #A8BFAA;
   transform: skew(-30deg);
 }
-.ha-Homesection-1 .center .textbox h3 small, .ha-Homesection-1 .center .textbox h3 strong {
+.ha-Homesection-1 .center .textbox h3 small,
+.ha-Homesection-1 .center .textbox h3 strong {
   position: relative;
   display: block;
 }
@@ -129,6 +130,29 @@
   color: #403A2F;
   border-bottom: 1px dotted #403A2F;
 }
-.ha-Homesection-1 .center .summary p {
+.ha-Homesection-1 .center .summary a {
+  transform: translateX(20px);
   color: rgba(64, 58, 47, 0.7);
+}
+.ha-Homesection-1 .center div.video {
+  width: 100%;
+  transform: translate(80%, -20%);
+}
+.ha-Homesection-1 .center div.video .videolink1 {
+  display: block;
+  width: 18%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 3px solid #211E18;
+  text-align: center;
+}
+.ha-Homesection-1 .center div.video .videolink1 i {
+  line-height: inherit;
+  width: 100%;
+  font-size: 5em;
+  padding-bottom: 10px;
+  color: #211E18;
+}
+.ha-Homesection-1 .center div.video .videolink1 em {
+  color: #211E18;
 }
