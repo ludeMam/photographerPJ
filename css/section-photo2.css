@@ -1,8 +1,6 @@
-.section-video-intro {
-  -webkit-clip-path: url(#ys-clipPath-1);
-  clip-path: url(#ys-clipPath-1);
+.ys-section-1 {
+  border: 2px solid red;
 }
-
-.ys-svg-1 {
-  position: absolute;
+.ys-section-1 h6 * {
+  font-size: 4em;
 }

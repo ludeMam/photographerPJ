@@ -303,31 +303,25 @@ a.btn-page::after {
   height: 100%;
   background: #FFF;
 }
-
-.youtube-size-img {
+.section-video-intro svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: red;
+}
+.section-video-intro .youtube-size-img {
   position: absolute;
   min-width: 100%;
   min-height: 100%;
   opacity: 0;
 }
-
 .section-video-intro .video-content {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1.2);
-}
-
-.section-video-intro .video-smoke {
-  mix-blend-mode: screen;
-}
-
-.white-cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .gnb .gnbNA {
