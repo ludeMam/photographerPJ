@@ -1,0 +1,27 @@
+section.yj-mainContent-section {
+  position: relative;
+  width: 100%;
+  height: 300%;
+}
+section.yj-mainContent-section div.main-content-bg {
+  height: 100%;
+  width: 95%;
+  max-width: 1200px;
+}
+section.yj-mainContent-section div.main-content-bg figure {
+  position: relative;
+}
+section.yj-mainContent-section div.main-content-bg figure img.main-content-bgimg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+section.yj-mainContent-section div.main-content-bg figure img.main-content-svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}

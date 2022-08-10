@@ -6,25 +6,26 @@
     <img class="white-cover" src="./img/icons/white-cover.png" alt="">
   </section>
   <!-- link -->
-  <link rel="stylesheet" href="./css/section-about-main.css">
+  <link rel="stylesheet" href="./css/section-about-visual.css">
   <link rel="stylesheet" href="./css/section-about-introduce.css">
-  <script src="./js/section-about-main.js"></script>
+  <link rel="stylesheet" href="./css/section-about-maincontent.css">
+  <script src="./js/section-about-visual.js"></script>
   <script src="./js/section-about-introduce.js"></script>
   <!-- link -->
-  <section class="yj-main-section">
-    <h2 class="hidden">About Main</h2>
+  <section class="yj-visual-section">
+    <h2 class="hidden">About visual</h2>
     <div>
-      <img class="main-background" src="./img/aboutme/mainBackground.png" alt="">
+      <img class="visual-background" src="./img/aboutme/visualBackground.png" alt="">
       <figure>
-        <img class="mainImg1" src="./img/aboutme/mainImg1.png" alt="">
-        <img class="mainImg2" src="./img/aboutme/mainImg2.png" alt="">
+        <img class="visualImg1" src="./img/aboutme/visualImg1.png" alt="">
+        <img class="visualImg2" src="./img/aboutme/visualImg2.png" alt="">
       </figure>
       <figcaption>
         <h3><span class="about">About</span> <span class="me">Me</span></h3>
       </figcaption>
     </div>
   </section>
-  <!-- main -->
+  <!-- visual -->
   <section class="yj-introduce-section">
     <h2 class="hidden">introduce section</h2>
     <div class="profile-background">  
@@ -34,12 +35,12 @@
         </figure>
         <figcaption>
           <div class="profile-text">
-            <h3>About Me</h3>
+            <h3>사진작가</h3>
             <h4>권선호</h4>
             <p>
               자연은 항상 제게 신비로움을 보여줬습니다. <br>
               어떠한 곳을 가보아도 새로운 영감과 놀라움을 선사해주었고, <br>
-              제가 느낀 그 감정들을 사람들에게 전달하고자 사진작가의 길을 걷게 되었습니다. 
+              제가 느낀 그 감정들을 사람들에게 전달하고 싶습니다. 
             </p>
           </div>
         </figcaption>
@@ -47,6 +48,21 @@
     </div>
   </section>
   <!-- introduce -->
+  <section class="yj-mainContent-section">
+    <h2 class="hidden">main content</h2>
+    <div class="main-content-bg">
+      <figure>
+        <img class='main-content-bgimg' src="./img/aboutme/mainContentBackground.png" alt="">
+        <img class='main-content-svg' src="./img/aboutme/mainContentSvg.png" alt="">
+      </figure>
+      <section class="main-content-section1">
+
+      </section>
+      <section class="main-content-section2"></section>
+      <section class="main-content-section3"></section>
+    </div>
+  </section>
+  <!-- main -->
   <section>
     about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>
   </section>

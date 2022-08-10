@@ -16,18 +16,26 @@ $(function(){
     textS = 0
     textE = $('section.yj-introduce-section').innerHeight()*0.5
     textRange = textE-textS
-    if(winh>999){
-      textLocation = textRange*(0.9-scrRatio) + textS
-    }else if(winh<1000 && winh>600){
-      textLocation = textRange*(0.8-scrRatio) + textS
-    }else{
-      textLocation = textRange*(0.7-scrRatio) + textS
+    if(winw>=1000){
+      textLocation = (textRange*(-scrRatio))+600
     }
-
-    $('section.yj-introduce-section div.profile-text').css({'top':textLocation})
+    if(winw<1000 && winw>=800){
+      textLocation = (textRange*(-scrRatio))+300
+    }else if(winw<800 && winw>=600){
+      textLocation = (textRange*(-scrRatio))+320
+    }else if(winw<600 && winw>=500){
+      textLocation = (textRange*(-scrRatio))+350
+    }else if(winw<500 && winw>450){
+      textLocation = (textRange*(-scrRatio))+370
+    }else if(winw<=450){
+      textLocation = (textRange*(-scrRatio))+250
+    }   
+    console.log(textLocation);
+    $('section.yj-introduce-section div.profile-text').css({'transform':'translateY('+textLocation+'px)'})
     imgT=$('section.yj-introduce-section figure.profile-img-container img.profile-img').offset().top+scrt
     imgH=$('section.yj-introduce-section figure.profile-img-container img.profile-img').innerHeight()
     meta = 0 +(scrt-(imgT-winh*0.5+imgH*0.5)) * -0.1
+    if(meta<0){meta=0}
     $('section.yj-introduce-section figure.profile-img-container img.profile-img').css({
       '-webkit-mask-position': 'center '+meta + 'px'
     })
