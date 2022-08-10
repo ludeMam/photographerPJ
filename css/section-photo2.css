@@ -1,3 +1,11 @@
+@charset "UTF-8";
+/* 
+짙은갈색 #211E18
+갈색 #403A2F
+진한민트#798C7A
+옅은민트#A8BFAA
+회색#F2F2F2
+ */
 .ys-section-1 h6 {
   position: absolute;
   top: 50%;
@@ -5,15 +13,21 @@
   transform: translateY(-50%);
   z-index: 1;
   font-family: "ele";
-  font-size: 55px;
-  mix-blend-mode: exclusion;
+  mix-blend-mode: normal;
+}
+@media screen and (min-width: 1200px) {
+  .ys-section-1 {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .ys-section-1 {
+    font-size: 4.5vw;
+  }
 }
 
 .ys-section-2 {
-  position: relative;
-  max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid yellow;
 }
 @media screen and (min-width: 800px) {
   .ys-section-2 {
@@ -28,27 +42,153 @@
 .ys-section-2 figure {
   position: relative;
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid blue;
 }
 .ys-section-2 figure h6 {
-  font-size: 45px;
+  position: relative;
+  transform: translate(50%, 200%);
+  font-weight: 600;
+  color: #F2F2F2;
   z-index: 1;
 }
-.ys-section-2 figure .ys-imgcontainer1 {
-  position: absolute;
+@media screen and (min-width: 1100px) {
+  .ys-section-2 figure h6 {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .ys-section-2 figure h6 {
+    font-size: 5vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ys-section-2 figure h6 {
+    text-align: center;
+    transform: translate(3%, 220%);
+  }
+}
+.ys-section-2 figure .box1 {
+  width: 90%;
+  padding: 5px;
+  margin-left: 9%;
+  margin-bottom: 25%;
+  border: 1px solid #211E18;
+}
+.ys-section-2 figure .box1 .box1-1 {
+  padding: 200px 0;
+  box-sizing: border-box;
+  background-color: #211E18;
 }
 .ys-section-2 figure .ys-imgcontainer1 div {
-  display: block;
-  width: 50%;
+  position: absolute;
 }
 .ys-section-2 figure .ys-imgcontainer1 div img {
-  height: 100%;
+  width: 100%;
 }
-.ys-section-2 figure div.text {
-  border: 1px solid green;
+.ys-section-2 figure .ys-imgcontainer1 .img1-1 {
+  width: 65%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.ys-section-2 figure div.text em {
-  display: block;
-  font-size: 2em;
+.ys-section-2 figure .ys-imgcontainer1 .img1-2 {
+  width: 35%;
+  top: 55%;
+  left: 17.5%;
+  transform: translate(-50%, -50%);
+}
+.ys-section-2 figure .ys-imgcontainer1 .img1-3 {
+  width: 40%;
+  top: 77%;
+  right: 4%;
+  transform: translateY(-100%);
+}
+.ys-section-2 figure .ys-imgcontainer1 .img1-4 {
+  width: 10%;
+  top: 77%;
+  right: 4%;
+}
+.ys-section-2 figure div.decorbar-1 {
+  position: absolute;
+  top: 70%;
+  left: 7%;
+  width: 0.7%;
+  padding: 17% 0;
+  transform: translateY(-50%);
+  background-color: #211E18;
+}
+.ys-section-2 figure div.textbox-1 {
+  width: 60%;
+  max-width: 550px;
+  transform: translateX(35%);
+}
+.ys-section-2 figure div.textbox-1 strong {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  font-family: "NanumSquareExtraBold";
+  color: #211E18;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.ys-section-2 figure div.textbox-1 strong::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 17px;
+  width: 100%;
+  height: 12px;
+  z-index: -1;
+  background: #A8BFAA;
+  transform: skew(-30deg);
+}
+@media screen and (min-width: 1100px) {
+  .ys-section-2 figure div.textbox-1 strong {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .ys-section-2 figure div.textbox-1 strong {
+    font-size: 2.2vw;
+  }
+}
+.ys-section-2 figure div.textbox-1 p {
+  position: relative;
+  font-family: "NanumSquareLight";
+  font-size: 1.3vw;
+  line-height: 145%;
+  color: #211E18;
+}
+.ys-section-2 figure div.textbox-1 p::before, .ys-section-2 figure div.textbox-1 p::after {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.12);
+}
+@media screen and (min-width: 1100px) {
+  .ys-section-2 figure div.textbox-1 p::before, .ys-section-2 figure div.textbox-1 p::after {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .ys-section-2 figure div.textbox-1 p::before, .ys-section-2 figure div.textbox-1 p::after {
+    font-size: 7vw;
+  }
+}
+.ys-section-2 figure div.textbox-1 p::before {
+  content: "❝";
+  left: -8%;
+}
+.ys-section-2 figure div.textbox-1 p::after {
+  content: "❞";
+  transform: translate(10%, 180%);
+}
+@media screen and (min-width: 1100px) {
+  .ys-section-2 figure div.textbox-1 p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .ys-section-2 figure div.textbox-1 p {
+    font-size: 1.35vw;
+  }
 }
