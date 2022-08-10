@@ -5,17 +5,23 @@
     <img class="youtube-size-img" src="./img/icons/560x315.jpg" draggable="false" alt="">
     <img class="white-cover" src="./img/icons/white-cover.png" alt="">
   </section>
+  <!-- link -->
   <link rel="stylesheet" href="./css/section-about-main.css">
   <link rel="stylesheet" href="./css/section-about-introduce.css">
+  <script src="./js/section-about-main.js"></script>
   <script src="./js/section-about-introduce.js"></script>
+  <!-- link -->
   <section class="yj-main-section">
     <h2 class="hidden">About Main</h2>
     <div>
       <img class="main-background" src="./img/aboutme/mainBackground.png" alt="">
-  <!--     <figure>
+      <figure>
         <img class="mainImg1" src="./img/aboutme/mainImg1.png" alt="">
         <img class="mainImg2" src="./img/aboutme/mainImg2.png" alt="">
-      </figure> -->
+      </figure>
+      <figcaption>
+        <h3><span class="about">About</span> <span class="me">Me</span></h3>
+      </figcaption>
     </div>
   </section>
   <!-- main -->

@@ -1,17 +1,60 @@
+@import './common';
 section.yj-main-section{
   div{
+    position: relative;
     img.main-background{
+      max-width: 1200px;
       width: 100%;
-      transform: translate(-20%, -10%);
+      transform: scale(1.06);
     }
     figure{
-      position: relative;
+      position: absolute;
+      top: 0;
       img{
         width: 100%;
+        &.mainImg1{
+          transform: translateX(-5%);
+          max-width: 1200px;
+          width: 95%;
+          -webkit-mask-image:url(../img/aboutme/mainMask.png);
+          -webkit-mask-size: 93% 100%;
+          -webkit-mask-repeat: no-repeat;
+          mask-image:url(../img/aboutme/mainMask.png);
+          mask-size: 93% 100%;
+          mask-repeat: no-repeat;
+        }
         &.mainImg2{
           position: absolute;
-          top: 0;
-          left: -100px;
+          top: -15%;
+          left: -25%;
+          transform: translateY(0%);
+        }
+      }
+    }
+    figcaption{
+      position: absolute;
+      span{
+        @include mainFont;
+        color: $gray-color;
+      }
+      @media screen and (min-width:1200px){
+        top:200px;
+        left: 400px;
+        span{
+          font-size: 70px;
+        }
+      }
+      @media screen and (max-width:1200px){
+        top: 35%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+        span{
+          font-size: 7vw;
+        }
+        span.me{
+          position: absolute;
+          top: 90%;
+          left: 90%;
         }
       }
     }
