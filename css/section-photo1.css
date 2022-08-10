@@ -4,11 +4,6 @@
 
 }
 
-.js-section-2{
-  max-width: 1200px;
-  margin: 0 auto;
-  border: 1px solid yellow;
-}
 @media screen and (min-width: 800px){
   .js-section-2{
     padding: 100px 0;
@@ -18,25 +13,5 @@
   .js-section-2{
     padding: 50px 0;
   }
-}
-.js-section-2 figure{
-  border: 1px solid blue;
-  position: relative;
-  
-}
-.js-section-2 figure h6{
-  font-size: 45px;
-}
-.js-section-2 figure .js-imgcontainer1{
-  position: absolute;
-}
-.js-section-2 figure .js-imgcontainer1 img{
-  height: 100%;
-}
-.js-section-2 figure div.text{
-  border: 1px solid green;
-}
-.js-section-2 figure div.text em{
-  display: block;
-font-size: 2em;
+
 }
