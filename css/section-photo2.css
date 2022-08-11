@@ -13,7 +13,7 @@
   transform: translateY(-50%);
   z-index: 1;
   font-family: "ele";
-  mix-blend-mode: normal;
+  mix-blend-mode: multiply;
 }
 @media screen and (min-width: 1200px) {
   .ys-section-1 {
@@ -26,6 +26,7 @@
   }
 }
 
+/* -----------------------------section-2------------------------------ */
 .ys-section-2 {
   margin: 0 auto;
 }
@@ -47,8 +48,9 @@
 }
 .ys-section-2 figure h6 {
   position: relative;
-  transform: translate(50%, 200%);
+  transform: translate(47%, 200%);
   font-weight: 600;
+  mix-blend-mode: difference;
   color: #F2F2F2;
   z-index: 1;
 }
@@ -76,14 +78,15 @@
   border: 1px solid #211E18;
 }
 .ys-section-2 figure .box1 .box1-1 {
-  padding: 200px 0;
+  padding: 23% 0;
   box-sizing: border-box;
   background-color: #211E18;
 }
-.ys-section-2 figure .ys-imgcontainer1 div {
+.ys-section-2 figure .ys-imgcontainer1 li {
   position: absolute;
+  overflow: hidden;
 }
-.ys-section-2 figure .ys-imgcontainer1 div img {
+.ys-section-2 figure .ys-imgcontainer1 li img {
   width: 100%;
 }
 .ys-section-2 figure .ys-imgcontainer1 .img1-1 {
@@ -100,13 +103,13 @@
 }
 .ys-section-2 figure .ys-imgcontainer1 .img1-3 {
   width: 40%;
-  top: 77%;
+  top: 75%;
   right: 4%;
   transform: translateY(-100%);
 }
 .ys-section-2 figure .ys-imgcontainer1 .img1-4 {
   width: 10%;
-  top: 77%;
+  top: 75%;
   right: 4%;
 }
 .ys-section-2 figure div.decorbar-1 {
@@ -121,12 +124,21 @@
 .ys-section-2 figure div.textbox-1 {
   width: 60%;
   max-width: 550px;
-  transform: translateX(35%);
+}
+@media screen and (min-width: 1100px) {
+  .ys-section-2 figure div.textbox-1 {
+    transform: translateX(35%);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .ys-section-2 figure div.textbox-1 {
+    transform: translate(35%, 30%);
+  }
 }
 .ys-section-2 figure div.textbox-1 strong {
   position: relative;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 1%;
   padding-bottom: 20px;
   font-family: "NanumSquareExtraBold";
   color: #211E18;
@@ -150,7 +162,7 @@
 }
 @media screen and (max-width: 1100px) {
   .ys-section-2 figure div.textbox-1 strong {
-    font-size: 2.2vw;
+    font-size: 2.35vw;
   }
 }
 .ys-section-2 figure div.textbox-1 p {
@@ -162,11 +174,11 @@
 }
 .ys-section-2 figure div.textbox-1 p::before, .ys-section-2 figure div.textbox-1 p::after {
   position: absolute;
-  color: rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.08);
 }
 @media screen and (min-width: 1100px) {
   .ys-section-2 figure div.textbox-1 p::before, .ys-section-2 figure div.textbox-1 p::after {
-    font-size: 80px;
+    font-size: 78px;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -184,7 +196,7 @@
 }
 @media screen and (min-width: 1100px) {
   .ys-section-2 figure div.textbox-1 p {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -192,3 +204,5 @@
     font-size: 1.35vw;
   }
 }
+
+/* -----------------------------section-3------------------------------ */
