@@ -1,27 +1,104 @@
- @import "./common";
-.ha-Homesection-2{
-   position: relative;
-  figure.section-bg{
+@import "./common";
+.ha-Homesection-2 {
+  padding: 40% 5% 70% 5%;
+  box-sizing: border-box;
+  position: relative;
+  background: white;
+  figure.section-bg {
     position: absolute;
     width: 100%;
     height: 100%;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
     background-image: url(../img/home/home2-mountain-bg.jpg);
     background-size: cover;
     background-position: center center;
     -webkit-mask-image: url(../img/home/home2-mountain-bg-mask.svg);
-    -webkit-mask-size: auto 100%  ;
-    
+    -webkit-mask-size: auto 100%;
+
     -webkit-mask-repeat: repeat-x;
-    animation:  bgmove 100000s infinite linear;
-  }
-  @keyframes bgmove{
-    0%{
-      -webkit-mask-position: 0 center ;
+    animation: bgmove 100000s infinite linear;
+
+    img {
+      width: 70%;
+      transform: translate(20%, 40%);
+      -webkit-mask-image: url(../img/home/home2mask.png);
+      -webkit-mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
     }
-    100%{
-      -webkit-mask-position: -100000% center ;
+  }
+  @keyframes bgmove {
+    0% {
+      -webkit-mask-position: 0 center;
+    }
+    100% {
+      -webkit-mask-position: -100000% center;
     }
   }
+  b.title {
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    top: 10%;
+    @include mainFont;
+    color: #dee1e7;
+    mix-blend-mode: exclusion;
+    @media screen and (min-width: 1500px) {
+      font-size: 270px;
+    } //lg
+    @media screen and (max-width: 1500px) {
+      font-size: 18vw;
+    } //sm
+  }
+
+  div.home2center {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 20%;
+    border: 1px solid white;
+    box-sizing: border-box;
+    @media screen and (max-width: 800px) {
+      top: 45%;
+    }
+    div.svgbox {
+      position: absolute;
+      width: 50%;
+      top: -170%;
+      left: -5%;
+      @media screen and (max-width: 1200px) and (min-width: 1000px) {
+        top: -130%;
+      }
+      @media screen and (max-width: 1000px) and (min-width: 800px) {
+        top: -100%;
+      }
+      @media screen and (max-width: 800px) {
+        transform: rotate(90deg);
+        left: -20%;
+        top: 0;
+      }
+      .svg1 {
+        width: 50%;
+      }
+      path {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+        /*           stroke-dasharray: 1px;
+          stroke-dashoffset: -1px; */
+      }
+    } //svgbox
+    figure.homesm {
+      position: absolute;
+      width: 50%;
+      img {
+        width: 100%;
+        opacity: 0.5;
+      }
+    }
+    figcaption{
+      
+    }
+  } //center
 } //section

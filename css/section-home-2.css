@@ -7,7 +7,10 @@
 회색#F2F2F2
  */
 .ha-Homesection-2 {
+  padding: 40% 5% 70% 5%;
+  box-sizing: border-box;
   position: relative;
+  background: white;
 }
 .ha-Homesection-2 figure.section-bg {
   position: absolute;
@@ -23,6 +26,14 @@
   -webkit-mask-repeat: repeat-x;
   animation: bgmove 100000s infinite linear;
 }
+.ha-Homesection-2 figure.section-bg img {
+  width: 70%;
+  transform: translate(20%, 40%);
+  -webkit-mask-image: url(../img/home/home2mask.png);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
 @keyframes bgmove {
   0% {
     -webkit-mask-position: 0 center;
@@ -30,4 +41,78 @@
   100% {
     -webkit-mask-position: -100000% center;
   }
+}
+.ha-Homesection-2 b.title {
+  position: absolute;
+  z-index: 1;
+  left: 5%;
+  top: 10%;
+  font-family: "ele";
+  font-size: 22vw;
+  color: #dee1e7;
+  mix-blend-mode: exclusion;
+}
+@media screen and (min-width: 1500px) {
+  .ha-Homesection-2 b.title {
+    font-size: 270px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .ha-Homesection-2 b.title {
+    font-size: 18vw;
+  }
+}
+.ha-Homesection-2 div.home2center {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 20%;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 800px) {
+  .ha-Homesection-2 div.home2center {
+    top: 45%;
+  }
+}
+.ha-Homesection-2 div.home2center div.svgbox {
+  position: absolute;
+  width: 50%;
+  top: -170%;
+  left: -5%;
+}
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .ha-Homesection-2 div.home2center div.svgbox {
+    top: -130%;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  .ha-Homesection-2 div.home2center div.svgbox {
+    top: -100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ha-Homesection-2 div.home2center div.svgbox {
+    transform: rotate(90deg);
+    left: -20%;
+    top: 0;
+  }
+}
+.ha-Homesection-2 div.home2center div.svgbox .svg1 {
+  width: 50%;
+}
+.ha-Homesection-2 div.home2center div.svgbox path {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+  /*           stroke-dasharray: 1px;
+    stroke-dashoffset: -1px; */
+}
+.ha-Homesection-2 div.home2center figure.homesm {
+  position: absolute;
+  width: 50%;
+}
+.ha-Homesection-2 div.home2center figure.homesm img {
+  width: 100%;
+  opacity: 0.5;
 }

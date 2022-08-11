@@ -67,8 +67,43 @@
   <!------------------------------------------------------------------>    
   <section class="ha-Homesection-2">
     <h2 class="hidden">About ME</h2>
-    <figure class="section-bg"></figure>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <b class="title">About <span>Me</span></b>
+    <figure class="section-bg">
+      <img src="./img/home/home2-center.jpg" alt="">
+    </figure>
+    
+    <div class="home2center">
+    <div class="svgbox">
+      <svg class="svg1" viewBox="0 0 417 550">
+        <path pathLength="1" d="M3 2.25h410v544.5H3z" />
+      </svg>
+    </div><!-- svgbox -->
+   <figure class="homesm">
+        <img src="./img/home/home2-3.png" alt="">
+      </figure>
+      <figcaption>
+        <ul>
+          <li>
+            <div>MY FROFIL</div>
+            <p>자기 소개 및 작품의 영감과 협력한 작품 · 경력
+              사진을 찍는 장비와 사용하는 기술 등
+              오래된 포토그래퍼의 이야기를 알려 드립니다.</p>
+          </li>
+          <li>
+            <div>MY SKILL</div>
+            <ul>
+              <li> 1. 셔터스피드</li>
+              <li> 2. 장노출 사진</li>
+              <li> 3. 브라케팅</li>
+              <li> 4. ND그라데이션</li>
+              <li> 5. 실루엣</li>
+              <li> 6. 화이트밸런스</li>
+            </ul>
+          </li>
+        </ul>
+      </figcaption>
+  </div> <!-- home2center -->
+  
   </section> <!-- hohome2 -->
   <!-- -------------------------------------------------------------->
 
