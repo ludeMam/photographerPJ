@@ -30,7 +30,6 @@ $(function(){
     }else if(winw<=450){
       textLocation = (textRange*(-scrRatio))+250
     }   
-    console.log(textLocation);
     $('section.yj-introduce-section div.profile-text').css({'transform':'translateY('+textLocation+'px)'})
     imgT=$('section.yj-introduce-section figure.profile-img-container img.profile-img').offset().top+scrt
     imgH=$('section.yj-introduce-section figure.profile-img-container img.profile-img').innerHeight()

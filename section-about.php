@@ -28,7 +28,7 @@
   <!-- visual -->
   <section class="yj-introduce-section">
     <h2 class="hidden">introduce section</h2>
-    <div class="profile-background">  
+    <div class="profile-background">
       <div class="profile-container">
         <figure class="profile-img-container">
           <img src="./img/aboutme/profile1.png" alt="" class="profile-img">
@@ -56,7 +56,9 @@
         <img class='main-content-svg' src="./img/aboutme/mainContentSvg.png" alt="">
       </figure>
       <section class="main-content-section1">
-
+        <div class="section1-container">
+          
+        </div>
       </section>
       <section class="main-content-section2"></section>
       <section class="main-content-section3"></section>
