@@ -1,48 +1,85 @@
-section.yj-mainContent-section div.main-content-bg {
+section.yj-mainContent-section {
   position: relative;
-  height: 200%;
-  min-height: 1600px;
   width: 100%;
-  /*     section.main-content-section1{
-        position: absolute;
-        width: 100%;
-        background-color: black;
-        min-height: 700px;
-        top: 0;
-        div.section1-container{
-          background-color: white;
-          width: 50%;
-          height: 700px;
-        }
-      } */
 }
-section.yj-mainContent-section div.main-content-bg figure {
+@media screen and (min-width: 1000px) {
+  section.yj-mainContent-section {
+    height: 200%;
+    min-height: 1600px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.yj-mainContent-section {
+    min-height: 3000px;
+  }
+}
+section.yj-mainContent-section figure.main-content-bg {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   text-align: center;
-  /*       @media screen and (min-width:1400px){
-
-        }
-        @media screen and (max-width:1400px) {
-
-        } */
 }
-section.yj-mainContent-section div.main-content-bg figure img.main-content-bgimg {
+section.yj-mainContent-section figure.main-content-bg img {
   width: 100%;
   max-width: 1400px;
+}
+section.yj-mainContent-section figure.main-content-bg img.main-content-bgimg {
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-section.yj-mainContent-section div.main-content-bg figure img.main-content-svg {
+section.yj-mainContent-section figure.main-content-bg img.main-content-svg {
+  position: absolute;
+  top: 0;
+}
+@media screen and (min-width: 1000px) {
+  section.yj-mainContent-section figure.main-content-bg img.main-content-svg {
+    left: 50%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transform: translate(-50%, 120px);
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.yj-mainContent-section figure.main-content-bg img.main-content-svg {
+    height: 80%;
+    object-fit: cover;
+    transform: translateY(25%);
+    z-index: 1;
+  }
+}
+section.yj-mainContent-section ul.main-content-container {
   position: absolute;
   top: 0;
   width: 100%;
-  max-width: 1400px;
   height: 100%;
-  object-fit: contain;
-  object-position: center;
-  transform: translateY(120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  section.yj-mainContent-section ul.main-content-container li {
+    height: 32%;
+    background-color: black;
+    width: 50%;
+  }
+  section.yj-mainContent-section ul.main-content-container li.main-content-2 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.yj-mainContent-section ul.main-content-container {
+    align-items: center;
+  }
+  section.yj-mainContent-section ul.main-content-container li {
+    width: 95%;
+    height: 30%;
+    background-color: black;
+  }
 }

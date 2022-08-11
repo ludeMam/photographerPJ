@@ -50,19 +50,15 @@
   <!-- introduce -->
   <section class="yj-mainContent-section">
     <h2 class="hidden">main content</h2>
-    <div class="main-content-bg">
-      <figure>
-        <img class='main-content-bgimg' src="./img/aboutme/mainContentBackground.png" alt="">
-        <img class='main-content-svg' src="./img/aboutme/mainContentSvg.png" alt="">
-      </figure>
-      <section class="main-content-section1">
-        <div class="section1-container">
-          
-        </div>
-      </section>
-      <section class="main-content-section2"></section>
-      <section class="main-content-section3"></section>
-    </div>
+    <figure class="main-content-bg">
+      <img class='main-content-bgimg' src="./img/aboutme/mainContentBackground.png" alt="">
+      <img class='main-content-svg' src="./img/aboutme/mainContentSvg.png" alt="">
+    </figure>
+    <ul class="main-content-container">
+      <li class="main-content-1"></li>
+      <li class="main-content-2"></li>
+      <li class="main-content-3"></li>
+    </ul>
   </section>
   <!-- main -->
   <section>
