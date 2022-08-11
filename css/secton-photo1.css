@@ -1,0 +1,98 @@
+.js-section-2 {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+.js-section-2 figure {
+  max-width: 1200px;
+  position: absolute;
+  height: 100%;
+}
+.js-section-2 figure h6 {
+  z-index: 1;
+  font-size: 45px;
+}
+.js-section-2 figure img {
+  position: absolute;
+  display: block;
+  height: 100%;
+}
+.js-section-2 figure .text {
+  position: absolute;
+  max-width: 40%;
+  border: 1px solid green;
+}
+.js-section-2 figure em {
+  display: block;
+  font-size: 3em;
+}
+
+.js-imgcontainer1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.js-imgcontainer1 .js-img1 .img-1-1 .f1 {
+  left: 100px;
+  top: 200px;
+}
+.js-imgcontainer1 .js-img1 .img-1-1 .f2 {
+  right: 100px;
+  top: 100px;
+}
+.js-imgcontainer1 .js-img1 .text1-1 {
+  bottom: 100px;
+  right: 100px;
+}
+.js-imgcontainer1 .js-img1 .img-1-2 .f3 {
+  left: 100px;
+  top: 200px;
+}
+.js-imgcontainer1 .js-img1 .img-1-2 .f4 {
+  right: 100px;
+  top: 100px;
+}
+.js-imgcontainer1 .js-img1 .text1-2 {
+  bottom: 100px;
+  right: 100px;
+}
+
+.js-imgcontainer2 {
+  border: 1px solid blue;
+}
+.js-imgcontainer2 .js-img2 .img-2-1 .s1 {
+  left: 150px;
+  top: 100px;
+}
+.js-imgcontainer2 .js-img2 .img-2-1 .s2 {
+  right: 150px;
+  top: 200px;
+}
+.js-imgcontainer2 .js-img2 .img-2-2 .s3 {
+  left: 150px;
+  top: 20px;
+}
+.js-imgcontainer2 .js-img2 .img-2-2 .s4 {
+  right: 100px;
+  top: 200px;
+}
+.js-imgcontainer2 .js-img2 .img-2-3 .s5 {
+  left: 100px;
+  top: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+  img {
+    width: 32%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  img {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 500px) {
+  img {
+    width: 100%;
+  }
+}

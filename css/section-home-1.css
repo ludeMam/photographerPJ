@@ -272,9 +272,3 @@
     display: none;
   }
 }
-
-section.ha-Homesection-2 figure.home2bg img {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}

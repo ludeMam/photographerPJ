@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* 
+짙은갈색 #211E18
+갈색 #403A2F
+진한민트#798C7A
+옅은민트#A8BFAA
+회색#F2F2F2
+ */
+.ha-Homesection-2 {
+  position: relative;
+}
+.ha-Homesection-2 figure.section-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: url(../img/home/home2-mountain-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  -webkit-mask-image: url(../img/home/home2-mountain-bg-mask.svg);
+  -webkit-mask-size: auto 100%;
+  -webkit-mask-repeat: repeat-x;
+  animation: bgmove 100000s infinite linear;
+}
+@keyframes bgmove {
+  0% {
+    -webkit-mask-position: 0 center;
+  }
+  100% {
+    -webkit-mask-position: -100000% center;
+  }
+}

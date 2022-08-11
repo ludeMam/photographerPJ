@@ -1,13 +1,16 @@
+<link rel="stylesheet" href="./css/section-home-1.css">
+<link rel="stylesheet" href="./css/section-home-2.css">
 <script src="./js/sectionhome.js"></script>
+
+
 <section class="section-home section-container  section-container1" data-section-number="1">
   <a class="btn-page" href="#home" data-section=".section-home" data-section-number="1">Home</a>
+  <!---------------------------------------------------------------->
   <section class="section-video-intro">
     <iframe class="video-content" src="https://www.youtube.com/embed/BHACKCNDMW8?&playlist=BHACKCNDMW8&vq=highres&iv_load_policy=3&autoplay=1&mute=1&loop=1&rel=0&showinfo=0&color=white&controls=0" allowfullscreen></iframe>
     <img class="youtube-size-img" src="./img/icons/560x315.jpg" draggable="false" alt="">
   </section>
-
-  <link rel="stylesheet" href="./css/home.css">
-
+  <!---------------------------------------------------------------->
   <section class="ha-Homesection-1">
     <figure class="bg-slider">
       <img class="lg" src="./img/home/home1.png" alt="">
@@ -50,7 +53,6 @@
           </ul>
         </div>
       </div><!-- summary -->
-
       <div class="video">
         <a  class="videolink1" href="https://www.youtube.com/watch?v=s2xF2lm64HM">
           <i class="fa-solid fa-circle-play"></i>
@@ -62,11 +64,16 @@
       <div class="corvar"></div>
     </div><!--center-->
   </section><!-- hahome1 -->
-
+  <!------------------------------------------------------------------>    
   <section class="ha-Homesection-2">
-  <h2 class="hidden">About ME</h2>
-  <figure class="home2bg">
-    <img src="./img/home/home2bg.png" alt="">
-  </figure>
+    <h2 class="hidden">About ME</h2>
+    <figure class="section-bg"></figure>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </section> <!-- hohome2 -->
+  <!-- -------------------------------------------------------------->
+
+  <section class="ha-Homesection-3">
+    section3
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </section>
 </section><!-- section-home section-container  section-container1 -->
