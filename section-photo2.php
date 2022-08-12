@@ -43,16 +43,42 @@
   </section>
 
   <section class="ys-section-3">
-    <div class="decorbar-2"></div>
-    <div class="textbox-2">
-      <strong>창의적인 접사 촬영 방법</strong>
-      <p>
-      피사체를 실제보다 크게 보여주는 것, 즉 무언가 작은 피사체를 극단적인
-      클로즈업을 통해 찍은 사진입니다. 대부분의 렌즈는 1:2.8 이상의 비율로 촬영하는
-      반면, 접사 렌즈는 1:1 비율로 촬영하고 약 12인치 이하의 접사 범위 내에서만
-      초점을 맞출 수 있는습니다
-      </p>
-    </div>
+    <figure>
+      <div class="textcontainer-2">
+        <div class="decorbar-2"></div>
+        <div class="textbox-2">
+          <strong>창의적인 접사 촬영 방법</strong>
+          <p>
+          피사체를 실제보다 크게 보여주는 것, 즉 무언가 작은 피사체를 극단적인
+          클로즈업을 통해 찍은 사진입니다. 대부분의 렌즈는 1:2.8 이상의 비율로 촬영하는
+          반면, 접사 렌즈는 1:1 비율로 촬영하고 약 12인치 이하의 접사 범위 내에서만
+         초점을 맞출 수 있는습니다
+         </p>
+        </div>
+      </div>
+      <ul class="ys-imgcontainer2">
+        <li class="img2-3"><img src="./img/photo2/sub2-3.jpg" alt=""></li>
+        <li class="img2-1"><img src="./img/photo2/sub2-1.jpg" alt=""></li>
+        <li class="img2-2"><img src="./img/photo2/sub2-2.jpg" alt=""></li>
+      </ul>
+      <div class="decortext">NATURE</div>
+    </figure>
+  </section>
+
+  <section class="ys-section-4">
+    <figure>
+    <div class="textcontainer-3">
+        <div class="decorbar-3"></div>
+        <div class="textbox-3">
+          <strong>창의적인 접사 촬영 방법</strong>
+          <p>
+          피사체를 실제보다 크게 보여주는 것, 즉 무언가 작은 피사체를 극단적인
+          클로즈업을 통해 찍은 사진입니다. 대부분의 렌즈는 1:2.8 이상의 비율로 촬영하는
+          반면, 접사 렌즈는 1:1 비율로 촬영하고 약 12인치 이하의 접사 범위 내에서만
+         초점을 맞출 수 있는습니다
+         </p>
+        </div>
+    </figure>
   </section>
 
 
