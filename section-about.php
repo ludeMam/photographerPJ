@@ -58,15 +58,44 @@
       <ul>
         <li class="main-content-section main-content-1">
           <ul>
-            <li class="content-1-img"><img src="./img/aboutme/img1-1.png" alt=""></li>
-            <li class="content-1-img"><img src="" alt=""></li>
-            <li class="content-1-img"><img src="" alt=""></li>
-            <li class="content-1-img"><img src="" alt=""></li>
-            <p></p>
+            <li class="content-1-img"><img src="./img/aboutme/img1-1.jpg" alt=""></li>
+            <li class="content-1-img"><img src="./img/aboutme/img1-2.png" alt=""></li>
+            <li class="content-1-img"><img src="./img/aboutme/img1-3.png" alt=""></li>
+            <li class="content-1-img"><img src="./img/aboutme/img1-4.png" alt=""></li>
           </ul>
+          <div>
+            <h3>My Profile</h3>
+            <p>
+              자기 소개 및 작품의 영감과 협력한 작품 · 경력
+              사진을 찍는 장비와 사용하는 기술 등
+              오래된 포토그래퍼의 이야기를 알려 드립니다.
+            </p>
+          </div>
         </li>
-        <li class="main-content-section main-content-2"></li>
-        <li class="main-content-section main-content-3"></li>
+        <li class="main-content-section main-content-2">
+          <ul>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+          </ul>
+          <div>
+            <h3></h3>
+            <p></p>
+          </div>
+        </li>
+        <li class="main-content-section main-content-3">
+        <ul>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+          </ul>
+          <div>
+            <h3></h3>
+            <p></p>
+          </div>
+        </li>
       </ul>
     </figure>
   </section>

@@ -42,7 +42,7 @@ section.yj-mainContent-section div.main-content-bg img.main-content-svg {
   top: 0;
   z-index: 1;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1400px) {
   section.yj-mainContent-section div.main-content-bg img.main-content-svg {
     left: 50%;
     height: 100%;
@@ -51,7 +51,7 @@ section.yj-mainContent-section div.main-content-bg img.main-content-svg {
     transform: translate(-50%, 120px);
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
   section.yj-mainContent-section div.main-content-bg img.main-content-svg {
     height: 80%;
     object-fit: cover;
@@ -70,27 +70,19 @@ section.yj-mainContent-section figure.main-content-container ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 section.yj-mainContent-section figure.main-content-container ul li.main-content-section {
-  /* &:nth-child(1){
-    &::before{
-      content: '';
-      display: block;
-      width: 100%;
-      height: 30px;
-      background-color: $gray-color;
-      transform: translateY(-30px);
-    }
-  } */
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
 }
-section.yj-mainContent-section figure.main-content-container ul li.main-content-section:nth-child(1) {
+section.yj-mainContent-section figure.main-content-container ul li.main-content-section:nth-child(1) ul {
   background-color: #F2F2F2;
 }
-section.yj-mainContent-section figure.main-content-container ul li.main-content-section:nth-child(2) {
+section.yj-mainContent-section figure.main-content-container ul li.main-content-section:nth-child(2) ul {
   background-color: #A8BFAA;
 }
-section.yj-mainContent-section figure.main-content-container ul li.main-content-section:nth-child(3) {
+section.yj-mainContent-section figure.main-content-container ul li.main-content-section:nth-child(3) ul {
   background-color: #798C7A;
 }
 section.yj-mainContent-section figure.main-content-container ul li.main-content-section ul {
@@ -98,38 +90,113 @@ section.yj-mainContent-section figure.main-content-container ul li.main-content-
   width: 100%;
   height: 100%;
 }
+section.yj-mainContent-section figure.main-content-container ul li.main-content-section ul li::before {
+  content: "";
+  border: 1px solid #A8BFAA;
+  box-sizing: border-box;
+  position: absolute;
+}
 section.yj-mainContent-section figure.main-content-container ul li.main-content-section ul li.content-1-img {
   position: absolute;
 }
-section.yj-mainContent-section figure.main-content-container ul li.main-content-section ul li.content-1-img:nth-child(1) {
-  width: 40%;
-  height: 50%;
-  top: -50px;
-  left: 50px;
-}
-section.yj-mainContent-section figure.main-content-container ul li.main-content-section ul li.content-1-img:nth-child(1) img {
+section.yj-mainContent-section figure.main-content-container ul li.main-content-section ul li.content-1-img img {
   width: 100%;
+}
+section.yj-mainContent-section figure.main-content-container ul li.main-content-section div {
+  position: relative;
+}
+section.yj-mainContent-section figure.main-content-container ul li.main-content-section div::before {
+  content: "01";
+  font-family: "ele";
+  font-weight: 600;
+  font-size: 42pt;
+  position: absolute;
+  top: 40%;
+  left: -5%;
+  color: #798C7A;
+}
+section.yj-mainContent-section figure.main-content-container ul li.main-content-section div h3 {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  font-family: "ele";
+  font-size: 30pt;
+  color: #403A2F;
 }
 @media screen and (min-width: 1000px) {
   section.yj-mainContent-section figure.main-content-container ul li.main-content-section {
     height: 30%;
-    background-color: black;
+  }
+  section.yj-mainContent-section figure.main-content-container ul li.main-content-section.main-content-1 {
+    height: 23%;
+    margin-top: 50px;
+  }
+  section.yj-mainContent-section figure.main-content-container ul li.main-content-section.main-content-1 ul {
     width: 60%;
     max-width: 600px;
   }
-  section.yj-mainContent-section figure.main-content-container ul li.main-content-section.main-content-2 {
+  section.yj-mainContent-section figure.main-content-container ul li.main-content-section.main-content-1 ul li.content-1-img:nth-child(1) {
+    width: 40%;
+    top: -50px;
+    left: 50px;
+  }
+  section.yj-mainContent-section figure.main-content-container ul li.main-content-section.main-content-1 ul li.content-1-img:nth-child(1)::before {
+    width: 2px;
+    height: calc(83.5% - 25px);
+    right: -12.5px;
+    bottom: 25px;
+  }
+  section.yj-mainContent-section figure.main-content-container ul li.main-content-section.main-content-1 ul li.content-1-img:nth-child(2) {
+    width: 50%;
+    left: 315px;
+    top: -134.91px;
+  }
+  section.yj-mainContent-section figure.main-content-container ul li.main-content-section.main-content-1 ul li.content-1-img:nth-child(2)::before {
+    width: 86.5%;
+    bottom: -12.5px;
+    left: 25px;
+  }
+  section.yj-mainContent-section figure.main-content-container ul li.main-content-section.main-content-1 ul li.content-1-img:nth-child(3) {
+    width: 40%;
+    top: 275.09px;
+    left: 25px;
+  }
+  section.yj-mainContent-section figure.main-content-container ul li.main-content-section.main-content-1 ul li.content-1-img:nth-child(3)::before {
+    top: -12.5px;
+    width: 100%;
+    height: 2px;
+    right: 25px;
+  }
+  section.yj-mainContent-section figure.main-content-container ul li.main-content-section.main-content-1 ul li.content-1-img:nth-child(4) {
+    width: 80%;
+    top: 325.09px;
+    left: 290px;
+  }
+  section.yj-mainContent-section figure.main-content-container ul li.main-content-section.main-content-1 ul li.content-1-img:nth-child(4)::before {
+    width: 2px;
+    height: 36.5%;
+    top: 25px;
+    left: -12.5px;
+  }
+  section.yj-mainContent-section figure.main-content-container ul li.main-content-section.main-content-1 div {
+    width: 35%;
+    min-height: 200px;
+    border: 1px solid black;
+  }
+  section.yj-mainContent-section figure.main-content-container ul li.main-content-section.main-content-2 ul {
     height: 25%;
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
   }
 }
 @media screen and (max-width: 1000px) {
   section.yj-mainContent-section figure.main-content-container ul {
     align-items: center;
   }
-  section.yj-mainContent-section figure.main-content-container ul li.main-content-section {
+  section.yj-mainContent-section figure.main-content-container ul li.main-content-section ul {
     width: 95%;
     height: 30%;
     background-color: black;
