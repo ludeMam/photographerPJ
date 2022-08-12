@@ -65,9 +65,9 @@
 .ha-Homesection-2 div.home2center {
   position: absolute;
   width: 100%;
-  top: 50%;
+  height: 20%;
+  top: 45%;
   left: 20%;
-  border: 1px solid white;
   box-sizing: border-box;
 }
 @media screen and (max-width: 800px) {
@@ -78,18 +78,8 @@
 .ha-Homesection-2 div.home2center div.svgbox {
   position: absolute;
   width: 50%;
-  top: -170%;
+  top: -50%;
   left: -5%;
-}
-@media screen and (max-width: 1200px) and (min-width: 1000px) {
-  .ha-Homesection-2 div.home2center div.svgbox {
-    top: -130%;
-  }
-}
-@media screen and (max-width: 1000px) and (min-width: 800px) {
-  .ha-Homesection-2 div.home2center div.svgbox {
-    top: -100%;
-  }
 }
 @media screen and (max-width: 800px) {
   .ha-Homesection-2 div.home2center div.svgbox {
@@ -114,5 +104,53 @@
 }
 .ha-Homesection-2 div.home2center figure.homesm img {
   width: 100%;
-  opacity: 0.5;
+  /*         opacity: 0.5; */
+}
+.ha-Homesection-2 div.home2center figcaption {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+}
+.ha-Homesection-2 div.home2center figcaption div.textbox {
+  width: 45%;
+  height: 100%;
+  transform: translate(-10%, 150%);
+  color: #F2F2F2;
+}
+.ha-Homesection-2 div.home2center figcaption div.textbox h3 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  font-size: 1.5em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.ha-Homesection-2 div.home2center figcaption div.textbox h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 20px;
+  background: #A8BFAA;
+  transform: skew(-30deg);
+}
+.ha-Homesection-2 div.home2center figcaption div.summary {
+  width: 45%;
+  transform: translate(20%, 70%);
+  color: #F2F2F2;
+}
+.ha-Homesection-2 div.home2center figcaption div.summary h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #403A2F;
+}
+@media screen and (max-width: 600px) {
+  .ha-Homesection-2 div.home2center figcaption div.summary h4 {
+    width: 55%;
+    border-bottom: 1px dotted #F2F2F2;
+  }
 }

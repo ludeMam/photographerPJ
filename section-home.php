@@ -82,15 +82,14 @@
         <img src="./img/home/home2-3.png" alt="">
       </figure>
       <figcaption>
-        <ul>
-          <li>
-            <div>MY FROFIL</div>
+        <div class="textbox">
+            <h3>MY FROFIL</h3>
             <p>자기 소개 및 작품의 영감과 협력한 작품 · 경력
               사진을 찍는 장비와 사용하는 기술 등
-              오래된 포토그래퍼의 이야기를 알려 드립니다.</p>
-          </li>
-          <li>
-            <div>MY SKILL</div>
+              오래된 포토그래퍼의 이야기를 알려 드립니다.</p>     
+         </div>
+        <div class="summary">
+            <h4>MY SKILL</h4>
             <ul>
               <li> 1. 셔터스피드</li>
               <li> 2. 장노출 사진</li>
@@ -99,8 +98,7 @@
               <li> 5. 실루엣</li>
               <li> 6. 화이트밸런스</li>
             </ul>
-          </li>
-        </ul>
+          </div>
       </figcaption>
   </div> <!-- home2center -->
   
