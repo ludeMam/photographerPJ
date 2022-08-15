@@ -106,6 +106,33 @@
   <!-- -------------------------------------------------------------->
 
   <section class="ha-Homesection-3">
+  <h2 class="hidden">My Gallery</h2>
+  <b class="title">My Gallery</b>
+  <figure class="section-bg">
+      <img src="./img/home/home3-1.jpg" alt="">
+    </figure>
+
+  <div class="home3center">
+<div class="gallery1">
+  <figure>
+    <img src="" alt="">
+  </figure>
+  <figcaption>
+      Dark moody
+  </figcaption>
+</div>
+<div>
+<figure>
+    <img src="" alt="">
+  </figure>
+  <figcaption>
+      Bright moody
+  </figcaption>
+</div>
+<div class="summary">
+      <h4>Make use</h4>
+          </div>
+  </div><!-- home3center -->
     section3
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </section>
