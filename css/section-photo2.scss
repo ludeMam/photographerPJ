@@ -2,10 +2,7 @@
 
 .ys-section-1{
   h6{
-    position: absolute;
-    top: 50%;
-    left: 7%;
-    transform: translateY(-50%);
+    transform: translate(8%,450%);
     z-index: 1;
     font-family: 'ele';
     mix-blend-mode: multiply;
@@ -26,7 +23,6 @@
   @media screen and (max-width:800px){
     padding:50px 0;
   }
-
   figure{
     position: relative;
     width: 80%;
@@ -34,7 +30,7 @@
     margin: 0 auto;
     h6{
       position: relative;
-      transform: translate(47%,200%);
+      transform: translate(45%,200%);
       font-weight: 600;
       mix-blend-mode: difference;
       color: $gray-color;
@@ -47,7 +43,7 @@
       }
       @media screen and (max-width:800px) {
         text-align: center;
-        transform: translate(3%,220%);
+        transform: translate(3%,180%);
       }
     }
     .box1{
@@ -72,51 +68,50 @@
       }
       .img1-1{
         width: 65%;
-        top: 30%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%,-165%);
       }
       .img1-2{
         width: 35%;
-        top: 55%;
         left: 17.5%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%,-110%);
       }
       .img1-3{
         width: 40%;
-        top: 75%;
         right: 4%;
-        transform: translateY(-100%);
+        transform: translateY(-130%);
       }
       .img1-4{
         width: 10%;
-        top: 75%;
         right: 4%;
+        transform: translateY(-90%);
       }
     }
     div.decorbar-1{
       position: absolute;
-      top: 70%;
       left: 7%;
       width: 0.7%;
       padding: 17% 0;
-      transform: translateY(-50%);
+      transform: translateY(-80%);
       background-color: $darkbrown-color;
     }
     div.textbox-1{
       width: 60%;
       max-width: 550px;
+      padding: 30px;
+      margin: 0 15%;
       @media screen and (min-width:1100px) {
-        transform: translateX(35%);
+        font-size: 26px;
       }
       @media screen and (max-width:1100px) {
-        transform: translate(35%,30%);
+        font-size: 2.35vw;
       }
       strong{
         position: relative;
         display: inline-block;
         margin-bottom: 1%;
         padding-bottom: 20px;
+        transform: translate(0);
         font-family: 'NanumSquareExtraBold';
         color: $darkbrown-color;
         &::before {
@@ -186,6 +181,7 @@
     padding:50px 0;
   }
   figure{
+    position: relative;
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
@@ -273,28 +269,32 @@
       }
     }
     .ys-imgcontainer2{
+      position: relative;
       padding: 5% 2%;
       li{
+        position: absolute;
         overflow: hidden;
         img{
           width: 100%;
         }
       }
       .img2-1{
-        width: 45%;
-        transform: translate(0,-95%);
+        width: 40%;
+        top: 100%;
+        left: 13%;
       }
       .img2-2{
-        width: 50%;
-        transform: translate(50%,-140%);
+        width: 45%;
+        left: 55%;
+        top: 180%;
+        transform: translateX(-50%);
       }
       .img2-3{
-        width: 40%;
-        transform: translateX(150%);
+        width: 35%;
+        right: -2%;
       }
       @media screen and (min-width:600px) {
         padding: 5% 7%;
-        transform: translateX(7%);
       }
     }
     .decortext{
@@ -302,14 +302,15 @@
       text-orientation: upright;
       font-size: 8vw;
       font-family: 'NanumSquareExtraBold';
-      transform: translate(-10%,-230%);
+      transform: translate(-35%,-20%);
       color: rgba(0,0,0,0.2);
-      @media screen and (min-width:1100px) {
-        transform: translate(-35%,-220%);
-      }
-      @media screen and (max-width:600px) {
-        display: none;
-      }
+    }
+    .decorbox{
+      position: absolute;
+      width: 40%;
+      padding: 20% 0;
+      transform: translate(103%,65%);
+      border: 2px solid $darkbrown-color;
     }
   }
 }
@@ -332,19 +333,15 @@
         position: absolute;
         width: 0.4%;
         height: 100%;
-        transform: translateX(6500%);
         background-color: $darkbrown-color;
-        @media screen and (max-width:600px) {
-          transform: translateX(4000%);
-        }
       }
       div.textbox-3{
         width: 60%;
         max-width: 680px;
         padding: 3% 0;
-        transform: translateX(65%);
+        transform: translateX(20%);
         @media screen and (max-width:600px) {
-          transform: translateX(50%);
+          transform: translateX(25%);
         }
         strong{
           position: relative;
@@ -406,6 +403,106 @@
               transform: translate(10%,100%);
             }
           }
+        }
+      }
+    }
+    .decorcontainer{
+      position: relative;
+      width: 55%;
+      margin: 5% auto 0 auto;
+      div{
+        position: absolute;
+        width: 30%;
+        padding: 50% 0;
+        transform: skew(-10deg);
+        border: 1.5px solid $darkbrown-color;
+      }
+      .decorbox2{
+        left: 50%;
+        transform: translateX(-50%) skew(-10deg);
+      }
+      .decorbox3{
+        right: 0;
+      }
+    }
+    .ys-imgcontainer3{
+      display: flex;
+      position: relative;
+      align-items: center;
+      padding: 10% 0;
+      @media screen and (max-width:600px) {
+        flex-wrap: wrap-reverse;
+      }
+      li{
+        div{
+          box-sizing: border-box;
+          font-size: 1vw;
+          font-family: 'NanumSquareLight';
+          line-height: 150%;
+        }
+        img{
+          width: 100%;
+        }
+      }
+      .img3-1{
+        width: 25%;
+      }
+      .img3-2{
+        width: 40%;
+        padding: 0 8%;
+      }
+      .img3-3{
+        width: 25%;
+      }
+      @media screen and (min-width:600px) {
+        .img3-1{
+          width: 25%;
+        }
+        .img3-2{
+          transform: translateX(-43.5%);
+        }
+        .img3-3{
+          transform: translateX(229%);
+        }
+      }
+      @media screen and (max-width:600px) {
+        .img3-1{
+          width: 40%;
+          margin: auto;
+        }
+        .img3-2{
+          width: 60%;
+          margin: 0 auto 15% auto;
+        }
+        .img3-3{
+          width: 40%;
+          margin: auto;
+        }
+      }
+      .img3-1-1{
+        padding: 0 10% 10% 10%;
+        &::before{
+          content: '01';
+          display: block;
+          margin-bottom: 5%;
+          line-height: 100%;
+          font-family: 'Montserrat';
+          font-weight: 800;
+          font-size: 4vw;
+          color: rgba(0,0,0,0.1);
+        }
+      }
+      .img3-3-1{
+        padding: 10% 10% 0 10%;
+        &::before{
+          content: '02';
+          display: block;
+          margin-bottom: 5%;
+          line-height: 100%;
+          font-family: 'Montserrat';
+          font-weight: 800;
+          font-size: 4vw;
+          color: rgba(0,0,0,0.1);
         }
       }
     }
