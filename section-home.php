@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="./css/section-home-1.css">
 <link rel="stylesheet" href="./css/section-home-2.css">
+<link rel="stylesheet" href="./css/section-home-3.css">
 <script src="./js/sectionhome.js"></script>
 
 
@@ -17,7 +18,7 @@
     </figure>
 
     <figure class="smbg">
-    <img class="sm" src="./img/home/home1.png" alt="">
+      <img class="sm" src="./img/home/home1.png" alt="">
     </figure>
 
     <h2 class="hidden">Making photo</h2>
@@ -39,7 +40,8 @@
           제가 원하는 컨셉의 사진을을 만드는 과정을
           담은 영상입니다.
         </p>
-      </div><!--textbox-->
+      </div>
+      <!--textbox-->
       <div class="summary">
         <h4>
           <i class="fa-solid fa-camera-retro"></i> Make Used
@@ -54,7 +56,7 @@
         </div>
       </div><!-- summary -->
       <div class="video">
-        <a  class="videolink1" href="https://www.youtube.com/watch?v=s2xF2lm64HM">
+        <a class="videolink1" href="https://www.youtube.com/watch?v=s2xF2lm64HM">
           <i class="fa-solid fa-circle-play"></i>
           <em>
             Making video
@@ -62,77 +64,88 @@
         </a><!-- videolink -->
       </div> <!-- video -->
       <div class="corvar"></div>
-    </div><!--center-->
+    </div>
+    <!--center-->
   </section><!-- hahome1 -->
-  <!------------------------------------------------------------------>    
+  <!------------------------------------------------------------------>
   <section class="ha-Homesection-2">
     <h2 class="hidden">About ME</h2>
     <b class="title">About <span>Me</span></b>
     <figure class="section-bg">
       <img src="./img/home/home2-center.jpg" alt="">
     </figure>
-    
+
     <div class="home2center">
-    <div class="svgbox">
-      <svg class="svg1" viewBox="0 0 417 550">
-        <path pathLength="1" d="M3 2.25h410v544.5H3z" />
-      </svg>
-    </div><!-- svgbox -->
-   <figure class="homesm">
+      <div class="svgbox">
+        <svg class="svg1" viewBox="0 0 417 550">
+          <path pathLength="1" d="M3 2.25h410v544.5H3z" />
+        </svg>
+      </div><!-- svgbox -->
+      <figure class="homesm">
         <img src="./img/home/home2-3.png" alt="">
       </figure>
       <figcaption>
         <div class="textbox">
-            <h3>MY FROFIL</h3>
-            <p>자기 소개 및 작품의 영감과 협력한 작품 · 경력
-              사진을 찍는 장비와 사용하는 기술 등
-              오래된 포토그래퍼의 이야기를 알려 드립니다.</p>     
-         </div>
+          <h3>MY FROFIL</h3>
+          <p>자기 소개 및 작품의 영감과 협력한 작품 · 경력
+            사진을 찍는 장비와 사용하는 기술 등
+            오래된 포토그래퍼의 이야기를 알려 드립니다.</p>
+        </div>
         <div class="summary">
-            <h4>MY SKILL</h4>
-            <ul>
-              <li> 1. 셔터스피드</li>
-              <li> 2. 장노출 사진</li>
-              <li> 3. 브라케팅</li>
-              <li> 4. ND그라데이션</li>
-              <li> 5. 실루엣</li>
-              <li> 6. 화이트밸런스</li>
-            </ul>
-          </div>
+          <h4>MY SKILL</h4>
+          <ul>
+            <li> 1. 셔터스피드</li>
+            <li> 2. 장노출 사진</li>
+            <li> 3. 브라케팅</li>
+            <li> 4. ND그라데이션</li>
+            <li> 5. 실루엣</li>
+            <li> 6. 화이트밸런스</li>
+          </ul>
+        </div>
       </figcaption>
-  </div> <!-- home2center -->
-  
+    </div> <!-- home2center -->
+
   </section> <!-- hohome2 -->
   <!-- -------------------------------------------------------------->
 
   <section class="ha-Homesection-3">
-  <h2 class="hidden">My Gallery</h2>
-  <b class="title">My Gallery</b>
-  <figure class="section-bg">
+    <h2 class="hidden">My Gallery</h2>
+    <b class="title">My Gallery</b>
+    <figure class="section3-bg">
       <img src="./img/home/home3-1.jpg" alt="">
     </figure>
 
-  <div class="home3center">
-<div class="gallery1">
-  <figure>
-    <img src="" alt="">
-  </figure>
-  <figcaption>
-      Dark moody
-  </figcaption>
-</div>
-<div>
-<figure>
-    <img src="" alt="">
-  </figure>
-  <figcaption>
-      Bright moody
-  </figcaption>
-</div>
-<div class="summary">
-      <h4>Make use</h4>
-          </div>
-  </div><!-- home3center -->
+    <div class="home3center">
+      <div class="gallery1">
+        <figure>
+          <img src="./img/home/home3-2.png" alt="">
+        </figure>
+        <figcaption>
+          Dark moody
+        </figcaption>
+        <div class="svg svgbox3">
+        <svg viewBox="0 0 268 124">
+            <path d="M163.51 1.86h102.35v121.29H2.13">
+          </svg>
+        </div>
+      </div>
+      <div class="gallery2">
+        <figure>
+          <img src="./img/home/home3-3.png" alt="">
+        </figure>
+        <figcaption>
+          Bright moody
+        </figcaption>
+        <div class="svg svgbox3">
+        <svg viewBox="0 0 268 124">
+            <path d="M163.51 1.86h102.35v121.29H2.13">
+          </svg>
+        </div>
+      </div>
+      <div class="summary">
+        <h4>Make use</h4>
+      </div>
+    </div><!-- home3center -->
     section3
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </section>

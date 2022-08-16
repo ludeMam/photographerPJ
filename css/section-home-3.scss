@@ -1,0 +1,79 @@
+@import "./common";
+
+.ha-Homesection-3 {
+  position: relative;
+  height: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 85%;
+  }
+
+  .section3-bg {
+    position: absolute;
+    left: -25%;
+    transform: rotate(-5deg);
+    width: 90%;
+    overflow: hidden;
+    -webkit-mask-image: url(../img/home/home3mask.png);
+    -webkit-mask-size: 95%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    img {
+      width: 100%;
+    }
+  }
+  .home3center {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 20%;
+    left: 20%;
+    box-sizing: border-box;
+     figcaption{
+      transform: translateX(20%);
+    } 
+    .gallery1 {
+      width: 90%;
+      position: absolute;
+      left: 25%;
+      top: -10%;
+      figure {
+        width: 25%;
+        min-width: 180px;
+        overflow: hidden;
+        img {
+          object-fit: cover;
+          object-position: center -50px;
+          width: 100%;
+        }
+      }
+    }
+    .gallery2 {
+      width: 90%;
+      position: absolute;
+      left: 40%;
+      top: 100%;
+      figure {
+        width: 25%;
+        min-width: 180px;
+        overflow: hidden;
+        img {
+          object-fit: cover;
+          object-position: center -50px;
+          width: 100%;
+        }
+      }
+    }
+    div.svg {
+      width: 25%;
+      transform: translate(20%, -90%);
+      svg {
+        width: 100%;
+        fill: none;
+        stroke: $darkbrown-color;
+        stroke-width: 2px;
+      }
+    }
+  }
+}

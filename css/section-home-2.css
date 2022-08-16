@@ -70,11 +70,6 @@
   left: 20%;
   box-sizing: border-box;
 }
-@media screen and (max-width: 800px) {
-  .ha-Homesection-2 div.home2center {
-    top: 45%;
-  }
-}
 .ha-Homesection-2 div.home2center div.svgbox {
   position: absolute;
   width: 50%;

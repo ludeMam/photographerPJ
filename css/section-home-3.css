@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* 
+짙은갈색 #211E18
+갈색 #403A2F
+진한민트#798C7A
+옅은민트#A8BFAA
+회색#F2F2F2
+ */
+.ha-Homesection-3 {
+  position: relative;
+  height: 100%;
+  background: #fff;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 1200px) {
+  .ha-Homesection-3 {
+    padding-bottom: 85%;
+  }
+}
+.ha-Homesection-3 .section3-bg {
+  position: absolute;
+  left: -25%;
+  transform: rotate(-5deg);
+  width: 90%;
+  overflow: hidden;
+  -webkit-mask-image: url(../img/home/home3mask.png);
+  -webkit-mask-size: 95%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+.ha-Homesection-3 .section3-bg img {
+  width: 100%;
+}
+.ha-Homesection-3 .home3center {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 20%;
+  left: 20%;
+  box-sizing: border-box;
+}
+.ha-Homesection-3 .home3center figcaption {
+  transform: translateX(20%);
+}
+.ha-Homesection-3 .home3center .gallery1 {
+  width: 90%;
+  position: absolute;
+  left: 25%;
+  top: -10%;
+}
+.ha-Homesection-3 .home3center .gallery1 figure {
+  width: 25%;
+  min-width: 180px;
+  overflow: hidden;
+}
+.ha-Homesection-3 .home3center .gallery1 figure img {
+  object-fit: cover;
+  object-position: center -50px;
+  width: 100%;
+}
+.ha-Homesection-3 .home3center .gallery2 {
+  width: 90%;
+  position: absolute;
+  left: 40%;
+  top: 100%;
+}
+.ha-Homesection-3 .home3center .gallery2 figure {
+  width: 25%;
+  min-width: 180px;
+  overflow: hidden;
+}
+.ha-Homesection-3 .home3center .gallery2 figure img {
+  object-fit: cover;
+  object-position: center -50px;
+  width: 100%;
+}
+.ha-Homesection-3 .home3center div.svg {
+  width: 25%;
+  transform: translate(20%, -90%);
+}
+.ha-Homesection-3 .home3center div.svg svg {
+  width: 100%;
+  fill: none;
+  stroke: #211E18;
+  stroke-width: 2px;
+}
