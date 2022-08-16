@@ -1,4 +1,10 @@
 @import '../css/common';
+@mixin front-number{
+  font-family: 'ele';
+  font-weight: 600;        
+  color: $dark-mint-color;
+  opacity: 0.4;
+}
 section.yj-mainContent-section{
   position: relative;
   width: 100%;
@@ -7,7 +13,15 @@ section.yj-mainContent-section{
     min-height: 2500px;
   }
   @media screen and(max-width:1000px){
-    min-height: 3000px;      
+    min-height: 2200px;      
+    &::before{
+      content: '';
+      position: absolute;
+      top:-30px;
+      background-color: #fbfbfb;
+      width: 100%;
+      height: 30px;
+    }
   }
   div.main-content-bg{
     position:absolute;
@@ -58,6 +72,14 @@ section.yj-mainContent-section{
       flex-direction: column;
       justify-content: space-between;
       li.main-content-section{
+        &.main-content-1{div::before{content: '01';}}
+        &.main-content-2{div::before{content: '02';}}
+        &.main-content-3{
+          div::before{content: '03';}
+          background-image: url(../img/aboutme/1.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
         ul{
           position: relative;
           width: 100%;
@@ -73,50 +95,37 @@ section.yj-mainContent-section{
           }
           li.main-content-img{
             position: absolute;
-            img{width: 100%;}
           }
         }
         div{
           position: relative;
           &::before{
-            content: '01';
-            font-family: 'ele';
-            font-weight: 600;        
+            @include front-number();
             position: absolute;
-            color: $dark-mint-color;
-            opacity: 0.4;
           }
           h3{
-            position: absolute;
-            z-index: 1;
             font-family: 'ele';
             color: $brown-color;
           }
           p{            
             font-family: 'NanumSquareLight';
-            position: absolute;  
-/*             &::after, &::before{
-              content: '"';
-              position: absolute;
-              font-family: 'ele';
-              color: #dcdcdc;
-              font-size: 80pt;
-            }
+            color: $brown-color;
+/*             box-shadow: 1px 1px 1px 1px rgba(121,140,122,.4); */
             &::before{
-              top:-30px;
-              left: -40px;
-              mix-blend-mode:multiply
+              content: '';
+              position: absolute;
+              background-color: $dark-mint-color;
+              opacity: 0.4;
+              height: 65.5%;
+              width: 2px;
+              top: 30%;
+              left: -7%;
             }
-            &::after{
-              right: -20px;
-              top: 50px;
-            } */
           }
         }
       }
       @media screen and(min-width:1000px){
         li.main-content-section{
-          border: 1px solid red;
           $liBgcolor:(
             1 : $gray-color,
             2 : $mint-color,
@@ -132,13 +141,22 @@ section.yj-mainContent-section{
           display: flex;
           justify-content: space-between;
           height: 30%;
+          ul{
+            width: 60%;
+            max-width: 600px;
+          }
+          div{
+            width: 35%;
+            min-height: 200px;
+          }
           &.main-content-1{
             height: 23%;
             margin-top: 50px;
             ul{
-              width: 60%;
-              max-width: 600px;
+/*               width: 60%;
+              max-width: 600px; */
               li.main-content-img{
+                img{width: 100%;}
                 &:nth-child(1){
                   width: 40%;
                   top: -50px;
@@ -185,15 +203,17 @@ section.yj-mainContent-section{
               }
             }
             div{
-              width: 35%;
+/*               width: 35%;
               min-height: 200px;
-              border:1px solid black;             
+              border:1px solid black;   */           
               &::before{
                 font-size: 55pt;            
                 top: 34%;
                 left: -4%;
               }
               h3{
+                position: absolute;
+                z-index: 1;
                 top: 46%;
                 left: 10%;
                 transform: translateY(-50%);
@@ -201,12 +221,16 @@ section.yj-mainContent-section{
                 letter-spacing: 4px;
               }
               p{
+                position: absolute;  
                 max-width: 400px;
                 width: 85%;
                 font-size: 12pt;
                 top:calc(51% + 25px);  
                 word-spacing: 2px;    
                 letter-spacing: 1px;  
+                &::before{
+                  display: none;
+                }
               }
             }
           }
@@ -219,8 +243,8 @@ section.yj-mainContent-section{
               mix-blend-mode: multiply;
             }
             div{
-              width: 40%;
-              height: 100%;
+/*               width: 40%;
+              height: 100%; */
               background-color: yellow;
             }
 
@@ -230,10 +254,7 @@ section.yj-mainContent-section{
       @media screen and(min-width:1000px) and (max-width:1300px){
         li.main-content-section{
           &.main-content-1{
-            div{
-              width: 35%;
-              min-height: 200px;
-              border:1px solid black;             
+            div{           
               &::before{
                 font-size: 55pt;            
                 top: 14%;
@@ -261,30 +282,57 @@ section.yj-mainContent-section{
       @media screen and (max-width:1000px){
         align-items: center;
         li.main-content-section{
+          position: relative;
           width: 100%;
           height: 33%;
           border: 1px solid black;
           ul{
-            position: relative;
+            position: absolute;
             width: 100%;
             height: 100%;
             border: 1px solid red;
             li.main-content-img{
               position: absolute;
               width: 100%;
-              height: 50%;
-              top: 0;
-              overflow: hidden;
+              height: 75%;
+              bottom: 0;
               &::before{
                 display: none;
               }
-              img{
-                position: absolute;
-                width: 70%;
-                top: 0;
-                object-fit: cover;
-                object-position: center center;
+              &:nth-child(4){
+                height: 50%;
+                width: 100%;
+                bottom:12.5%;
               }
+              img{
+                height: 100%;
+                margin: 0 auto;
+              }
+              @media screen and (max-width:600px){
+                height: 85%;
+                &:nth-child(4){
+                  bottom: 14.5%;
+                }                
+              }
+            }
+          }
+          div{
+            height: 35%;
+            &::before{
+              font-size: 12vw;
+            }
+            h3{
+              font-size: 5vw;
+              margin-left: 20%;
+              margin-bottom: 1%;
+              padding-top: 3.5%;
+              letter-spacing: 6px;
+            }
+            p{
+              position: relative;
+              font-size: 2vw;
+              width: 70%;
+              margin: 0 auto 0 20%;
             }
           }
         }
