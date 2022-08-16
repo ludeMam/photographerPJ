@@ -53,6 +53,7 @@ section.yj-introduce-section div.profile-background div.profile-container figcap
 section.yj-introduce-section div.profile-background div.profile-container figcaption div.profile-text h3 {
   font-family: "ele";
   color: #403A2F;
+  opacity: 0.7;
 }
 section.yj-introduce-section div.profile-background div.profile-container figcaption div.profile-text h4 {
   font-family: "ROEHOE-CHAN";
