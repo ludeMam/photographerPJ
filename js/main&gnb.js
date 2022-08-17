@@ -88,3 +88,12 @@ $(function(){
     changeYoutubeSize()
   })
 })
+/*tab --------------------------------------------------- */
+
+$(document).bind('keydown', function (e) {
+
+  if (e.keyCode == 9) {
+    e.preventDefault();
+    e.returnValue = false;
+  }
+})//keydown
