@@ -8,9 +8,9 @@
  */
 .ys-section-1 h6 {
   transform: translate(8%, 450%);
-  z-index: 1;
   font-family: "ele";
-  mix-blend-mode: multiply;
+  mix-blend-mode: difference;
+  color: #FFF;
 }
 @media screen and (min-width: 1200px) {
   .ys-section-1 {
@@ -362,7 +362,7 @@
   text-orientation: upright;
   font-size: 8vw;
   font-family: "NanumSquareExtraBold";
-  transform: translate(-35%, -20%);
+  transform: translate(-40%, -20%);
   color: rgba(0, 0, 0, 0.2);
 }
 .ys-section-3 figure .decorbox {
@@ -489,7 +489,17 @@
 .ys-section-4 figure .decorcontainer {
   position: relative;
   width: 55%;
-  margin: 5% auto 0 auto;
+}
+@media screen and (min-width: 600px) {
+  .ys-section-4 figure .decorcontainer {
+    margin: 5% auto 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ys-section-4 figure .decorcontainer {
+    transform: rotate(90deg) scale(1.35) translateX(82%);
+    left: 63%;
+  }
 }
 .ys-section-4 figure .decorcontainer div {
   position: absolute;
@@ -497,6 +507,11 @@
   padding: 50% 0;
   transform: skew(-10deg);
   border: 1.5px solid #211E18;
+}
+@media screen and (max-width: 600px) {
+  .ys-section-4 figure .decorcontainer div {
+    transform: skew(-10deg) translateY(7%);
+  }
 }
 .ys-section-4 figure .decorcontainer .decorbox2 {
   left: 50%;
@@ -518,9 +533,36 @@
 }
 .ys-section-4 figure .ys-imgcontainer3 li div {
   box-sizing: border-box;
-  font-size: 1vw;
   font-family: "NanumSquareLight";
   line-height: 150%;
+}
+@media screen and (min-width: 1100px) {
+  .ys-section-4 figure .ys-imgcontainer3 li div {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .ys-section-4 figure .ys-imgcontainer3 li div {
+    font-size: 1.25vw;
+  }
+}
+.ys-section-4 figure .ys-imgcontainer3 li div::before {
+  display: block;
+  margin-bottom: 5%;
+  line-height: 100%;
+  font-family: "Montserrat";
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 1100px) {
+  .ys-section-4 figure .ys-imgcontainer3 li div::before {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .ys-section-4 figure .ys-imgcontainer3 li div::before {
+    font-size: 5vw;
+  }
 }
 .ys-section-4 figure .ys-imgcontainer3 li img {
   width: 100%;
@@ -537,13 +579,13 @@
 }
 @media screen and (min-width: 600px) {
   .ys-section-4 figure .ys-imgcontainer3 .img3-1 {
-    width: 25%;
+    transform: translateY(15%);
   }
   .ys-section-4 figure .ys-imgcontainer3 .img3-2 {
     transform: translateX(-43.5%);
   }
   .ys-section-4 figure .ys-imgcontainer3 .img3-3 {
-    transform: translateX(229%);
+    transform: translate(229%, -15%);
   }
 }
 @media screen and (max-width: 600px) {
@@ -565,24 +607,10 @@
 }
 .ys-section-4 figure .ys-imgcontainer3 .img3-1-1::before {
   content: "01";
-  display: block;
-  margin-bottom: 5%;
-  line-height: 100%;
-  font-family: "Montserrat";
-  font-weight: 800;
-  font-size: 4vw;
-  color: rgba(0, 0, 0, 0.1);
 }
 .ys-section-4 figure .ys-imgcontainer3 .img3-3-1 {
   padding: 10% 10% 0 10%;
 }
 .ys-section-4 figure .ys-imgcontainer3 .img3-3-1::before {
   content: "02";
-  display: block;
-  margin-bottom: 5%;
-  line-height: 100%;
-  font-family: "Montserrat";
-  font-weight: 800;
-  font-size: 4vw;
-  color: rgba(0, 0, 0, 0.1);
 }

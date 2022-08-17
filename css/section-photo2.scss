@@ -3,9 +3,9 @@
 .ys-section-1{
   h6{
     transform: translate(8%,450%);
-    z-index: 1;
     font-family: 'ele';
-    mix-blend-mode: multiply;
+    mix-blend-mode: difference;
+    color:#FFF;
   }
   @media screen and (min-width:1200px) {
     font-size: 55px;
@@ -302,7 +302,7 @@
       text-orientation: upright;
       font-size: 8vw;
       font-family: 'NanumSquareExtraBold';
-      transform: translate(-35%,-20%);
+      transform: translate(-40%,-20%);
       color: rgba(0,0,0,0.2);
     }
     .decorbox{
@@ -409,13 +409,22 @@
     .decorcontainer{
       position: relative;
       width: 55%;
-      margin: 5% auto 0 auto;
+      @media screen and (min-width:600px) {
+        margin: 5% auto 0 auto;
+      }
+      @media screen and (max-width:600px) {
+        transform: rotate(90deg) scale(1.35) translateX(82%);
+        left: 63%;
+      }
       div{
         position: absolute;
         width: 30%;
         padding: 50% 0;
         transform: skew(-10deg);
         border: 1.5px solid $darkbrown-color;
+        @media screen and (max-width:600px) {
+          transform: skew(-10deg) translateY(7%);
+        }
       }
       .decorbox2{
         left: 50%;
@@ -436,9 +445,28 @@
       li{
         div{
           box-sizing: border-box;
-          font-size: 1vw;
           font-family: 'NanumSquareLight';
           line-height: 150%;
+          @media screen and (min-width:1100px) {
+            font-size: 13px;
+          }
+          @media screen and (max-width:1100px) {
+            font-size: 1.25vw;
+          }
+          &::before{
+            display: block;
+            margin-bottom: 5%;
+            line-height: 100%;
+            font-family: 'Montserrat';
+            font-weight: 800;
+            color: rgba(0,0,0,0.1);
+            @media screen and (min-width:1100px) {
+              font-size: 50px;
+            }
+            @media screen and (max-width:1100px) {
+              font-size: 5vw;
+            }
+          }
         }
         img{
           width: 100%;
@@ -456,13 +484,13 @@
       }
       @media screen and (min-width:600px) {
         .img3-1{
-          width: 25%;
+          transform: translateY(15%);
         }
         .img3-2{
           transform: translateX(-43.5%);
         }
         .img3-3{
-          transform: translateX(229%);
+          transform: translate(229%,-15%);
         }
       }
       @media screen and (max-width:600px) {
@@ -483,26 +511,12 @@
         padding: 0 10% 10% 10%;
         &::before{
           content: '01';
-          display: block;
-          margin-bottom: 5%;
-          line-height: 100%;
-          font-family: 'Montserrat';
-          font-weight: 800;
-          font-size: 4vw;
-          color: rgba(0,0,0,0.1);
         }
       }
       .img3-3-1{
         padding: 10% 10% 0 10%;
         &::before{
           content: '02';
-          display: block;
-          margin-bottom: 5%;
-          line-height: 100%;
-          font-family: 'Montserrat';
-          font-weight: 800;
-          font-size: 4vw;
-          color: rgba(0,0,0,0.1);
         }
       }
     }
