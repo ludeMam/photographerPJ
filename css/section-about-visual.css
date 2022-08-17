@@ -6,6 +6,9 @@
 옅은민트#A8BFAA
 회색#F2F2F2
  */
+section.yj-visual-section {
+  padding: 100px 0;
+}
 section.yj-visual-section div {
   position: relative;
 }

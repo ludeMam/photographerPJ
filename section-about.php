@@ -1,112 +1,31 @@
 <section class="section-about section-container section-container2" data-section-number="2">
+  <link rel="stylesheet" href="./css/section-about.css">
+  <!--  -->
   <a class="btn-page" href="#about" data-section=".section-about" data-section-number="2">About me</a>
   <section class="section-video-intro">
     <iframe class="video-content" src="https://www.youtube.com/embed/BHACKCNDMW8?&playlist=BHACKCNDMW8&vq=highres&iv_load_policy=3&autoplay=1&mute=1&loop=1&rel=0&showinfo=0&color=white&controls=0" allowfullscreen></iframe>
     <img class="youtube-size-img" src="./img/icons/560x315.jpg" draggable="false" alt="">
     <img class="white-cover" src="./img/icons/white-cover.png" alt="">
   </section>
-  <!-- link -->
-  <link rel="stylesheet" href="./css/section-about-visual.css">
-  <link rel="stylesheet" href="./css/section-about-introduce.css">
-  <link rel="stylesheet" href="./css/section-about-maincontent.css">
-  <script src="./js/section-about-visual.js"></script>
-  <script src="./js/section-about-introduce.js"></script>
-  <!-- link -->
-  <section class="yj-visual-section">
-    <h2 class="hidden">About visual</h2>
-    <div>
-      <img class="visual-background" src="./img/aboutme/visualBackground.png" alt="">
-      <figure>
-        <img class="visualImg1" src="./img/aboutme/visualImg1.png" alt="">
-        <img class="visualImg2" src="./img/aboutme/visualImg2.png" alt="">
+  <!--  -->
+  <section class="yj-about-section-1">
+    <div class="inner-center">
+      <figure class="about-me-figure">
+        <img class="bg" src="./img/aboutme/visualImg1.png" alt="">
+        <img class="man" src="./img/aboutme/visualImg2.png" alt="">
       </figure>
-      <figcaption>
-        <h3><span class="about">About</span> <span class="me">Me</span></h3>
-      </figcaption>
-    </div>
-  </section>
-  <!-- visual -->
-  <section class="yj-introduce-section">
-    <h2 class="hidden">introduce section</h2>
-    <div class="profile-background">
-      <div class="profile-container">
-        <figure class="profile-img-container">
-          <img src="./img/aboutme/profile1.png" alt="" class="profile-img">
-        </figure>
-        <figcaption>
-          <div class="profile-text">
-            <h3>사진작가</h3>
-            <h4>권선호</h4>
-            <p>
-              자연은 항상 제게 신비로움을 보여줬습니다. <br>
-              어떠한 곳을 가보아도 새로운 영감과 놀라움을 선사해주었고, <br>
-              제가 느낀 그 감정들을 사람들에게 전달하고 싶습니다. 
-            </p>
-          </div>
-        </figcaption>
+      <div class="textbox">
+        <img class="photo" src="./img/aboutme/man.png" alt="">
+        <h2><span>about me</span></h2>
+        <p class="icon-font">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        </p>
       </div>
-    </div>
-  </section>
-  <!-- introduce -->
-  <section class="yj-mainContent-section">
-    <h2 class="hidden">main content</h2>
-    <div class="main-content-bg">
-      <img class='main-content-bgimg' src="./img/aboutme/mainContentBackground.png" alt="">
-      <img class='main-content-svg' src="./img/aboutme/mainContentSvg.png" alt="">
-    </div>
-    <figure class="main-content-container">
-      <ul>
-        <li class="main-content-section main-content-1">
-          <ul>
-            <li class="main-content-img"><img src="./img/aboutme/img1-1.jpg" alt=""></li>
-            <li class="main-content-img"><img src="./img/aboutme/img1-2.png" alt=""></li>
-            <li class="main-content-img"><img src="./img/aboutme/img1-3.png" alt=""></li>
-            <li class="main-content-img"><img src="./img/aboutme/img1-4.png" alt=""></li>
-          </ul>
-          <div>
-            <h3>My Profile</h3>
-            <p>
-              권성호 작가는 한국대학교 사진학과를 졸업 후, JW 픽쳐스에서 
-              5년간 보조 사진작가로서 활동하였고, 현재 12년째 프리랜서 
-              풍경사진 작가로서 활동하고 있습니다. 
-            </p>
-          </div>
-        </li>
-        <li class="main-content-section main-content-2">
-          <ul>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-          </ul>
-          <div>
-            <h3>Bright Moody</h3>
-            <p>
-              자연을 보고 있으면 포근함이 느껴집니다.
-              편안한 마음으로 쉬었다 갈 수 있는 우리의 소중한 쉼터입니다.
-            </p>
-          </div>
-        </li>
-        <li class="main-content-section main-content-3">
-          <ul>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-          </ul>
-          <div>
-            <h3>Dark Moody</h3>
-            <p>
-              자연은 때로는 또다른 매력을 보여주고는,
-              우리에게 색다른 영감을 줍니다.
-            </p>
-          </div>
-        </li>
-      </ul>
-    </figure>
-  </section>
-  <!-- main -->
+    </div><!-- inner-center -->
+  </section><!-- section1 -->
+
+
   <section>
-    about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>about<br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </section>
 </section>
