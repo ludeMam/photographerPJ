@@ -2,7 +2,10 @@
 
 .ys-section-1{
   h6{
-    transform: translate(8%,450%);
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
     font-family: 'ele';
     mix-blend-mode: difference;
     color:#FFF;

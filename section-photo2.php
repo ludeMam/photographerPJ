@@ -6,7 +6,7 @@
   <section class="section-video-intro ys-section-1">
     <iframe class="video-content" src="https://www.youtube.com/embed/fpy_deG56JA?&playlist=fpy_deG56JA&vq=highres&iv_load_policy=3&autoplay=1&mute=1&loop=1&rel=0&showinfo=0&color=white&controls=0" allowfullscreen></iframe>
     <img class="youtube-size-img" src="./img/icons/560x315.jpg" draggable="false" alt="">
-    <img class="video-mask-img" src="./img/icons/video-mask.png" alt="">
+    <img class="video-mask-img" src="./img/icons/video-mask-photo2.png" alt="">
     <?php //include "section-photo2-svg.php" ?>
     <h6>
       DARK AND MOODY & <br>
