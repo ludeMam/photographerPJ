@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="./css/section-home-1.css">
 <link rel="stylesheet" href="./css/section-home-2.css">
 <link rel="stylesheet" href="./css/section-home-3.css">
-<script src="./js/sectionhome.js"></script>
+<script src="./js/section-home-1.js"></script>
 
 
 <section class="section-home section-container  section-container1" data-section-number="1">
@@ -10,6 +10,7 @@
   <section class="section-video-intro">
     <iframe class="video-content" src="https://www.youtube.com/embed/BHACKCNDMW8?&playlist=BHACKCNDMW8&vq=highres&iv_load_policy=3&autoplay=1&mute=1&loop=1&rel=0&showinfo=0&color=white&controls=0" allowfullscreen></iframe>
     <img class="youtube-size-img" src="./img/icons/560x315.jpg" draggable="false" alt="">
+    <img class="video-mask-img" src="./img/icons/video-mask-home.png" alt="">
   </section>
   <!---------------------------------------------------------------->
   <section class="ha-Homesection-1">
@@ -68,6 +69,7 @@
     <!--center-->
   </section><!-- hahome1 -->
   <!------------------------------------------------------------------>
+  <script src="./js/section-home-2.js"></script>
   <section class="ha-Homesection-2">
     <h2 class="hidden">About ME</h2>
     <b class="title">About <span>Me</span></b>
@@ -112,7 +114,11 @@
     <h2 class="hidden">My Gallery</h2>
     <b class="title">My Gallery</b>
     <figure class="section3-bg">
-      <img src="./img/home/home3-1.jpg" alt="">
+      <img class="lg" src="./img/home/home3-1.jpg" alt="">
+    </figure>
+
+    <figure class="smbg">
+      <img class="sm" src="./img/home/home3-1.jpg" alt="">
     </figure>
 
     <div class="home3center">

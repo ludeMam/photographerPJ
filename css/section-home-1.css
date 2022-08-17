@@ -229,13 +229,7 @@
   padding-bottom: 20px;
 }
 .ha-Homesection-1 .center div.video {
-  width: 100%;
   transform: translate(80%, -20%);
-}
-.ha-Homesection-1 .center div.video:hover i {
-  transition: transform 0.5s;
-  transform: scale(1.2);
-  color: #798C7A;
 }
 @media screen and (max-width: 600px) {
   .ha-Homesection-1 .center div.video {
@@ -254,6 +248,11 @@
   .ha-Homesection-1 .center div.video .videolink1 {
     border: none;
   }
+}
+.ha-Homesection-1 .center div.video .videolink1:hover i {
+  transition: transform 0.5s;
+  transform: scale(1.2);
+  color: #798C7A;
 }
 .ha-Homesection-1 .center div.video .videolink1 i {
   line-height: inherit;

@@ -90,8 +90,8 @@
   fill: none;
   stroke: #fff;
   stroke-width: 2px;
-  /*           stroke-dasharray: 1px;
-    stroke-dashoffset: -1px; */
+  stroke-dasharray: 1px;
+  stroke-dashoffset: -1px;
 }
 .ha-Homesection-2 div.home2center figure.homesm {
   position: absolute;

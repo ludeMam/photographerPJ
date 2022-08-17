@@ -9,7 +9,7 @@
     padding-bottom: 85%;
   }
 
-  .section3-bg {
+  figure.section3-bg {
     position: absolute;
     left: -25%;
     transform: rotate(-5deg);
@@ -19,8 +19,30 @@
     -webkit-mask-size: 95%;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
-    img {
+    img.lg {
       width: 100%;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+
+  figure.smbg {
+    display: none;
+    @media screen and (max-width: 600px) {
+      display: block;
+    }
+    img.sm {
+      position: absolute;
+      width: 100%;
+      -webkit-mask-image: url(../img/home/home3mask.png);
+      -webkit-mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      transform: translateY(-10%);
+      @media screen and (max-width: 600px) {
+        opacity: 0.5;
+      }
     }
   }
   .home3center {
@@ -30,14 +52,32 @@
     top: 20%;
     left: 20%;
     box-sizing: border-box;
-     figcaption{
-      transform: translateX(20%);
-    } 
+    figcaption {
+      @media screen and (min-width: 1200px) {
+        transform: translate(20%, 0);
+      }
+      @media screen and (min-width: 800px) and (max-width: 1200px) {
+        transform: translate(15%, -200%);
+      }
+      @media screen and (max-width: 800px) {
+        transform: translate(15%, -200%);
+      }
+    }
     .gallery1 {
-      width: 90%;
       position: absolute;
       left: 25%;
-      top: -10%;
+      @media screen and (min-width: 1200px) {
+        width: 90%;
+        top: -10%;
+      }
+      @media screen and (min-width: 800px) and (max-width: 1200px) {
+        width: 70%;
+        top: -8%;
+      }
+      @media screen and (max-width: 800px) {
+        width: 60%;
+        top: -5%;
+      }
       figure {
         width: 25%;
         min-width: 180px;
@@ -50,10 +90,20 @@
       }
     }
     .gallery2 {
-      width: 90%;
       position: absolute;
       left: 40%;
-      top: 100%;
+      @media screen and (min-width: 1200px) {
+        width: 90%;
+        top: 100%;
+      }
+      @media screen and (min-width: 800px) and (max-width: 1200px) {
+        width: 70%;
+        top: 80%;
+      }
+      @media screen and (max-width: 800px) {
+        width: 60%;
+        top: 60%;
+      }
       figure {
         width: 25%;
         min-width: 180px;
@@ -66,13 +116,59 @@
       }
     }
     div.svg {
-      width: 25%;
-      transform: translate(20%, -90%);
+      @media screen and (min-width: 1200px) {
+        width: 25%;
+        transform: translate(20%, -90%);
+      }
+      @media screen and (min-width: 900px) and (max-width: 1200px) {
+        width: 23%;
+        transform: translate(40%, -130%);
+      }
+      @media screen and (min-width: 800px) and (max-width: 900px) {
+        width: 20%;
+        transform: translate(60%, -170%);
+      }
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
       svg {
         width: 100%;
         fill: none;
         stroke: $darkbrown-color;
         stroke-width: 2px;
+      }
+    }
+
+    .summary {
+      position: absolute;
+      @media screen and (min-width: 1000px) {
+        width: 50%;
+        bottom: -150%;
+        transform: translateX(10%);
+      } //lg
+      @media screen and (min-width: 600px) and (max-width: 1000px) {
+        width: 50%;
+        bottom: -80%;
+        transform: translateX(10%);
+      } //sm
+      @media screen and (max-width: 600px) {
+        transform: translateX(0);
+        color: $darkbrown-color;
+      }
+      h4 {
+        display: flex;
+        justify-content: end;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        color: $brown-color;
+        border-bottom: 1px dotted $brown-color;
+        @media screen and (max-width: 600px) {
+          width: 55%;
+          color: $darkbrown-color;
+          border-bottom: 1px dotted $darkbrown-color;
+        }
       }
     }
   }

@@ -9,10 +9,10 @@ $(function(){
     
     var section1imgOffset = $('.bg-slider , .smbg').offset().top +scrt //바깥밖스높이임
     var section1imginnerH = $('.bg-slider , smbg').innerHeight()
-    var meta = 1 + (scrt - (section1imgOffset  - winh * 0.5 + section1imginnerH * 0.5)) * 0.0004
+    var meta = 0 + Math.abs(scrt - (section1imgOffset  - winh * 0.5 + section1imginnerH * 0.5)) * 0.008
     if(meta < 0) {meta = 0}
-    if(meta > 1) {meta = 1}
-    $('.bg-slider img.lg , .smbg img.sm').css({ 'transform': 'scale(' + meta + ')' })
+    if(meta > 5) {meta = 5}
+    $('.bg-slider img.lg , .smbg img.sm').css({ 'filter': 'blur(' + meta + 'px'+')' })
     
   }
   hScrM()
