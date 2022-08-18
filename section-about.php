@@ -1,5 +1,6 @@
 <section class="section-about section-container section-container2" data-section-number="2">
   <link rel="stylesheet" href="./css/section-about.css">
+  <script src="./js/section-about-1.js"></script>
   <!--  -->
   <a class="btn-page" href="#about" data-section=".section-about" data-section-number="2">About me</a>
   <section class="section-video-intro">

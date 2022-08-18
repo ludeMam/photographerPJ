@@ -27,6 +27,16 @@
       -webkit-mask-size:contain;
       -webkit-mask-position: center;
       -webkit-mask-repeat: no-repeat;
+      mask-image:url(../img/aboutme/visualMask.png);
+      mask-size:contain;
+      mask-position: center;
+      mask-repeat: no-repeat;
+      img.bg{
+        transform: scale(1.4) translateY(12%);
+      }
+      img.man{
+        transform: translateY(-10%);
+      }
       @media screen and (min-width: 800px) {
         width: 65%;
       } //lg
