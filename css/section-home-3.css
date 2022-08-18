@@ -47,15 +47,41 @@
 .ha-Homesection-3 figure.smbg img.sm {
   position: absolute;
   width: 100%;
+  top: 10%;
   -webkit-mask-image: url(../img/home/home3mask.png);
   -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   transform: translateY(-10%);
+  /*       @media screen and (max-width: 600px) {
+          opacity: 0.9;
+        } */
+}
+.ha-Homesection-3 b.title {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  font-family: "ele";
+  font-size: 22vw;
+  color: #dee1e7;
+  mix-blend-mode: exclusion;
+}
+@media screen and (min-width: 1500px) {
+  .ha-Homesection-3 b.title {
+    font-size: 170px;
+    left: 40%;
+  }
+}
+@media screen and (max-width: 1500px) and (min-width: 600px) {
+  .ha-Homesection-3 b.title {
+    font-size: 9vw;
+    left: 40%;
+  }
 }
 @media screen and (max-width: 600px) {
-  .ha-Homesection-3 figure.smbg img.sm {
-    opacity: 0.5;
+  .ha-Homesection-3 b.title {
+    font-size: 80px;
+    left: 30%;
   }
 }
 .ha-Homesection-3 .home3center {
@@ -193,7 +219,10 @@
 }
 @media screen and (max-width: 600px) {
   .ha-Homesection-3 .home3center .summary {
-    transform: translateX(0);
+    position: absolute;
+    width: 30%;
+    bottom: 0;
+    left: -15%;
     color: #211E18;
   }
 }
@@ -214,3 +243,8 @@
     border-bottom: 1px dotted #211E18;
   }
 }
+
+/*
+class=lgp, lg, smg, sm display none 하고
+마스크씌워서 아래에 동그랗게 두개나 네모 두개 갤러리 1번 2번만들기
+*/

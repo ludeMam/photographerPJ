@@ -89,9 +89,10 @@
       <figcaption>
         <div class="textbox">
           <h3>MY FROFIL</h3>
-          <p>자기 소개 및 작품의 영감과 협력한 작품 · 경력
+          <p class="lg">자기 소개 및 작품의 영감과 협력한 작품 · 경력
             사진을 찍는 장비와 사용하는 기술 등
             오래된 포토그래퍼의 이야기를 알려 드립니다.</p>
+          <p class="sm">자기 소개 및 작품 경력 등 오래된 포토그래퍼의 이야기를 알려드립니다. </p>
         </div>
         <div class="summary">
           <h4>MY SKILL</h4>
@@ -123,10 +124,10 @@
 
     <div class="home3center">
       <div class="gallery1">
-        <figure>
+        <figure class="lg">
           <img src="./img/home/home3-2.png" alt="">
         </figure>
-        <figcaption>
+        <figcaption class="lgp">
           Dark moody
         </figcaption>
         <div class="svg svgbox3">
@@ -136,10 +137,10 @@
         </div>
       </div>
       <div class="gallery2">
-        <figure>
+        <figure class="sm">
           <img src="./img/home/home3-3.png" alt="">
         </figure>
-        <figcaption>
+        <figcaption class="smp">
           Bright moody
         </figcaption>
         <div class="svg svgbox3">

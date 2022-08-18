@@ -13,6 +13,7 @@ $(function () {
     scrollRatio= 2*(scrt-scrStart) / scrRange
     if(scrollRatio<0){scrollRatio = 0}
     if(scrollRatio>1){scrollRatio = 1}
+    if(winw < 900){scrollRatio = 1}
     strokeOffset = 1 - scrollRatio
     $('.ha-Homesection-2 .svg1 path').css({'stroke-dashoffset':strokeOffset})
   }//fn
