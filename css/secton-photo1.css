@@ -1,3 +1,35 @@
+@charset "UTF-8";
+/* 위 태그가 없으면 한글, 특수문자 들이 깨져서 나올 수 있어요. */
+/* 
+짙은갈색 #211E18
+갈색 #403A2F
+진한민트#798C7A
+옅은민트#A8BFAA
+회색#F2F2F2
+ */
+ .js-section-1 h6 {
+  position: absolute;
+  top: 50%;
+  righit: 7%;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-family: "ele";
+  mix-blend-mode: multiply;
+}
+@media screen and (min-width: 1200px) {
+  .ys-section-1 {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .ys-section-1 {
+    font-size: 4.5vw;
+  }
+}
+
+/* -----------------------------section-1------------------------------ */
+/* -----------------------------section-2------------------------------ */
+
 .js-section-2 {
   position: relative;
   margin: 0 auto;
