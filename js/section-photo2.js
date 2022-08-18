@@ -16,9 +16,9 @@ $(function(){
   $(e).children('img').css({'transform':'scale(1.3) translateY('+imgL+'%)'})
   }
 
-  ysboxMotion('.ys-imgcontainer1 li')
-	$('main').bind('scroll',function(){ysboxMotion('.ys-imgcontainer1 li')})
-	$(window).resize(function(){ysboxMotion('.ys-imgcontainer1 li')})
+  ysboxMotion('.ys-imgcontainer1 li a')
+	$('main').bind('scroll',function(){ysboxMotion('.ys-imgcontainer1 li a')})
+	$(window).resize(function(){ysboxMotion('.ys-imgcontainer1 li a')})
 
   ysboxMotion('.ys-imgcontainer2 li')
 	$('main').bind('scroll',function(){ysboxMotion('.ys-imgcontainer2 li')})

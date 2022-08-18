@@ -6,6 +6,17 @@
 옅은민트#A8BFAA
 회색#F2F2F2
  */
+.ys-section-1 {
+  position: relative;
+}
+.ys-section-1 .photo2-bg-line {
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
 .ys-section-1 h6 {
   position: absolute;
   top: 50%;
@@ -48,24 +59,17 @@
 }
 .ys-section-2 figure h6 {
   position: relative;
+  pointer-events: none;
   transform: translate(45%, 200%);
+  font-size: 3.5em;
   font-weight: 600;
   mix-blend-mode: difference;
   color: #F2F2F2;
   z-index: 1;
 }
-@media screen and (min-width: 1100px) {
-  .ys-section-2 figure h6 {
-    font-size: 55px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .ys-section-2 figure h6 {
-    font-size: 5vw;
-  }
-}
 @media screen and (max-width: 800px) {
   .ys-section-2 figure h6 {
+    font-size: 6vw;
     text-align: center;
     transform: translate(3%, 180%);
   }
@@ -105,9 +109,9 @@
   transform: translateY(-130%);
 }
 .ys-section-2 figure .ys-imgcontainer1 .img1-4 {
-  width: 10%;
+  width: 12%;
   right: 4%;
-  transform: translateY(-90%);
+  transform: translateY(-70%);
 }
 .ys-section-2 figure div.decorbar-1 {
   position: absolute;
@@ -118,19 +122,17 @@
   background-color: #211E18;
 }
 .ys-section-2 figure div.textbox-1 {
-  width: 60%;
+  width: 85%;
   max-width: 550px;
   padding: 30px;
   margin: 0 15%;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (max-width: 600px) {
   .ys-section-2 figure div.textbox-1 {
-    font-size: 26px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .ys-section-2 figure div.textbox-1 {
-    font-size: 2.35vw;
+    letter-spacing: -0.01em;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15% 0;
   }
 }
 .ys-section-2 figure div.textbox-1 strong {
@@ -139,10 +141,16 @@
   margin-bottom: 1%;
   padding-bottom: 20px;
   transform: translate(0);
+  font-size: 1.9em;
   font-family: "NanumSquareExtraBold";
   color: #211E18;
 }
-.ys-section-2 figure div.textbox-1 strong::before {
+@media screen and (min-width: 1100px) {
+  .ys-section-2 figure div.textbox-1 strong {
+    font-size: 1.7em;
+  }
+}
+.ys-section-2 figure div.textbox-1::before {
   content: "";
   position: absolute;
   left: 0;
@@ -154,58 +162,54 @@
   background: #A8BFAA;
   transform: skew(-30deg);
 }
-@media screen and (min-width: 1100px) {
-  .ys-section-2 figure div.textbox-1 strong {
-    font-size: 26px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .ys-section-2 figure div.textbox-1 strong {
-    font-size: 2.35vw;
-  }
-}
-.ys-section-2 figure div.textbox-1 p {
+.ys-section-2 figure p {
   position: relative;
-  font-family: "NanumSquareLight";
-  font-size: 1.3vw;
+  font-size: 1.2em;
+  font-family: "NanumSquare";
   line-height: 145%;
   color: #211E18;
 }
-@media screen and (min-width: 1100px) {
-  .ys-section-2 figure div.textbox-1 p {
-    font-size: 15px;
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+  .ys-section-2 figure p {
+    font-size: 1.1em;
   }
 }
-@media screen and (max-width: 1100px) {
-  .ys-section-2 figure div.textbox-1 p {
-    font-size: 1.35vw;
+@media screen and (max-width: 600px) {
+  .ys-section-2 figure p {
+    font-size: 1em;
   }
 }
-.ys-section-2 figure div.textbox-1 p::before, .ys-section-2 figure div.textbox-1 p::after {
+.ys-section-2 figure p::before, .ys-section-2 figure p::after {
   position: absolute;
   color: rgba(0, 0, 0, 0.08);
 }
 @media screen and (min-width: 1100px) {
-  .ys-section-2 figure div.textbox-1 p::before, .ys-section-2 figure div.textbox-1 p::after {
-    font-size: 78px;
+  .ys-section-2 figure p::before, .ys-section-2 figure p::after {
+    font-size: 70px;
   }
 }
 @media screen and (max-width: 1100px) {
-  .ys-section-2 figure div.textbox-1 p::before, .ys-section-2 figure div.textbox-1 p::after {
-    font-size: 7vw;
+  .ys-section-2 figure p::before, .ys-section-2 figure p::after {
+    font-size: 3.5em;
   }
 }
-.ys-section-2 figure div.textbox-1 p::before {
+.ys-section-2 figure p::before {
   content: "❝";
-  left: -8%;
+  transform: translateX(-30px);
 }
-.ys-section-2 figure div.textbox-1 p::after {
+@media screen and (min-width: 1100px) {
+  .ys-section-2 figure p::before {
+    transform: translate(0);
+    left: -8%;
+  }
+}
+.ys-section-2 figure p::after {
   content: "❞";
-  transform: translate(10%, 180%);
+  transform: translateY(30px);
 }
-@media screen and (max-width: 600px) {
-  .ys-section-2 figure div.textbox-1 p::after {
-    transform: translate(10%, 100%);
+@media screen and (min-width: 1100px) {
+  .ys-section-2 figure p::after {
+    transform: translate(10%, 180%);
   }
 }
 
@@ -241,7 +245,7 @@
 }
 @media screen and (max-width: 600px) {
   .ys-section-3 figure div.textcontainer-2 div.decorbar-2 {
-    transform: translateX(4000%);
+    display: none;
   }
 }
 .ys-section-3 figure div.textcontainer-2 div.textbox-2 {
@@ -252,7 +256,10 @@
 }
 @media screen and (max-width: 600px) {
   .ys-section-3 figure div.textcontainer-2 div.textbox-2 {
-    transform: translateX(50%);
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    transform: translate(0);
   }
 }
 .ys-section-3 figure div.textcontainer-2 div.textbox-2 strong {
@@ -260,8 +267,15 @@
   display: inline-block;
   margin-bottom: 1%;
   padding-bottom: 20px;
+  transform: translate(0);
+  font-size: 1.9em;
   font-family: "NanumSquareExtraBold";
   color: #211E18;
+}
+@media screen and (min-width: 1100px) {
+  .ys-section-3 figure div.textcontainer-2 div.textbox-2 strong {
+    font-size: 1.7em;
+  }
 }
 .ys-section-3 figure div.textcontainer-2 div.textbox-2 strong::before {
   content: "";
@@ -275,31 +289,21 @@
   background: #A8BFAA;
   transform: skew(-30deg);
 }
-@media screen and (min-width: 1100px) {
-  .ys-section-3 figure div.textcontainer-2 div.textbox-2 strong {
-    font-size: 26px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .ys-section-3 figure div.textcontainer-2 div.textbox-2 strong {
-    font-size: 2.35vw;
-  }
-}
 .ys-section-3 figure div.textcontainer-2 div.textbox-2 p {
   position: relative;
-  font-family: "NanumSquareLight";
-  font-size: 1.3vw;
+  font-size: 1.2em;
+  font-family: "NanumSquare";
   line-height: 145%;
   color: #211E18;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 600px) and (max-width: 1100px) {
   .ys-section-3 figure div.textcontainer-2 div.textbox-2 p {
-    font-size: 15px;
+    font-size: 1.1em;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 600px) {
   .ys-section-3 figure div.textcontainer-2 div.textbox-2 p {
-    font-size: 1.35vw;
+    font-size: 1em;
   }
 }
 .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::before, .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::after {
@@ -308,25 +312,31 @@
 }
 @media screen and (min-width: 1100px) {
   .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::before, .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::after {
-    font-size: 78px;
+    font-size: 70px;
   }
 }
 @media screen and (max-width: 1100px) {
   .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::before, .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::after {
-    font-size: 7vw;
+    font-size: 3.5em;
   }
 }
 .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::before {
   content: "❝";
-  left: -8%;
+  transform: translateX(-30px);
+}
+@media screen and (min-width: 1100px) {
+  .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::before {
+    transform: translate(0);
+    left: -8%;
+  }
 }
 .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::after {
   content: "❞";
-  transform: translate(10%, 180%);
+  transform: translateY(30px);
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1100px) {
   .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::after {
-    transform: translate(10%, 100%);
+    transform: translate(10%, 180%);
   }
 }
 .ys-section-3 figure .ys-imgcontainer2 {
@@ -368,6 +378,11 @@
   transform: translate(-40%, -20%);
   color: rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 600px) {
+  .ys-section-3 figure .decortext {
+    font-size: em;
+  }
+}
 .ys-section-3 figure .decorbox {
   position: absolute;
   width: 40%;
@@ -404,6 +419,11 @@
   height: 100%;
   background-color: #211E18;
 }
+@media screen and (max-width: 600px) {
+  .ys-section-4 figure div.textcontainer-3 div.decorbar-3 {
+    display: none;
+  }
+}
 .ys-section-4 figure div.textcontainer-3 div.textbox-3 {
   width: 60%;
   max-width: 680px;
@@ -412,7 +432,10 @@
 }
 @media screen and (max-width: 600px) {
   .ys-section-4 figure div.textcontainer-3 div.textbox-3 {
-    transform: translateX(25%);
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    transform: translate(0);
   }
 }
 .ys-section-4 figure div.textcontainer-3 div.textbox-3 strong {
@@ -420,8 +443,15 @@
   display: inline-block;
   margin-bottom: 1%;
   padding-bottom: 20px;
+  transform: translate(0);
+  font-size: 1.9em;
   font-family: "NanumSquareExtraBold";
   color: #211E18;
+}
+@media screen and (min-width: 1100px) {
+  .ys-section-4 figure div.textcontainer-3 div.textbox-3 strong {
+    font-size: 1.7em;
+  }
 }
 .ys-section-4 figure div.textcontainer-3 div.textbox-3 strong::before {
   content: "";
@@ -435,31 +465,21 @@
   background: #A8BFAA;
   transform: skew(-30deg);
 }
-@media screen and (min-width: 1100px) {
-  .ys-section-4 figure div.textcontainer-3 div.textbox-3 strong {
-    font-size: 26px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .ys-section-4 figure div.textcontainer-3 div.textbox-3 strong {
-    font-size: 2.35vw;
-  }
-}
 .ys-section-4 figure div.textcontainer-3 div.textbox-3 p {
   position: relative;
-  font-family: "NanumSquareLight";
-  font-size: 1.3vw;
+  font-size: 1.2em;
+  font-family: "NanumSquare";
   line-height: 145%;
   color: #211E18;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 600px) and (max-width: 1100px) {
   .ys-section-4 figure div.textcontainer-3 div.textbox-3 p {
-    font-size: 15px;
+    font-size: 1.1em;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 600px) {
   .ys-section-4 figure div.textcontainer-3 div.textbox-3 p {
-    font-size: 1.35vw;
+    font-size: 1em;
   }
 }
 .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::before, .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::after {
@@ -468,25 +488,31 @@
 }
 @media screen and (min-width: 1100px) {
   .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::before, .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::after {
-    font-size: 78px;
+    font-size: 70px;
   }
 }
 @media screen and (max-width: 1100px) {
   .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::before, .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::after {
-    font-size: 7vw;
+    font-size: 3.5em;
   }
 }
 .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::before {
   content: "❝";
-  left: -8%;
+  transform: translateX(-30px);
+}
+@media screen and (min-width: 1100px) {
+  .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::before {
+    transform: translate(0);
+    left: -8%;
+  }
 }
 .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::after {
   content: "❞";
-  transform: translate(10%, 180%);
+  transform: translateY(30px);
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1100px) {
   .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::after {
-    transform: translate(10%, 100%);
+    transform: translate(10%, 180%);
   }
 }
 .ys-section-4 figure .decorcontainer {
@@ -541,12 +567,17 @@
 }
 @media screen and (min-width: 1100px) {
   .ys-section-4 figure .ys-imgcontainer3 li div {
-    font-size: 13px;
+    font-size: 1.1em;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (min-width: 800px) and (max-width: 1100px) {
   .ys-section-4 figure .ys-imgcontainer3 li div {
-    font-size: 1.25vw;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ys-section-4 figure .ys-imgcontainer3 li div {
+    font-size: 0.9em;
   }
 }
 .ys-section-4 figure .ys-imgcontainer3 li div::before {
@@ -608,12 +639,107 @@
 .ys-section-4 figure .ys-imgcontainer3 .img3-1-1 {
   padding: 0 10% 10% 10%;
 }
+@media screen and (max-width: 1100px) {
+  .ys-section-4 figure .ys-imgcontainer3 .img3-1-1 {
+    padding: 0 2% 10% 2%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ys-section-4 figure .ys-imgcontainer3 .img3-1-1 {
+    text-align: center;
+  }
+}
 .ys-section-4 figure .ys-imgcontainer3 .img3-1-1::before {
   content: "01";
 }
 .ys-section-4 figure .ys-imgcontainer3 .img3-3-1 {
   padding: 10% 10% 0 10%;
 }
+@media screen and (max-width: 1100px) {
+  .ys-section-4 figure .ys-imgcontainer3 .img3-3-1 {
+    padding: 10% 2% 0 2%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ys-section-4 figure .ys-imgcontainer3 .img3-3-1 {
+    text-align: center;
+  }
+}
 .ys-section-4 figure .ys-imgcontainer3 .img3-3-1::before {
   content: "02";
+}
+
+/* -----card motion---- */
+.ys-imgcontainer1 li:hover,
+.ys-imgcontainer2 li:hover {
+  z-index: 10;
+}
+.ys-imgcontainer1 li a.card,
+.ys-imgcontainer2 li a.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.ys-imgcontainer1 li a.card .card_bg,
+.ys-imgcontainer2 li a.card .card_bg {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  z-index: 2;
+  left: -50%;
+  top: -50%;
+  border-radius: 999px;
+  animation-name: ys-bgout;
+  animation-duration: 600ms;
+  background-color: #fd4053;
+}
+.ys-imgcontainer1 li a.card .card_text,
+.ys-imgcontainer2 li a.card .card_text {
+  position: absolute;
+  opacity: 0;
+  z-index: 3;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  font-weight: 800;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+.ys-imgcontainer1 li a.card:hover .card_bg,
+.ys-imgcontainer2 li a.card:hover .card_bg {
+  opacity: 0.45;
+  transform: scale(1);
+  animation-name: ys-bgin;
+  animation-duration: 500ms;
+  transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, transform 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+.ys-imgcontainer1 li a.card:hover .card_text,
+.ys-imgcontainer2 li a.card:hover .card_text {
+  opacity: 1;
+}
+
+@keyframes ys-bgin {
+  from {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  to {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+}
+@keyframes ys-bgout {
+  from {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  to {
+    border: 1px solid red;
+    opacity: 0;
+    transform: scale(1);
+  }
 }

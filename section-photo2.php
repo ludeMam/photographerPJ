@@ -4,6 +4,7 @@
 <section class="section-photo2 section-container section-container4" data-section-number="4">
   <a class="btn-page" href="#photo2" data-section=".section-photo2" data-section-number="4">Dark mood</a>
   <section class="section-video-intro ys-section-1">
+    <img src="./img/photo2/photo2-bg-line.png" alt="">
     <iframe class="video-content" src="https://www.youtube.com/embed/fpy_deG56JA?&playlist=fpy_deG56JA&vq=highres&iv_load_policy=3&autoplay=1&mute=1&loop=1&rel=0&showinfo=0&color=white&controls=0" allowfullscreen></iframe>
     <img class="youtube-size-img" src="./img/icons/560x315.jpg" draggable="false" alt="">
     <img class="video-mask-img" src="./img/icons/video-mask-photo2.png" alt="">
@@ -24,10 +25,34 @@
           <div class="box1-1"></div>
         </div>
         <ul class="ys-imgcontainer1">
-          <li class="img1-4"><img src="./img/photo2/sub1-4.jpg" alt=""></li>
-          <li class="img1-3"><img src="./img/photo2/sub1-3.jpg" alt=""></li>
-          <li class="img1-2"><img src="./img/photo2/sub1-2.jpg" alt=""></li>
-          <li class="img1-1"><img src="./img/photo2/sub1-1.jpg" alt=""></li>
+          <li class="img1-4">
+            <a href="#" class="card">
+              <div class="card_bg"></div>
+              <img src="./img/photo2/sub1-4.jpg" alt="">
+              <div class="card_text">Iceland</div>
+            </a>
+          </li>
+          <li class="img1-3">
+            <a href="#" class="card">
+              <div class="card_bg"></div>
+              <img src="./img/photo2/sub1-3.jpg" alt="">
+              <div class="card_text">Iceland</div>
+            </a>
+          </li>
+          <li class="img1-2">
+            <a href="#" class="card">
+              <div class="card_bg"></div>
+              <img src="./img/photo2/sub1-2.jpg" alt="">
+              <div class="card_text">Iceland</div>
+            </a>
+          </li>
+          <li class="img1-1">
+            <a href="#" class="card">
+              <div class="card_bg"></div>
+              <img src="./img/photo2/sub1-1.jpg" alt="">
+              <div class="card_text">Iceland</div>
+            </a>
+          </li>
         </ul>
         <div class="decorbar-1"></div>
         <div class="textbox-1">
@@ -52,15 +77,33 @@
           피사체를 실제보다 크게 보여주는 것, 즉 무언가 작은 피사체를 극단적인
           클로즈업을 통해 찍은 사진입니다. 대부분의 렌즈는 1:2.8 이상의 비율로 촬영하는
           반면, 접사 렌즈는 1:1 비율로 촬영하고 약 12인치 이하의 접사 범위 내에서만
-         초점을 맞출 수 있는습니다
+         초점을 맞출 수 있습니다
          </p>
         </div>
       </div>
       <div class="decorbox"></div>
       <ul class="ys-imgcontainer2">
-        <li class="img2-3"><img src="./img/photo2/sub2-3.jpg" alt=""></li>
-        <li class="img2-1"><img src="./img/photo2/sub2-1.jpg" alt=""></li>
-        <li class="img2-2"><img src="./img/photo2/sub2-2.jpg" alt=""></li>
+        <li class="img2-3">
+          <a href="#" class="card">
+            <div class="card_bg"></div>
+            <img src="./img/photo2/sub2-3.jpg" alt="">
+            <div class="card_text">Iceland</div>
+          </a>
+        </li>
+        <li class="img2-1">
+          <a href="#" class="card">
+            <div class="card_bg"></div>
+            <img src="./img/photo2/sub2-1.jpg" alt="">
+            <div class="card_text">Iceland</div>
+          </a>
+        </li>
+        <li class="img2-2">
+          <a href="#" class="card">
+            <div class="card_bg"></div>
+            <img src="./img/photo2/sub2-2.jpg" alt="">
+            <div class="card_text">Iceland</div>
+          </a>
+        </li>
       </ul>
       <div class="decortext">NATURE</div>
     </figure>
@@ -76,7 +119,7 @@
           피사체를 실제보다 크게 보여주는 것, 즉 무언가 작은 피사체를 극단적인
           클로즈업을 통해 찍은 사진입니다. 대부분의 렌즈는 1:2.8 이상의 비율로 촬영하는
           반면, 접사 렌즈는 1:1 비율로 촬영하고 약 12인치 이하의 접사 범위 내에서만
-          초점을 맞출 수 있는습니다
+          초점을 맞출 수 있습니다
           </p>
         </div>
       </div>
@@ -91,16 +134,30 @@
             피사체를 실제보다 크게 보여주는 것, 즉 무언가 작은 피사체를 극단적인
             클로즈업을 통해 찍은 사진입니다. 대부분의 렌즈는 1:2.8 이상의 비율로 촬영합니다
           </div>
-          <img src="./img/photo2/sub3-1.jpg" alt="">
+          <a href="#" class="card">
+            <div class="card_bg"></div>
+            <img src="./img/photo2/sub3-1.jpg" alt="">
+            <div class="card_text">Iceland</div>
+          </a>
         </li>
         <li class="img3-3">
-          <img src="./img/photo2/sub3-3.jpg" alt="">
+          <a href="#" class="card">
+            <div class="card_bg"></div>
+            <img src="./img/photo2/sub3-3.jpg" alt="">
+            <div class="card_text">Iceland</div>
+          </a>
           <div class="img3-3-1">
             피사체를 실제보다 크게 보여주는 것, 즉 무언가 작은 피사체를 극단적인
             클로즈업을 통해 찍은 사진입니다. 대부분의 렌즈는 1:2.8 이상의 비율로 촬영합니다
           </div>
         </li>
-        <li class="img3-2"><img src="./img/photo2/sub3-2.jpg" alt=""></li>
+        <li class="img3-2">
+          <a href="#" class="card">
+            <div class="card_bg"></div>
+            <img src="./img/photo2/sub3-2.jpg" alt="">
+            <div class="card_text">Iceland</div>
+          </a>
+        </li>
       </ul>
     </figure>
   </section>
