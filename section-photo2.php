@@ -29,28 +29,40 @@
             <a href="#" class="card">
               <div class="card_bg"></div>
               <img src="./img/photo2/sub1-4.jpg" alt="">
-              <div class="card_text">Iceland</div>
+              <div class="card_text">
+                <div><i class="fa-solid fa-earth-americas"></i> Bayern, Germany</div>
+                <div><i class="fa-solid fa-camera-retro"></i> Canon, EOS 70D</div>
+              </div>
             </a>
           </li>
           <li class="img1-3">
             <a href="#" class="card">
               <div class="card_bg"></div>
               <img src="./img/photo2/sub1-3.jpg" alt="">
-              <div class="card_text">Iceland</div>
+              <div class="card_text">
+                <div><i class="fa-solid fa-earth-americas"></i> Bayern, Germany</div>
+                <div><i class="fa-solid fa-camera-retro"></i> Canon, EOS 70D</div>
+              </div>
             </a>
           </li>
           <li class="img1-2">
             <a href="#" class="card">
               <div class="card_bg"></div>
               <img src="./img/photo2/sub1-2.jpg" alt="">
-              <div class="card_text">Iceland</div>
+              <div class="card_text">
+                <div><i class="fa-solid fa-earth-americas"></i> Antholzer See, Italy</div>
+                <div><i class="fa-solid fa-camera-retro"></i> NIKON D5200</div>
+              </div>
             </a>
           </li>
           <li class="img1-1">
             <a href="#" class="card">
               <div class="card_bg"></div>
               <img src="./img/photo2/sub1-1.jpg" alt="">
-              <div class="card_text">Iceland</div>
+              <div class="card_text">
+                <div><i class="fa-solid fa-earth-americas"></i> Yosemite Valley, USA</div>
+                <div><i class="fa-solid fa-camera-retro"></i> NIKON D5200</div>
+              </div>
             </a>
           </li>
         </ul>
@@ -87,25 +99,36 @@
           <a href="#" class="card">
             <div class="card_bg"></div>
             <img src="./img/photo2/sub2-3.jpg" alt="">
-            <div class="card_text">Iceland</div>
+            <div class="card_text">
+             <div><i class="fa-solid fa-earth-americas"></i> New Jersey, USA</div>
+              <div><i class="fa-solid fa-camera-retro"></i> Canon, EOS 70D</div>
+            </div>
           </a>
         </li>
         <li class="img2-1">
           <a href="#" class="card">
             <div class="card_bg"></div>
             <img src="./img/photo2/sub2-1.jpg" alt="">
-            <div class="card_text">Iceland</div>
+            <div class="card_text">
+              <div><i class="fa-solid fa-earth-americas"></i> Pennsylvania, USA</div>
+              <div><i class="fa-solid fa-camera-retro"></i> NIKON D5200</div>
+            </div>
           </a>
         </li>
         <li class="img2-2">
           <a href="#" class="card">
             <div class="card_bg"></div>
             <img src="./img/photo2/sub2-2.jpg" alt="">
-            <div class="card_text">Iceland</div>
+            <div class="card_text">
+              <div><i class="fa-solid fa-earth-americas"></i> Pennsylvania, USA</div>
+              <div><i class="fa-solid fa-camera-retro"></i> NIKON D5200</div>
+            </div>
           </a>
         </li>
       </ul>
+
       <div class="decortext">NATURE</div>
+
     </figure>
   </section>
 
@@ -137,14 +160,20 @@
           <a href="#" class="card">
             <div class="card_bg"></div>
             <img src="./img/photo2/sub3-1.jpg" alt="">
-            <div class="card_text">Iceland</div>
+            <div class="card_text">
+              <div><i class="fa-solid fa-earth-americas"></i> New Jersey, USA</div>
+              <div><i class="fa-solid fa-camera-retro"></i> Canon, EOS 70D</div>
+            </div>
           </a>
         </li>
         <li class="img3-3">
           <a href="#" class="card">
             <div class="card_bg"></div>
             <img src="./img/photo2/sub3-3.jpg" alt="">
-            <div class="card_text">Iceland</div>
+            <div class="card_text">
+              <div><i class="fa-solid fa-earth-americas"></i> Vermont, USA</div>
+              <div><i class="fa-solid fa-camera-retro"></i> NIKON D5200</div>
+            </div>
           </a>
           <div class="img3-3-1">
             피사체를 실제보다 크게 보여주는 것, 즉 무언가 작은 피사체를 극단적인
@@ -155,7 +184,10 @@
           <a href="#" class="card">
             <div class="card_bg"></div>
             <img src="./img/photo2/sub3-2.jpg" alt="">
-            <div class="card_text">Iceland</div>
+            <div class="card_text">
+              <div><i class="fa-solid fa-earth-americas"></i> Ylläsjärvi, Finland</div>
+              <div><i class="fa-solid fa-camera-retro"></i> NIKON D5200</div>
+            </div>
           </a>
         </li>
       </ul>
