@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* 
+짙은갈색 #211E18
+갈색 #403A2F
+진한민트#798C7A
+옅은민트#A8BFAA
+회색#F2F2F2
+ */
+.section-about .yj-about-section-2 {
+  padding: 100px 0;
+  background: red;
+}

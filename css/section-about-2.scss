@@ -1,0 +1,14 @@
+@import "./common";
+.section-about {
+  .yj-about-section-2{
+    padding: 100px 0;
+    background: red;
+    .inner-center{
+      .textbox{
+        @media screen and (min-width:800px){
+          
+        }     
+      }//textbox
+    }//center
+  }//yj-about-section-2
+}//section-about

@@ -52,7 +52,7 @@
 @media screen and (min-width: 800px) {
   .section-about .yj-about-section-1 .inner-center .deco {
     width: 55%;
-    transform: translate(-2%, 10%);
+    transform: translate(-20%, -50px);
   }
 }
 @media screen and (max-width: 800px) {
@@ -73,14 +73,14 @@
   max-width: 1000px;
   margin: 0 auto;
   -webkit-mask-image: url(../img/aboutme/visualMask.png);
-  -webkit-mask-size: contain;
+  -webkit-mask-size: 100% 100%;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
 }
 @media screen and (min-width: 800px) {
   .section-about .yj-about-section-1 .inner-center .about-me-figure {
     width: 65%;
-    transform: translateY(-50px);
+    transform: translateY(-100px);
   }
 }
 @media screen and (max-width: 800px) {
@@ -107,7 +107,6 @@
 @media screen and (min-width: 800px) {
   .section-about .yj-about-section-1 .inner-center .textbox {
     width: 40%;
-    transform: translateY(50px);
   }
 }
 @media screen and (max-width: 800px) {

@@ -34,13 +34,14 @@
       } //lg
       @media screen and (max-width: 800px) {
       } //sm
+      
       .deco {
         position: absolute;
         max-width: 1000px;
         filter: sepia(100%);
         @media screen and (min-width: 800px) {
           width: 55%;
-          transform: translate(-2%, 10%);
+          transform: translate(-20%, -50px); 
         } //lg
         @media screen and (max-width: 800px) {
           width: 90%;
@@ -57,12 +58,12 @@
         max-width: 1000px;
         margin: 0 auto;
         -webkit-mask-image: url(../img/aboutme/visualMask.png);
-        -webkit-mask-size: contain;
+        -webkit-mask-size: 100% 100%;
         -webkit-mask-position: center;
         -webkit-mask-repeat: no-repeat;
         @media screen and (min-width: 800px) {
           width: 65%;
-          transform: translateY(-50px);
+          transform: translateY(-100px);
         } //lg
         @media screen and (max-width: 800px) {
           transform: scale(1.2);
@@ -84,7 +85,6 @@
         text-transform: capitalize;
         @media screen and (min-width: 800px) {
           width: 40%;
-          transform: translateY(50px);
         } //lg
         @media screen and (max-width: 800px) {
           margin: 0 auto;
