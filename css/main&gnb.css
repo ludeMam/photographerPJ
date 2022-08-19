@@ -328,8 +328,6 @@ a.btn-page::after {
   height: 100%;
   left: 0;
   top: 0;
-  object-fit: cover;
-  object-position: bottom left;
 }
 
 .gnb .gnbNA {
