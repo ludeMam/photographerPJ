@@ -202,6 +202,11 @@
 }
 .ha-Homesection-3 .home3center .summary {
   position: absolute;
+  /*       @media screen and (min-width: 600px) and (max-width: 800px) {
+          width: 50%;
+          bottom: -20%;
+          transform: translateX(10%);
+        } */
 }
 @media screen and (min-width: 1000px) {
   .ha-Homesection-3 .home3center .summary {
@@ -210,14 +215,14 @@
     transform: translateX(10%);
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-width: 800px) and (max-width: 1000px) {
   .ha-Homesection-3 .home3center .summary {
     width: 50%;
     bottom: -80%;
     transform: translateX(10%);
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .ha-Homesection-3 .home3center .summary {
     position: absolute;
     width: 30%;
@@ -228,7 +233,6 @@
 }
 .ha-Homesection-3 .home3center .summary h4 {
   display: flex;
-  justify-content: end;
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 10px;
@@ -236,8 +240,19 @@
   color: #403A2F;
   border-bottom: 1px dotted #403A2F;
 }
+@media screen and (min-width: 800px) {
+  .ha-Homesection-3 .home3center .summary h4 {
+    justify-content: end;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .ha-Homesection-3 .home3center .summary h4 {
+    justify-content: start;
+  }
+}
 @media screen and (max-width: 600px) {
   .ha-Homesection-3 .home3center .summary h4 {
+    justify-content: start;
     width: 55%;
     color: #211E18;
     border-bottom: 1px dotted #211E18;

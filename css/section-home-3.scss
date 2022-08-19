@@ -166,13 +166,18 @@
         width: 50%;
         bottom: -150%;
         transform: translateX(10%);
-      } //lg
-      @media screen and (min-width: 600px) and (max-width: 1000px) {
+      } 
+      @media screen and (min-width: 800px) and (max-width: 1000px) {
         width: 50%;
         bottom: -80%;
         transform: translateX(10%);
-      } //sm
-      @media screen and (max-width: 600px) {
+      }
+/*       @media screen and (min-width: 600px) and (max-width: 800px) {
+        width: 50%;
+        bottom: -20%;
+        transform: translateX(10%);
+      } */
+      @media screen and (max-width: 800px) {
         position: absolute;
         width: 30%;
         bottom: 0;
@@ -181,14 +186,20 @@
       }
       h4 {
         display: flex;
-        justify-content: end;
         font-size: 1.2em;
         font-weight: bold;
         margin-bottom: 10px;
         padding-bottom: 10px;
         color: $brown-color;
         border-bottom: 1px dotted $brown-color;
+        @media screen and (min-width: 800px){
+          justify-content: end;
+        }
+        @media screen and (max-width: 800px) and (min-width: 600px){
+          justify-content:start
+        }
         @media screen and (max-width: 600px) {
+          justify-content: start;
           width: 55%;
           color: $darkbrown-color;
           border-bottom: 1px dotted $darkbrown-color;
