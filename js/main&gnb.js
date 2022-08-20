@@ -16,11 +16,11 @@ $(function(){
     }else if(url.match('contact')){
       section = ".section-contact";sectionNumber=5
     }
-    $('.section-container').css({'display':'block'})
-    $(section).css({'animation':'active'+sectionNumber+' 0s both'})
+  
+    $(section).css({'animation':'active'+sectionNumber+' 0s both','display':'block'})
     $('.section-container:not('+section+')').each(function(){
       var sectionNumber = $(this).attr('data-section-number')
-      $(this).css({'animation':'de-active'+sectionNumber+' 0s both'})
+      $(this).css({'animation':'de-active'+sectionNumber+' 0s both','display':'none'})
     })
     $('main').css({'overflow-y':'scroll'})
   }//fn
@@ -33,14 +33,15 @@ $(function(){
 
   $('.btn-menu').click(function(){
     $(this).stop().fadeOut()
-    initialState = "menu"
+    initialState = "menu" //smooth scroll
     var intervalID = setInterval(function(){
       scrt += (0 - scrt)  * 0.4
       if(scrt < 1){
         scrt = 0
         clearInterval(intervalID)
         $('main').css({'overflow-y':'hidden'})
-        $('.section-container').css({'animation':'none'})
+        $('.section-container').css({'animation':'none','display':'block'})
+        
         $('.section-container').css('animation')
         $(section).css({'animation':'active'+sectionNumber+' 2s both reverse'})
         $('.section-container:not('+section+')').each(function(){
@@ -59,7 +60,7 @@ $(function(){
     var urlParam= $(this).attr('href')
     section = $(this).attr('data-section')
     sectionNumber = $(this).attr('data-section-number')
-    $('main').css({'overflow-y':'scroll'})
+    
     $('.section-container').css({'animation':'none'})
     $('.section-container').css('animation')
     $(section).css({'animation':'active'+sectionNumber+' 2s both'})
@@ -69,23 +70,11 @@ $(function(){
     })
     setTimeout(function(){
       initialState = 'content'
+      $('.section-container:not('+section+')').css({'display':'none'})
+      $('main').css({'overflow-y':'scroll'})
       $('.btn-menu').stop().fadeIn()
       history.pushState(null,null,'/'+urlParam)
     },2000)
-  })
-
-  /*video ----------------------------------------------- */
-  function changeYoutubeSize(){
-    var youtubeW = $('.youtube-size-img').width()
-    var youtubeH = $('.youtube-size-img').height()
-    $('.section-video-intro iframe').width(youtubeW)
-    $('.section-video-intro iframe').height(youtubeH)
-  }
-  changeYoutubeSize()
-  $(window).load(function(){
-    changeYoutubeSize()
-  }).resize(function(){
-    changeYoutubeSize()
   })
 })
 /*tab --------------------------------------------------- */

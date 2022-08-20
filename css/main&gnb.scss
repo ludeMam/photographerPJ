@@ -16,14 +16,16 @@ section.section-container {
   background: #fff;
   transform-origin: right bottom;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  section {
+
+  > section {
     background: #fff; /* 지울것 */
   }
-  @for $i from 1 through 5{
-    &.section-container#{$i}{
-      z-index:#{6 - $i} ;
-    } 
-  } 
+
+  @for $i from 1 through 5 {
+    &.section-container#{$i} {
+      z-index: #{6 - $i};
+    }
+  }
   @for $i from 1 through 5 {
     @keyframes active#{$i} {
       0% {
@@ -76,71 +78,72 @@ section.section-container {
   }
 } //section
 /* -------------------------------------------- */
-button.btn-menu{
+button.btn-menu {
   position: fixed;
   z-index: 100;
   right: 20px;
-  top:20px;
+  top: 20px;
   padding: 10px 30px;
   border-radius: 30px;
-  background: #FFF;
-  border:1px solid #CCC;
+  background: #fff;
+  border: 1px solid #ccc;
 }
-a.btn-page{
+a.btn-page {
   position: absolute;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
   transform: translateY(-98%);
   padding: 10px 20px;
-  background: #FFF;
-  &::after{
+  background: #fff;
+  &::after {
     content: "";
     position: absolute;
-    top:0;
+    top: 0;
     left: 99%;
     height: 100%;
     width: 40px;
-    background-image:url(../img/icons/triangle.png);
+    background-image: url(../img/icons/triangle.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left top;
   }
 }
 /* -------------------------------------------- */
-.section-video-intro{
+.section-video-intro {
   position: relative;
   overflow: hidden;
   height: 100%;
-  background: #FFF;
-  svg{
+  background: #fff;
+  video{
     position: absolute;
     width: 100%;
     height: 100%;
+    left: 0;
     top:0;
-    left:0;
+    object-fit: cover;
+    object-position: center center;
   }
-  .youtube-size-img{
+  .video-mask-img {
     position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0;
-  }
-  .video-content{
-    position: absolute;
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%) scale(1.2);
-  }
-  .video-mask-img{
-    position: absolute ;
     width: 100%;
     height: 100%;
-    left:0;top:0;
-
+    left: 0;
+    top: 0;
+  }
+  h6 {
+    font-family: "ele";
+    mix-blend-mode: difference;
+    color: #fff;
+    @media screen and (min-width: 1200px) {
+      font-size: 55px;
+    }
+    @media screen and (max-width: 1200px) {
+      font-size: 4.5vw;
+    }
   }
 }
 
-.gnb .gnbNA{
+.gnb .gnbNA {
   font-size: 2em;
   font-weight: bold;
 }

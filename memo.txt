@@ -1,5 +1,14 @@
--window.js , smoothScroll수정
-boxt =  $('.test').offset().top + scrt
 404페이지제작
-첫번째 동영상 섹션은 youtube주소 id만 수정해서 사용
-svg 커버 제작
+
+
+스크롤 이벤트 예시
+function motion(){
+  var offsetTop = $('.el').offset().top + scrt
+}//fn
+motion()
+$(window).resize(function(){
+  motion()
+})
+$('main').scroll(function(){
+  motion()
+})//window

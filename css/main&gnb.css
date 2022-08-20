@@ -19,24 +19,32 @@ section.section-container {
   transform-origin: right bottom;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-section.section-container section {
-  background: #fff; /* 지울것 */
+
+section.section-container > section {
+  background: #fff;
+  /* 지울것 */
 }
+
 section.section-container.section-container1 {
   z-index: 5;
 }
+
 section.section-container.section-container2 {
   z-index: 4;
 }
+
 section.section-container.section-container3 {
   z-index: 3;
 }
+
 section.section-container.section-container4 {
   z-index: 2;
 }
+
 section.section-container.section-container5 {
   z-index: 1;
 }
+
 @keyframes active1 {
   0% {
     right: -20%;
@@ -64,6 +72,7 @@ section.section-container.section-container5 {
     transform: scale(1) rotateX(0deg);
   }
 }
+
 @keyframes active2 {
   0% {
     right: -20%;
@@ -91,6 +100,7 @@ section.section-container.section-container5 {
     transform: scale(1) rotateX(0deg);
   }
 }
+
 @keyframes active3 {
   0% {
     right: -20%;
@@ -118,6 +128,7 @@ section.section-container.section-container5 {
     transform: scale(1) rotateX(0deg);
   }
 }
+
 @keyframes active4 {
   0% {
     right: -20%;
@@ -145,6 +156,7 @@ section.section-container.section-container5 {
     transform: scale(1) rotateX(0deg);
   }
 }
+
 @keyframes active5 {
   0% {
     right: -20%;
@@ -172,6 +184,7 @@ section.section-container.section-container5 {
     transform: scale(1) rotateX(0deg);
   }
 }
+
 @keyframes de-active1 {
   0% {
     right: -20%;
@@ -190,6 +203,7 @@ section.section-container.section-container5 {
     transform: scale(0.65) rotate(0deg);
   }
 }
+
 @keyframes de-active2 {
   0% {
     right: -20%;
@@ -208,6 +222,7 @@ section.section-container.section-container5 {
     transform: scale(0.65) rotate(0deg);
   }
 }
+
 @keyframes de-active3 {
   0% {
     right: -20%;
@@ -226,6 +241,7 @@ section.section-container.section-container5 {
     transform: scale(0.65) rotate(0deg);
   }
 }
+
 @keyframes de-active4 {
   0% {
     right: -20%;
@@ -244,6 +260,7 @@ section.section-container.section-container5 {
     transform: scale(0.65) rotate(0deg);
   }
 }
+
 @keyframes de-active5 {
   0% {
     right: -20%;
@@ -271,8 +288,8 @@ button.btn-menu {
   top: 20px;
   padding: 10px 30px;
   border-radius: 30px;
-  background: #FFF;
-  border: 1px solid #CCC;
+  background: #fff;
+  border: 1px solid #ccc;
 }
 
 a.btn-page {
@@ -281,8 +298,9 @@ a.btn-page {
   top: 0;
   transform: translateY(-98%);
   padding: 10px 20px;
-  background: #FFF;
+  background: #fff;
 }
+
 a.btn-page::after {
   content: "";
   position: absolute;
@@ -301,33 +319,43 @@ a.btn-page::after {
   position: relative;
   overflow: hidden;
   height: 100%;
-  background: #FFF;
+  background: #fff;
 }
-.section-video-intro svg {
+
+.section-video-intro video {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
   left: 0;
+  top: 0;
+  object-fit: cover;
+  object-position: center center;
 }
-.section-video-intro .youtube-size-img {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  opacity: 0;
-}
-.section-video-intro .video-content {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1.2);
-}
+
 .section-video-intro .video-mask-img {
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
+}
+
+.section-video-intro h6 {
+  font-family: "ele";
+  mix-blend-mode: difference;
+  color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-video-intro h6 {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-video-intro h6 {
+    font-size: 4.5vw;
+  }
 }
 
 .gnb .gnbNA {

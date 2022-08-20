@@ -1,5 +1,6 @@
 <script src="./js/main&gnb.js"></script>
 <main id="style-4">
+  <?php include "particle.php" ?>
   <?php include "section-home.php" ?>
   <?php include "section-about.php" ?>
   <?php include "section-photo1.php" ?>
