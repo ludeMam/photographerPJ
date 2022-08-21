@@ -1,5 +1,6 @@
 $(function () {
   var url
+  var path
   var section
   var sectionNumber
   function urlMatch() {
@@ -14,8 +15,11 @@ $(function () {
       section = ".section-photo2"; sectionNumber = 4
     } else if (url.match('contact')) {
       section = ".section-contact"; sectionNumber = 5
+    } else if (!url.match('#')){
+      path = url.split('#')
+      section = ".section-home"; sectionNumber = 1
+      history.pushState(null, null, path[0] + '#home')
     }
-
     $(section).css({ 'animation': 'active' + sectionNumber + ' 0s both', 'display': 'block' })
     $('.section-container:not(' + section + ')').each(function () {
       var sectionNumber = $(this).attr('data-section-number')
@@ -72,7 +76,8 @@ $(function () {
       $('.section-container:not(' + section + ')').css({ 'display': 'none' })
       $('main').css({ 'overflow-y': 'scroll' })
       $('.btn-menu').stop().fadeIn()
-      //history.pushState(null, null, '/' + urlParam)
+      path = url.split('#')
+      history.pushState(null, null, path[0] + urlParam)
     }, 2000)
   })
   /*video sectioin title parallax --------------------------------------------------- */

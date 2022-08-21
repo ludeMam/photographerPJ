@@ -51,7 +51,6 @@ $(function () {
     $('.camera-gallery .camera-gallery-inner').css({ 'transform': 'translateY(' + ty + 'px)' })
     $('.camera-gallery .img-back-container img, .camera-gallery .img-lenz-container img').removeClass('active')
     $('.camera-gallery .img-back-container .img-back-' + imgNum + ', .camera-gallery .img-lenz-' + imgNum).addClass('active')
-    console.log(scrollRatio);
     /* textbox move motion ------------------------------------------------------------------------- */
     $('.yj-home-section-2 .textbox').each(function () {
       offsetTop = $(this).offset().top + scrt
