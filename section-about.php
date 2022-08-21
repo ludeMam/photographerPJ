@@ -8,8 +8,10 @@
     <video src="./video/video-about.mp4" muted autoplay loop playsinline></video>
     <img class="video-mask-img" src="./img/icons/video-mask-about.png" alt="">
     <h6>
-      DARK AND MOODY & <br>
-      LOW LIGHT PHOTOGRAPHY
+      <span>
+        DARK AND MOODY & <br>
+        LOW LIGHT PHOTOGRAPHY
+      </span>
     </h6>
   </section>
   <!--about-section-1--------------------------------------------------------------->

@@ -11,8 +11,9 @@
     } //h6
   } //section-video-intro
   .yj-home-section-1 {
+    position: relative;
     overflow: hidden;
-    padding: 150px 0;
+    padding: 200px 0;
     .inner-center {
       position: relative;
       margin: 0 auto;
@@ -24,11 +25,10 @@
         justify-content: space-between;
       } //inner-center  lg
       .home-figure-wrap {
-
         -webkit-box-reflect:below -10px radial-gradient(at bottom right,rgba(#000,0.8),rgba(#000,0.07),rgba(#000,0));
         @media screen and (min-width: 800px) {
           width: 65%;
-          transform: translateY(-100px);
+          transform: translateY(-200px);
         } //home-figure-wrap lg
         @media screen and (max-width: 800px) {
           width: 100%;

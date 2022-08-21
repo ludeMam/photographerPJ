@@ -358,6 +358,10 @@ a.btn-page::after {
   }
 }
 
+.section-video-intro h6 span {
+  display: block;
+}
+
 .gnb .gnbNA {
   font-size: 2em;
   font-weight: bold;

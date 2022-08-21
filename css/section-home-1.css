@@ -16,8 +16,9 @@
 }
 
 .section-home .yj-home-section-1 {
+  position: relative;
   overflow: hidden;
-  padding: 150px 0;
+  padding: 200px 0;
 }
 
 .section-home .yj-home-section-1 .inner-center {
@@ -42,7 +43,7 @@
 @media screen and (min-width: 800px) {
   .section-home .yj-home-section-1 .inner-center .home-figure-wrap {
     width: 65%;
-    transform: translateY(-100px);
+    transform: translateY(-200px);
   }
 }
 
