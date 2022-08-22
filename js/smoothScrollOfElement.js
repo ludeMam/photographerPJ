@@ -8,7 +8,7 @@ $(function () {
     isMobile = filter.indexOf(navigator.platform.toLowerCase()) < 0;
   }
   if(!isMobile){
-    document.querySelector('main').addEventListener('mousewheel', function (e) {
+      document.querySelector('main').addEventListener('wheel', function (e) {
       e.preventDefault()
       if (initialState === "content") {
         wheelDelta = e.wheelDelta / -120
@@ -20,6 +20,7 @@ $(function () {
         top: scrt + scrollSpeed,
       })
       scrollSpeed = scrollSpeed * 0.95
+      
     }, 20)
   }
 })//ready
