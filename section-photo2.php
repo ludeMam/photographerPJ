@@ -3,7 +3,7 @@
 <script src="./js/windowOfElement.js"></script>
 <!--section-container------------------------------------------------------------------------>
 <section class="section-photo2 section-container section-container4" data-section-number="4">
-  <a class="btn-page" href="#photo2" data-section=".section-photo2" data-section-number="4">Dark mood</a>
+  <a class="btn-page" href="#photo2" data-section=".section-photo2" data-section-number="4">Dark Moody</a>
   <!-- video section ------------------------------------------------------------------------------------->
   <section class="section-video-intro ys-section-1">
     <video src="./video/video-photo2.mp4" muted autoplay loop playsinline></video>

@@ -8,6 +8,7 @@
   <?php include "section-photo2.php" ?>
   <?php include "section-contact.php" ?>
   <button class="btn-menu">
+    <span class="circle-bg"></span>
     <span class="circle" aria-hidden="true">
       <span class="icon arrow"></span>
     </span>
