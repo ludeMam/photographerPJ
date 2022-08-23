@@ -1,7 +1,14 @@
 @import "./common";
 .section-photo1 {
   .yj-section-photo1-2 {
-    background: linear-gradient(white,#211e18);
+    position: relative;
+    background: linear-gradient(white,#ccc);
+    div.guide-line{
+      position: sticky;
+      width:100%;
+      top: 50%;
+      border:1px solid black;
+    }
     ul.main-content{
       padding: 50px;
       box-sizing: border-box;
@@ -27,12 +34,26 @@
           }
           &:last-child{
             display: block;
+            figure{
+              div{
+                box-shadow: none;
+              }
+            }
+            figcaption{
+              &::before{display:none;}
+            }
           }
           &:nth-child(3n+1){
             margin: 0;
             figcaption{
               top: 0;
               left: 100%;
+              &::before{
+                -webkit-transform: skewY(-20deg);
+                width: 6px;
+                height: 200px;
+                left: 14px;
+              }
               h3{
                 writing-mode: vertical-rl;
               }
@@ -45,6 +66,13 @@
               right: 0;
               text-align: right;
               padding-right: 0;
+              &::before{
+                -webkit-transform: skewX(-20deg);
+                width: 200px;
+                height: 6px;
+                right: 0;
+                top: 24px;
+              }
               p{
                 margin-left: auto;
               }
@@ -53,15 +81,50 @@
           &:nth-child(3n+3){
             margin:0 33.33%;
             figcaption{
-              top:0;
-              right: 100%;
+              top: 50%;
+              color: #dcdcdc;
+              letter-spacing: 2px;
+              h3{
+                background-color: $darkbrown-color;
+                padding: 10px;
+                position: inherit;
+                top: -30%;
+                left: -30%;
+                mix-blend-mode: hard-light;
+              }
+              p{
+                background-color: $darkbrown-color;
+                padding: 10px 0 10px 10px;
+                position: inherit;
+                right: -40%;
+                top:0;
+                mix-blend-mode: hard-light;
+              }
             }
           }
+/*           &:nth-child(even){
+            figure{
+              div{
+                img{
+                  transform: scale(1.5);
+                }
+              }
+            }
+          } */
         }         
         @media screen and (min-width:800px) and (max-width:1200px){
           width: 50%;
           figcaption{
-            top: 0;
+            top: 50%;
+            &::before{
+              -webkit-transform: skewX(-20deg);
+              width: 200px;
+              height: 6px;
+              top: 24px;
+            }
+            p{
+              width: 300px;
+            }
           }
           &:nth-child(odd){
             figcaption{
@@ -72,12 +135,27 @@
             margin-left: 50%;
             figcaption{
               right: 100%;
+              &::before{right: 14px;}
+              h3,p{text-align: right;}
+              p{
+                padding-left: calc(100% - 300px);
+              }
             }
           }
         }
         @media screen and (max-width:800px){
           width: 100%;
-          margin-bottom: 100%;
+          margin-bottom: 40%;
+          figure{
+            figcaption{
+              &::before{
+                transform: skew(-20deg);
+                width: 200px;
+                height: 6px;
+                top: 24px;
+              }
+            }
+          }
         }
         figure{
           position: relative;
@@ -87,6 +165,7 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
+            box-shadow: 0 0 5px 2px;
             img{
               width: 110%;
               height: 110%;
@@ -102,15 +181,27 @@
             font-family: 'ele';
             padding: 10px;
             box-sizing: border-box;
-            color: #dcdcdc;
-            mix-blend-mode: difference;
+            color: $brown-color;
+            /* mix-blend-mode: difference; */
+            &::before{
+              content: '';
+              position:absolute;
+              background-color: $mint-color;
+              opacity: .7;
+            }
             h3{
+              position: relative;
+              z-index: 1;
               font-size: 1.3em;
               font-weight: 600;
               margin-bottom: 10px;
             }      
             p{
               font-size: 1em;
+              i{
+                font-size: 2em;
+                font-family: 'Bebas Neue', cursive;
+              }
             }
           }
         }
