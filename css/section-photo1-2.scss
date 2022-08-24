@@ -73,6 +73,10 @@
                 right: 0;
                 top: 24px;
               }
+              h3{
+                margin-left: auto;
+                width: 56%;
+              }
               p{
                 margin-left: auto;
               }
@@ -81,24 +85,23 @@
           &:nth-child(3n+3){
             margin:0 33.33%;
             figcaption{
-              top: 50%;
-              color: #dcdcdc;
-              letter-spacing: 2px;
+              top: 100%;
+              &::before{
+                -webkit-transform: skewX(-20deg);
+                width: 200px;
+                height: 6px;
+                left: -130px;
+                top: -338px;
+              }
               h3{
-                background-color: $darkbrown-color;
-                padding: 10px;
                 position: inherit;
-                top: -30%;
+                top: -80%;
                 left: -30%;
-                mix-blend-mode: hard-light;
               }
               p{
-                background-color: $darkbrown-color;
-                padding: 10px 0 10px 10px;
                 position: inherit;
                 right: -40%;
-                top:0;
-                mix-blend-mode: hard-light;
+                top:-50%;
               }
             }
           }
@@ -122,6 +125,9 @@
               height: 6px;
               top: 24px;
             }
+            h3{
+              width: 43%;
+            }
             p{
               width: 300px;
             }
@@ -136,9 +142,9 @@
             figcaption{
               right: 100%;
               &::before{right: 14px;}
-              h3,p{text-align: right;}
-              p{
-                padding-left: calc(100% - 300px);
+              h3,p{
+                margin-left: auto;
+                text-align: right;
               }
             }
           }
@@ -147,6 +153,9 @@
           width: 100%;
           margin-bottom: 40%;
           figure{
+            div img{
+              opacity: 0;
+            }
             figcaption{
               &::before{
                 transform: skew(-20deg);
@@ -172,6 +181,8 @@
               transform: translate(-5%, -5%);
               object-fit: cover;
               object-position: center center;
+              opacity: .7;
+              transition: transform 0.3s, opacity 0.3s;
             }
           }
           figcaption{
@@ -195,12 +206,15 @@
               font-size: 1.3em;
               font-weight: 600;
               margin-bottom: 10px;
+              transition: all 0.3s;
             }      
             p{
               font-size: 1em;
+              transition: all 0.3s;
               i{
                 font-size: 2em;
                 font-family: 'Bebas Neue', cursive;
+                transition: all 0.3s;
               }
             }
           }
