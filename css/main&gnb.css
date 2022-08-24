@@ -357,12 +357,18 @@ a.btn-page {
   position: absolute;
   left: 0;
   top: 0;
-  transform: rotate(-55deg) translate(90px, -60px);
+  transform: rotate(-55deg) translate(90px, -70px);
   transform-origin: left bottom;
   padding: 10px 20px;
   color: #fff;
   font-size: 1.2em;
   text-transform: capitalize;
+  transition: transform 1s;
+}
+@media screen and (max-width: 600px) {
+  a.btn-page {
+    transform: rotate(-45deg) translate(110px, -40px);
+  }
 }
 a.btn-page::before {
   content: "";
@@ -386,18 +392,28 @@ a.btn-page::before {
   font-size: 2em;
   font-weight: bold;
 }
-.gnb h6 {
-  color: #fff;
-  margin-top: 15px;
+.gnb .btn-shine {
+  position: absolute;
+  left: 50%;
   text-align: center;
   font-size: 1.5em;
   font-weight: 600;
   font-family: "ele";
   letter-spacing: 2px;
   text-transform: uppercase;
+  transform: translateX(-50%);
+  padding: 20px 48px;
+  color: #fff;
+  background: linear-gradient(to right, rgba(77, 77, 77, 0.8) 0, white 10%, rgba(77, 77, 77, 0.8) 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: ys-shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  white-space: nowrap;
 }
 .gnb .gnb-sns {
-  display: none;
   position: absolute;
   z-index: 100;
   align-items: center;
@@ -420,6 +436,8 @@ a.btn-page::before {
   text-transform: uppercase;
   transform: rotate(180deg) translateY(105px);
   writing-mode: vertical-lr;
+  opacity: 1;
+  transition: opacity 0.2s;
 }
 .gnb .gnb-sns li:first-child::before {
   content: "";
@@ -433,10 +451,21 @@ a.btn-page::before {
 }
 @media screen and (max-width: 600px) {
   .gnb .gnb-sns li:first-child {
-    display: none;
+    opacity: 0;
   }
 }
 
+@keyframes ys-shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 300px;
+  }
+  100% {
+    background-position: 300px;
+  }
+}
 /* -------------------------------------------- */
 .section-video-intro {
   position: relative;

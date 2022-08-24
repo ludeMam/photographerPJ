@@ -2,7 +2,7 @@
 
 <nav class="gnb">
 
-  <h6>siteTitle</h6>
+  <a class="btn-shine">My Menu</a>
   <ul>
     <li><a class="gnbNA" href="#home" data-section=".section-home" data-section-number="1">Home</a></li>
     <li><a class="gnbNA" href="#about" data-section=".section-about" data-section-number="2">About me</a></li>
