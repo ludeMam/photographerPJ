@@ -211,6 +211,28 @@ a.btn-page {
   left: 0;
   font-size: 2em;
   font-weight: bold;
+  .gnb-sub-menu{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    color: rgba(#646464,0.8);
+    font-size: 0.5em;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -0.5px;
+    @media screen and (max-width:600px) {
+      top: 80px;
+      width: 90%;
+      letter-spacing: -1px;
+    } 
+    li{
+      margin: 0 5px;
+    }
+  }
   .btn-shine {
     position: absolute;
     left: 50%;
@@ -223,11 +245,11 @@ a.btn-page {
     transform: translateX(-50%);
     padding: 20px 48px;
     color: #fff;
-    background: linear-gradient(to right, rgba($color: #4d4d4d, $alpha: 0.8) 0, white 10%, rgba($color: #4d4d4d, $alpha: 0.8) 20%);
+    background: linear-gradient(to right, rgba(#646464,0.8) 0, white 10%,rgba(#646464,0.8) 20%);
     background-position: 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: ys-shine 3s infinite linear;
+    animation: ys-shine 2.8s infinite linear;
     animation-fill-mode: forwards;
     -webkit-text-size-adjust: none;
     white-space: nowrap;
