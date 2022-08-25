@@ -1,81 +1,71 @@
 $(function(){
-  var figureT
-  var figureH
-  var figureMeta
-  var scrS
-  var scrE
-  var scrScope
-  var scrR
-  var opcT
+  var h
   function contentContainer(){
-    $('.yj-section-photo1-2 .main-content figure').each(function(){
-      figureT=$(this).offset().top + scrt
-      figureH=$(this).innerHeight()
-      figureMeta = 0 + (scrt-(figureT-winh*0.5+figureH*0.5))*0.15 
-      $(this).children('div').children('img').css({
-        'transform' : `translate(-5%,calc(-5%+${figureMeta}))`
-      })
-    })
-  }
-  function photo1_2imgOpc(){
-    $('.yj-section-photo1-2 .main-content .content-container').each(function(){
-      scrS=$(this).offset().top+scrt-winh
-      scrE=$(this).offset().top+scrt-winh*0.5
-      scrScope=scrE-scrS
-      scrR=(scrt-scrS)/scrScope
-      opcT = (1*scrR)
-      sclT = (0.2*scrR)+1
-      if(opcT<0){opcT=0}
-      if(opcT>1){opcT=1}
-      if(sclT>1.2){sclT=1.2}
-      if(winw<801){
-        $(this).children('figure').children('div').children('img').css({
-          'opacity':`${opcT}`,
-          'transform' : `scale(${sclT})`
-        })
-      }
-    })
-  }
-  function photo1_2imgMotion(){
-    if(winw>=801){
-      $('.yj-section-photo1-2 .main-content figure div').mouseenter(function(){
-        $(this).children('img').css({
-          'opacity' : '1'
-        })
+    //li heigth
+    h = $('.yj-section-photo1-2 .main-content li.content-container').innerWidth()
+    $('.yj-section-photo1-2 .main-content li.content-container').height(h)
+    //mouse hover
+    $('.yj-section-photo1-2 .main-content figure.original div').mouseenter(function(){
+      if(winw>801){
         $(this).parent().children('figcaption').children().css({
           'background-color': '#211E18',
-          'color': 'white',
-          'padding' : '10px'
-        })
-      }).mouseleave(function(){
-        $(this).children('img').css({
-          'opacity' : '.7'
-        })
+          'color': 'white',  
+          'padding' : '5px'
+        })//text
+      }
+      $(this).parent().children('figcaption').addClass('active')
+      $(this).parent().siblings('.dummy-figure').children('img').addClass('active')//img
+    }).mouseleave(function(){
+      if(winw>801){
         $(this).parent().children('figcaption').children().css({
           'background-color': 'inherit',
           'color': '#403A2F',
           'padding' : '0px'
-          })
-      })
-    }
+        })
+      }
+      $(this).parent().children('figcaption').removeClass('active')
+      $(this).parent().siblings('.dummy-figure').children('img').removeClass('active')//img
+    })//text
+    
   }
   contentContainer()
-  photo1_2imgOpc()
-  photo1_2imgMotion()
   $('main').bind('wheel', function(){
     contentContainer()
-    photo1_2imgOpc()
-    photo1_2imgMotion()
   })
   $(window).resize(function(){
     contentContainer()
-    photo1_2imgOpc()
-    photo1_2imgMotion()
   })
 
-  var h = $('.yj-section-photo1-2 .main-content li.content-container').innerWidth()
-  $('.yj-section-photo1-2 .main-content li.content-container').height(h)
 
+
+  /* 
+      var figureT
+      var figureH
+      var figureMeta
+      var scrS
+      var scrE
+      var scrScope
+      var scrR
+      $('.yj-section-photo1-2 .main-content .content-container').each(function(){
+      figureT=$(this).offset().top + scrt
+      figureH=$(this).innerHeight()
+      figureMeta = 0 + (scrt-(figureT-winh*0.5+figureH*0.5))*0.15 
+      $(this).children('div').children('img.originImg').css({
+        'transform' : `translate(-5%,calc(-5%+${figureMeta}))`
+      })
+      scrS=$(this).offset().top+scrt-winh
+      scrE=$(this).offset().top+scrt-winh*0.5
+      scrScope=scrE-scrS
+      scrR=(scrt-scrS)/scrScope
+      sclT = (0.2*scrR)+1
+      if(sclT<0){sclT=0}
+      if(sclT>1.2){sclT=1.2}
+      if(winw<801){
+        $(this).children('figure').children('div').children('img.originImg').css({
+          'transform' : `translate(-5%,calc(-5%+${figureMeta})) scale(${sclT})`
+        })
+      }
+    }) */
 
 
 

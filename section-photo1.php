@@ -24,171 +24,207 @@
   </section>
   <section class="yj-section-photo1-2">
     <h2 class="hidden">bright moody section2</h2>
-    <div class="guide-line"></div>
     <ul class="main-content">
       <li class="content-container content-container-1">
-        <figure>
+        <figure class="dummy-figure">
+          <img src="./img/photo1/img1.jpg" alt="">
+          <img class='circle-zoom' src="./img/photo1/img1.jpg" alt="">          
+        </figure>
+        <figure class="original">
           <div>
             <img src="./img/photo1/img1.jpg" alt="">
           </div>
           <figcaption>
             <h3>What is Lorem Ipsum?</h3>
             <p>
-            <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
             </p>
           </figcaption>
         </figure>
       </li>
       <li class="content-container content-container-2">
-        <figure>
+        <figure class="dummy-figure">
+          <img src="./img/photo1/img2.jpg" alt="">
+        </figure>
+        <figure class="original">
           <div>
             <img src="./img/photo1/img2.jpg" alt="">
           </div>
           <figcaption>
             <h3>What is Lorem Ipsum?</h3>
             <p>
-            <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
             </p>
           </figcaption>
         </figure>
       </li>
       <li class="content-container content-container-3">
-        <figure>
+        <figure class="dummy-figure">
+          <img src="./img/photo1/img3.jpg" alt="">
+        </figure>
+        <figure class="original">
           <div>
             <img src="./img/photo1/img3.jpg" alt="">
           </div>
           <figcaption>
             <h3>What is Lorem Ipsum?</h3>
             <p>
-            <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
             </p>
           </figcaption>
         </figure>
       </li>
       <li class="content-container content-container-4">
-        <figure>
+        <figure class="dummy-figure">
+          <img src="./img/photo1/img4.png" alt="">
+        </figure>
+        <figure class="original">
           <div>
             <img src="./img/photo1/img4.png" alt="">
           </div>
           <figcaption>
             <h3>What is Lorem Ipsum?</h3>
             <p>
-              <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
             </p>
           </figcaption>
         </figure>
       </li>
       <li class="content-container content-container-5">
-        <figure>
+        <figure class="dummy-figure">
+          <img src="./img/photo1/img5.jpg" alt="">
+        </figure>
+        <figure class="original">
           <div>
             <img src="./img/photo1/img5.jpg" alt="">
           </div>
           <figcaption>
             <h3>What is Lorem Ipsum?</h3>
             <p>
-            <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
             </p>
           </figcaption>
         </figure>
       </li>
       <li class="content-container content-container-6">
-        <figure>
+        <figure class="dummy-figure">
+          <img src="./img/photo1/img6.jpg" alt="">
+        </figure>
+        <figure class="original">
           <div>
             <img src="./img/photo1/img6.jpg" alt="">
           </div>
           <figcaption>
             <h3>What is Lorem Ipsum?</h3>
             <p>
-            <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
             </p>
           </figcaption>
         </figure>
       </li>
       <li class="content-container content-container-7">
-        <figure>
+        <figure class="dummy-figure">
+          <img src="./img/photo1/img7.jpg" alt="">
+        </figure>
+        <figure class="original">
           <div>
             <img src="./img/photo1/img7.jpg" alt="">
           </div>
           <figcaption>
             <h3>What is Lorem Ipsum?</h3>
             <p>
-            <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
             </p>
           </figcaption>
         </figure>
       </li>
       <li class="content-container content-container-8">
-        <figure>
+        <figure class="dummy-figure">
+          <img src="./img/photo1/img8.png" alt="">
+        </figure>
+        <figure class="original">
           <div>
             <img src="./img/photo1/img8.png" alt="">
           </div>
           <figcaption>
             <h3>What is Lorem Ipsum?</h3>
             <p>
-            <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
             </p>
           </figcaption>
         </figure>
       </li>
       <li class="content-container content-container-9">
-        <figure>
+        <figure class="dummy-figure">
+          <img src="./img/photo1/img9.png" alt="">
+        </figure>
+        <figure class="original">
           <div>
             <img src="./img/photo1/img9.png" alt="">
           </div>
           <figcaption>
             <h3>What is Lorem Ipsum?</h3>
             <p>
-            <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
             </p>
           </figcaption>
         </figure>
       </li>
       <li class="content-container content-container-10">
-        <figure>
+        <figure class="dummy-figure">
+          <img src="./img/photo1/img10.png" alt="">
+        </figure>
+        <figure class="original">
           <div>
             <img src="./img/photo1/img10.png" alt="">
           </div>
           <figcaption>
             <h3>What is Lorem Ipsum?</h3>
             <p>
-            <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
             </p>
           </figcaption>
         </figure>
       </li>
       <li class="content-container content-container-11">
-        <figure>
+        <figure class="dummy-figure">
+          <img src="./img/photo1/img11.jpg" alt="">
+        </figure>
+        <figure class="original">
           <div>
             <img src="./img/photo1/img11.jpg" alt="">
           </div>
           <figcaption>
             <h3>What is Lorem Ipsum?</h3>
             <p>
-            <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
             </p>
           </figcaption>
         </figure>
       </li>
       <li class="content-container content-container-12">
-        <figure>
+        <figure class="dummy-figure">
+          <img src="./img/photo1/img12.png" alt="">
+        </figure>
+        <figure class="original">
           <div>
             <img src="./img/photo1/img12.png" alt="">
           </div>
           <figcaption>
             <h3>What is Lorem Ipsum?</h3>
             <p>
-            <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
             </p>
           </figcaption>
@@ -205,6 +241,6 @@
     </ul>
 
 
-     
+
   </section><!-- yj-section-photo1-2 -->
 </section><!-- section-photo1 -->
