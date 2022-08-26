@@ -28,7 +28,7 @@
       <li class="content-container content-container-1">
         <figure class="dummy-figure">
           <img src="./img/photo1/img1.jpg" alt="">
-          <img class='circle-zoom' src="./img/photo1/img1.jpg" alt="">          
+          <img class='circle-zoom' src="./img/photo1/img1.jpg" alt="">           
         </figure>
         <figure class="original">
           <div>

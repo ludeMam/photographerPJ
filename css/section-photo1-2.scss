@@ -22,7 +22,7 @@
           figure{
             &.dummy-figure{
               .circle-zoom{
-                display: none !important;
+                display: none;
               }
             }
             figcaption{
@@ -146,7 +146,7 @@
           figure{
             &.dummy-figure{
               .circle-zoom{
-                display: none !important;
+                display: none;
               }
             }
             figcaption{
@@ -199,12 +199,31 @@
           width: 100%;
           margin-bottom: 80%;
           figure{
+            &.original{
+              div img{
+                display: none;
+              }
+            }
             &.dummy-figure{
               position: relative;
-              .circle-zoom{
-                position: absolute;
+              img:first-child{
+                width: 100%;
+                height: 100%;
                 top: 0;
                 left: 0;
+                object-fit: cover;
+                object-position: center center;
+                opacity: .5 !important;
+              }
+              .circle-zoom{
+                position: absolute;
+                top: -50%;
+                left: -50%;
+                opacity: 1 !important;
+                -webkit-mask-image:url(../img/photo1/mask.png);
+                -webkit-mask-size: 250px 250px;
+                -webkit-mask-repeat: no-repeat;
+                -webkit-mask-position:-1000000px;
               }
             }
             figcaption{
@@ -227,11 +246,13 @@
             position: absolute;
             overflow: hidden;
             img{
+              position: absolute;
               width: 200%;
               height: 200%;
+              top: -50%;
+              left: -50%;
               object-fit: cover;
               object-position: center center;
-              transform: translate(-50%,-50%);
               opacity: 0 ;
               &.active{
                 opacity: 1;

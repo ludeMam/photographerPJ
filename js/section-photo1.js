@@ -1,33 +1,57 @@
 $(function(){
   var h
   function contentContainer(){
-    //li heigth
     h = $('.yj-section-photo1-2 .main-content li.content-container').innerWidth()
-    $('.yj-section-photo1-2 .main-content li.content-container').height(h)
-    //mouse hover
-    $('.yj-section-photo1-2 .main-content figure.original div').mouseenter(function(){
-      if(winw>801){
-        $(this).parent().children('figcaption').children().css({
-          'background-color': '#211E18',
-          'color': 'white',  
-          'padding' : '5px'
-        })//text
-      }
-      $(this).parent().children('figcaption').addClass('active')
-      $(this).parent().siblings('.dummy-figure').children('img').addClass('active')//img
-    }).mouseleave(function(){
-      if(winw>801){
-        $(this).parent().children('figcaption').children().css({
-          'background-color': 'inherit',
-          'color': '#403A2F',
-          'padding' : '0px'
-        })
-      }
-      $(this).parent().children('figcaption').removeClass('active')
-      $(this).parent().siblings('.dummy-figure').children('img').removeClass('active')//img
-    })//text
-    
+    $('.yj-section-photo1-2 .main-content li.content-container').height(h)  
   }
+  $('.yj-section-photo1-2 .main-content figure.original div').mouseenter(function(){
+    if(winw>801){
+      $(this).parent().children('figcaption').children().css({
+        'background-color': '#211E18',
+        'color': 'white',  
+        'padding' : '5px'
+      })//text
+    }
+    $(this).parent().children('figcaption').addClass('active')
+    $(this).parent().siblings('.dummy-figure').children('img').addClass('active')//img
+  }).mouseleave(function(){
+    if(winw>801){
+      $(this).parent().children('figcaption').children().css({
+        'background-color': 'inherit',
+        'color': '#403A2F',
+        'padding' : '0px'
+      })
+    }
+    $(this).parent().children('figcaption').removeClass('active')
+    $(this).parent().siblings('.dummy-figure').children('img').removeClass('active')//img
+  })//mouse hover
+
+  $('.yj-section-photo1-2 .main-content figure.original div').mousemove(function(e){
+    var mouseX=e.pageX
+    var mouseY=e.pageY
+    var zImgOffT=$(this).parent().siblings('.dummy-figure').children('.circle-zoom').offset().top
+    var zImgOffL=$(this).parent().siblings('.dummy-figure').children('.circle-zoom').offset().left
+    var maskSize=250
+    var maskX=mouseX-zImgOffL-maskSize*0.5
+    var maskY=mouseY-zImgOffT-maskSize*0.5
+    var mouseSrtX=$(this).offset().left
+    var mouseSrtY=$(this).offset().top
+    var mouseXrange=$(this).innerWidth()
+    var mouseYrange=$(this).innerHeight()
+    var zImgOffW=$(this).parent().siblings('.dummy-figure').children('.circle-zoom').innerWidth()
+    var zImgOffH=$(this).parent().siblings('.dummy-figure').children('.circle-zoom').innerHeight()
+    var mouseRatioX=(mouseX-mouseSrtX)/mouseXrange
+    var mouseRatioY=(mouseY-mouseSrtY)/mouseYrange
+    var zImgMoveRangeX=$(this).innerWidth()-zImgOffW
+    var zImgMoveRangeY=$(this).innerHeight()-zImgOffH
+    var zoomX=mouseRatioX*zImgMoveRangeX
+    var zoomY=mouseRatioY*zImgMoveRangeY
+    $(this).parent().siblings('.dummy-figure').children('.circle-zoom').css({
+      'top':zoomY,
+      'left':zoomX,
+      '-webkit-mask-position':`${maskX}px ${maskY}px`
+    })
+  })
   contentContainer()
   $('main').bind('wheel', function(){
     contentContainer()
