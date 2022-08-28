@@ -67,6 +67,15 @@
             margin-left: 33.333%;
             figcaption {
               top: 100%;
+              display: flex;
+              div{
+                right: 0;
+                writing-mode: vertical-rl;
+                height: 80%;
+                h3{
+                  margin-left: 20px;
+                }
+              }
             }
           } //li nth
           &:nth-child(3n + 3) {
@@ -75,6 +84,12 @@
             margin-right: 33.333%;
             figcaption {
               right: 100%;
+              display: flex;
+              div{
+                width: 80%;
+                right: 0;
+                top: 50%;
+              }
             }
           } //li nth
         } //li lg
@@ -84,12 +99,28 @@
             margin-left: 0%;
             figcaption {
               left: 100%;
+              div{
+                writing-mode: vertical-rl;
+                height: 80%;
+                h3{
+                  margin-left: 20px;
+                }
+              }
             }
           } //li odd
           &:nth-child(even) {
             margin-left: 50%;
             figcaption {
               right: 100%;
+              display: flex;
+              div{
+                writing-mode: vertical-lr;
+                height: 80%;
+                right: 0;
+                h3{
+                  margin-right: 20px;
+                }
+              }
             }
           } //li even
         } //li md
