@@ -58,18 +58,6 @@
     position: absolute;
     padding: 10px;
     box-sizing: border-box;
-    background: #ccc;
-  }
-  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure figcaption div h3 {
-    font-size: 1.3em;
-    padding: 5px;
-    box-sizing: border-box;
-    background-color: #000;
-    color: white;
-  }
-  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure figcaption div p {
-    background-color: white;
-    padding: 5px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -88,7 +76,7 @@
     writing-mode: vertical-rl;
   }
   .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(3n+1) figcaption div h3 {
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(3n+2) {
     margin-left: 33.333%;
@@ -103,7 +91,7 @@
     height: 80%;
   }
   .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(3n+2) figcaption div h3 {
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(3n+3) {
     clear: both;
@@ -120,7 +108,7 @@
     top: 50%;
   }
   .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(3n+3) figcaption div h3 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1400px) {
