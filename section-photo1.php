@@ -25,10 +25,10 @@
   <section class="yj-section-photo1-2">
     <h2 class="hidden">bright moody section2</h2>
     <ul class="main-content clearfix">
-      <li class="content-container content-container-1">
+      <li class="content-container content-container-1" data-n="1">
         <figure class="original">
           <div>
-            <img src="./img/photo1/img1.jpg" alt="">
+            <img class="img-org" src="./img/photo1/img1.jpg" alt="">
           </div>
           <figcaption>
             <div>
@@ -40,13 +40,13 @@
             </div>
           </figcaption>
         </figure>
+        <figure class="zoom-lg"></figure>
       </li>
 
-      <li class="content-container content-container-2">
-
+      <li class="content-container content-container-2" data-n="2">
         <figure class="original">
           <div>
-            <img src="./img/photo1/img2.jpg" alt="">
+            <img class="img-org" src="./img/photo1/img2.jpg" alt="">
           </div>
           <figcaption>
             <div>
@@ -58,15 +58,15 @@
             </div>
           </figcaption>
         </figure>
+        <figure class="zoom-lg"></figure>
       </li>
-      <li class="content-container content-container-3">
-
-        <figure class="original">
+      <li class="content-container content-container-3" data-n="3">
+        <figure class="original" class="original">
           <div>
-            <img src="./img/photo1/img3.jpg" alt="">
+            <img class="img-org" src="./img/photo1/img3.jpg" alt="">
           </div>
           <figcaption>
-          <div>
+            <div>
               <h3>What is Lorem Ipsum?</h3>
               <p>
                 <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -75,15 +75,15 @@
             </div>
           </figcaption>
         </figure>
+        <figure class="zoom-lg"></figure>
       </li>
-      <li class="content-container content-container-4">
-
+      <li class="content-container content-container-4" data-n="4">
         <figure class="original">
           <div>
-            <img src="./img/photo1/img4.png" alt="">
+            <img class="img-org" src="./img/photo1/img4.png" alt="">
           </div>
           <figcaption>
-          <div>
+            <div>
               <h3>What is Lorem Ipsum?</h3>
               <p>
                 <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -92,15 +92,15 @@
             </div>
           </figcaption>
         </figure>
+        <figure class="zoom-lg"></figure>
       </li>
-      <li class="content-container content-container-5">
-
+      <li class="content-container content-container-5" data-n="5">
         <figure class="original">
           <div>
-            <img src="./img/photo1/img5.jpg" alt="">
+            <img class="img-org" src="./img/photo1/img5.jpg" alt="">
           </div>
           <figcaption>
-          <div>
+            <div>
               <h3>What is Lorem Ipsum?</h3>
               <p>
                 <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -109,15 +109,15 @@
             </div>
           </figcaption>
         </figure>
+        <figure class="zoom-lg"></figure>
       </li>
-      <li class="content-container content-container-6">
-
+      <li class="content-container content-container-6" data-n="6">
         <figure class="original">
           <div>
-            <img src="./img/photo1/img6.jpg" alt="">
+            <img class="img-org" src="./img/photo1/img6.jpg" alt="">
           </div>
           <figcaption>
-          <div>
+            <div>
               <h3>What is Lorem Ipsum?</h3>
               <p>
                 <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -126,15 +126,15 @@
             </div>
           </figcaption>
         </figure>
+        <figure class="zoom-lg"></figure>
       </li>
-      <li class="content-container content-container-7">
-
+      <li class="content-container content-container-7" data-n="7">
         <figure class="original">
           <div>
-            <img src="./img/photo1/img7.jpg" alt="">
+            <img class="img-org" src="./img/photo1/img7.jpg" alt="">
           </div>
           <figcaption>
-          <div>
+            <div>
               <h3>What is Lorem Ipsum?</h3>
               <p>
                 <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -143,15 +143,15 @@
             </div>
           </figcaption>
         </figure>
+        <figure class="zoom-lg"></figure>
       </li>
-      <li class="content-container content-container-8">
-
+      <li class="content-container content-container-8" data-n="8">
         <figure class="original">
           <div>
-            <img src="./img/photo1/img8.png" alt="">
+            <img class="img-org" src="./img/photo1/img8.png" alt="">
           </div>
           <figcaption>
-          <div>
+            <div>
               <h3>What is Lorem Ipsum?</h3>
               <p>
                 <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -160,15 +160,15 @@
             </div>
           </figcaption>
         </figure>
+        <figure class="zoom-lg"></figure>
       </li>
-      <li class="content-container content-container-9">
-
+      <li class="content-container content-container-9" data-n="9">
         <figure class="original">
           <div>
-            <img src="./img/photo1/img9.png" alt="">
+            <img class="img-org" src="./img/photo1/img9.png" alt="">
           </div>
           <figcaption>
-          <div>
+            <div>
               <h3>What is Lorem Ipsum?</h3>
               <p>
                 <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -177,15 +177,15 @@
             </div>
           </figcaption>
         </figure>
+        <figure class="zoom-lg"></figure>
       </li>
-      <li class="content-container content-container-10">
-
+      <li class="content-container content-container-10" data-n="10">
         <figure class="original">
           <div>
-            <img src="./img/photo1/img10.png" alt="">
+            <img class="img-org" src="./img/photo1/img10.png" alt="">
           </div>
           <figcaption>
-          <div>
+            <div>
               <h3>What is Lorem Ipsum?</h3>
               <p>
                 <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -194,15 +194,15 @@
             </div>
           </figcaption>
         </figure>
+        <figure class="zoom-lg"></figure>
       </li>
-      <li class="content-container content-container-11">
-
+      <li class="content-container content-container-11" data-n="11">
         <figure class="original">
           <div>
-            <img src="./img/photo1/img11.jpg" alt="">
+            <img class="img-org" src="./img/photo1/img11.jpg" alt="">
           </div>
           <figcaption>
-          <div>
+            <div>
               <h3>What is Lorem Ipsum?</h3>
               <p>
                 <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -211,15 +211,15 @@
             </div>
           </figcaption>
         </figure>
+        <figure class="zoom-lg"></figure>
       </li>
-      <li class="content-container content-container-12">
-
+      <li class="content-container content-container-12" data-n="12">
         <figure class="original">
           <div>
-            <img src="./img/photo1/img12.png" alt="">
+            <img class="img-org" src="./img/photo1/img12.png" alt="">
           </div>
           <figcaption>
-          <div>
+            <div>
               <h3>What is Lorem Ipsum?</h3>
               <p>
                 <i>L</i>orem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -228,6 +228,7 @@
             </div>
           </figcaption>
         </figure>
+        <figure class="zoom-lg"></figure>
       </li>
     </ul>
 

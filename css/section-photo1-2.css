@@ -29,35 +29,64 @@
     display: block;
     padding-top: 100%;
   }
-  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure {
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure.original {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
   }
-  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure > div {
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure.original > div {
     width: 100%;
     height: 100%;
   }
-  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure > div img {
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure.original > div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure figcaption {
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure.original figcaption {
+    pointer-events: none;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
-    background: #eee;
   }
-  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure figcaption div {
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure.original figcaption div {
     position: absolute;
     padding: 10px;
     box-sizing: border-box;
+    transition: all 0.3s;
+  }
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure.zoom-lg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: yellow;
+  }
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure.zoom-lg img {
+    position: absolute;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container.active figcaption {
+    left: 0 !important;
+  }
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container.active figcaption div {
+    transform: translate(0, 0) rotate(0) !important;
+    left: 5%;
+    bottom: 5%;
+    width: 90%;
+    height: auto !important;
+    writing-mode: horizontal-tb !important;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container.active figure.zoom-lg {
+    display: block !important;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -78,6 +107,10 @@
   .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(3n+1) figcaption div h3 {
     margin-left: 10px;
   }
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(3n+1) figure.zoom-lg {
+    left: 100%;
+    top: 0;
+  }
   .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(3n+2) {
     margin-left: 33.333%;
   }
@@ -92,6 +125,10 @@
   }
   .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(3n+2) figcaption div h3 {
     margin-left: 10px;
+  }
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(3n+2) figure.zoom-lg {
+    left: 0%;
+    top: 100%;
   }
   .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(3n+3) {
     clear: both;
@@ -109,6 +146,10 @@
   }
   .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(3n+3) figcaption div h3 {
     margin-bottom: 10px;
+  }
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure.zoom-lg {
+    right: 100%;
+    top: 0;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1400px) {
@@ -128,6 +169,10 @@
   .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(odd) figcaption div h3 {
     margin-left: 20px;
   }
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(odd) figure.zoom-lg {
+    left: 100%;
+    top: 0;
+  }
   .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(even) {
     margin-left: 50%;
   }
@@ -136,12 +181,17 @@
     display: flex;
   }
   .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(even) figcaption div {
-    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
     height: 80%;
     right: 0;
   }
   .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(even) figcaption div h3 {
     margin-right: 20px;
+  }
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container:nth-child(even) figure.zoom-lg {
+    right: 100%;
+    top: 0;
   }
 }
 @media screen and (max-width: 800px) {
@@ -150,25 +200,28 @@
     max-width: 600px;
     margin: 0 auto;
   }
-  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure img {
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure.original img {
     width: 100%;
   }
-  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure figcaption {
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure.original figcaption {
     padding: 10px;
     border: 1px solid #ccc;
     background: #eee;
   }
-  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure figcaption h3 {
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure.original figcaption h3 {
     padding: 5px;
     background: #000;
     color: #fff;
   }
-  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure figcaption p {
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure.original figcaption p {
     padding: 5px;
     background: #fff;
   }
+  .section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure.zoom-lg {
+    display: none;
+  }
 }
-.section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure figcaption h3 {
+.section-photo1 .yj-section-photo1-2 ul.main-content li.content-container figure.original figcaption h3 {
   font-family: "ele";
   font-weight: 600;
 }

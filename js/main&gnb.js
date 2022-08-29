@@ -3,6 +3,7 @@ $(function () {
   var path
   var section
   var sectionNumber
+  var isClick = true
   function urlMatch() {
     url = location.href
     if (url.match('home')) {
@@ -35,6 +36,10 @@ $(function () {
   })
 
   $('.btn-menu').click(function () {
+    isClick = false 
+    setTimeout(function () {
+      isClick = true
+    }, 2000)
     $(this).stop().fadeOut()
     initialState = "menu" //smooth scroll
     var intervalID = setInterval(function () {
@@ -58,8 +63,10 @@ $(function () {
     }, 50)
   })
 
-  $('a.btn-page').click(function (e) {
+  $('a.btn-page,.gnb-sub-menu a').click(function (e) {
     e.preventDefault()
+    if(isClick === false) return false;
+    isClick = false 
     var urlParam = $(this).attr('href')
     section = $(this).attr('data-section')
     sectionNumber = $(this).attr('data-section-number')
@@ -72,6 +79,7 @@ $(function () {
       $(this).css({ 'animation': 'de-active' + sectionNumber + ' 2s both' })
     })
     setTimeout(function () {
+      isClick = true
       initialState = 'content'
       $('.section-container:not(' + section + ')').css({ 'display': 'none' })
       $('main').css({ 'overflow-y': 'scroll' })
