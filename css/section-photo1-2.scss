@@ -38,11 +38,26 @@
               width: 100%;
               height: 100%;
               top: 0;
+              padding: 10px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              background: #eee;
               div{
                 position: absolute;
                 padding: 10px;
                 box-sizing: border-box;
-                background: red;
+                background: #ccc;
+                h3{
+                  font-size: 1.3em;
+                  padding: 5px;
+                  box-sizing: border-box;
+                  background-color: #000;
+                  color: white;
+                }
+                p{
+                  background-color: white;
+                  padding: 5px;
+                }
               }
             } //figcaption
           } //figure
@@ -69,7 +84,7 @@
               top: 100%;
               display: flex;
               div{
-                right: 0;
+                right: 10px;
                 writing-mode: vertical-rl;
                 height: 80%;
                 h3{
@@ -87,8 +102,11 @@
               display: flex;
               div{
                 width: 80%;
-                right: 0;
+                right: 10px;
                 top: 50%;
+                h3{
+                  margin-bottom: 20px;
+                }
               }
             }
           } //li nth
