@@ -6,6 +6,13 @@
 옅은민트#A8BFAA
 회색#F2F2F2
  */
+.section-photo1 .section-video-intro h6 {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  text-align: right;
+}
+
 .section-photo1 .yj-section-photo1 {
   padding: 100px 0;
   position: relative;
