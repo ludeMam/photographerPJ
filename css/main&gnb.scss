@@ -89,6 +89,7 @@ button.btn-menu {
   top: 20px;
   width: 9em;
   height: auto;
+  margin-right: 10px;
   outline: none;
   border: 0;
   vertical-align: middle;
@@ -256,7 +257,6 @@ a.btn-page {
   }
   .gnb-sns {
     position: absolute;
-    z-index: 100;
     align-items: center;
     bottom: 50px;
     left: 40px;

@@ -19,32 +19,24 @@ section.section-container {
   transform-origin: right bottom;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-
 section.section-container > section {
-  background: #fff;
-  /* 지울것 */
+  background: #fff; /* 지울것 */
 }
-
 section.section-container.section-container1 {
   z-index: 5;
 }
-
 section.section-container.section-container2 {
   z-index: 4;
 }
-
 section.section-container.section-container3 {
   z-index: 3;
 }
-
 section.section-container.section-container4 {
   z-index: 2;
 }
-
 section.section-container.section-container5 {
   z-index: 1;
 }
-
 @keyframes active1 {
   0% {
     right: -20%;
@@ -72,7 +64,6 @@ section.section-container.section-container5 {
     transform: scale(1) rotateX(0deg);
   }
 }
-
 @keyframes active2 {
   0% {
     right: -20%;
@@ -100,7 +91,6 @@ section.section-container.section-container5 {
     transform: scale(1) rotateX(0deg);
   }
 }
-
 @keyframes active3 {
   0% {
     right: -20%;
@@ -128,7 +118,6 @@ section.section-container.section-container5 {
     transform: scale(1) rotateX(0deg);
   }
 }
-
 @keyframes active4 {
   0% {
     right: -20%;
@@ -156,7 +145,6 @@ section.section-container.section-container5 {
     transform: scale(1) rotateX(0deg);
   }
 }
-
 @keyframes active5 {
   0% {
     right: -20%;
@@ -184,7 +172,6 @@ section.section-container.section-container5 {
     transform: scale(1) rotateX(0deg);
   }
 }
-
 @keyframes de-active1 {
   0% {
     right: -20%;
@@ -203,7 +190,6 @@ section.section-container.section-container5 {
     transform: scale(0.65) rotate(0deg);
   }
 }
-
 @keyframes de-active2 {
   0% {
     right: -20%;
@@ -222,7 +208,6 @@ section.section-container.section-container5 {
     transform: scale(0.65) rotate(0deg);
   }
 }
-
 @keyframes de-active3 {
   0% {
     right: -20%;
@@ -241,7 +226,6 @@ section.section-container.section-container5 {
     transform: scale(0.65) rotate(0deg);
   }
 }
-
 @keyframes de-active4 {
   0% {
     right: -20%;
@@ -260,7 +244,6 @@ section.section-container.section-container5 {
     transform: scale(0.65) rotate(0deg);
   }
 }
-
 @keyframes de-active5 {
   0% {
     right: -20%;
@@ -289,6 +272,7 @@ button.btn-menu {
   top: 20px;
   width: 9em;
   height: auto;
+  margin-right: 10px;
   outline: none;
   border: 0;
   vertical-align: middle;
@@ -297,18 +281,16 @@ button.btn-menu {
   font-size: inherit;
   font-family: inherit;
 }
-
 button.btn-menu .circle-bg {
   position: absolute;
   display: block;
   margin: 0;
   width: 100%;
   height: 100%;
-  background: white;
+  background: rgb(255, 255, 255);
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 1.625em;
 }
-
 button.btn-menu .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
@@ -319,7 +301,6 @@ button.btn-menu .circle {
   background: #798C7A;
   border-radius: 1.625em;
 }
-
 button.btn-menu .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
@@ -328,7 +309,6 @@ button.btn-menu .circle .icon {
   margin: auto;
   background: #fff;
 }
-
 button.btn-menu .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625em;
@@ -336,7 +316,6 @@ button.btn-menu .circle .icon.arrow {
   height: 0.08em;
   background: none;
 }
-
 button.btn-menu .circle .icon.arrow::before {
   position: absolute;
   content: "";
@@ -348,7 +327,6 @@ button.btn-menu .circle .icon.arrow::before {
   border-right: 0.15em solid #fff;
   transform: rotate(45deg);
 }
-
 button.btn-menu .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
@@ -364,16 +342,13 @@ button.btn-menu .button-text {
   text-align: center;
   text-transform: uppercase;
 }
-
 button.btn-menu:hover .circle {
   width: 100%;
 }
-
 button.btn-menu:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1em, 0);
 }
-
 button.btn-menu:hover .button-text {
   color: #fff;
 }
@@ -391,13 +366,11 @@ a.btn-page {
   text-transform: capitalize;
   transition: transform 1s;
 }
-
 @media screen and (max-width: 600px) {
   a.btn-page {
     transform: rotate(-45deg) translate(110px, -40px);
   }
 }
-
 a.btn-page::before {
   content: "";
   position: absolute;
@@ -420,7 +393,6 @@ a.btn-page::before {
   font-size: 2em;
   font-weight: bold;
 }
-
 .gnb .gnb-sub-menu {
   display: flex;
   justify-content: space-between;
@@ -435,7 +407,6 @@ a.btn-page::before {
   text-align: center;
   letter-spacing: -0.5px;
 }
-
 @media screen and (max-width: 600px) {
   .gnb .gnb-sub-menu {
     top: 80px;
@@ -443,11 +414,9 @@ a.btn-page::before {
     letter-spacing: -1px;
   }
 }
-
 .gnb .gnb-sub-menu li {
   margin: 0 5px;
 }
-
 .gnb .btn-shine {
   position: absolute;
   left: 50%;
@@ -469,27 +438,22 @@ a.btn-page::before {
   -webkit-text-size-adjust: none;
   white-space: nowrap;
 }
-
 .gnb .gnb-sns {
   position: absolute;
-  z-index: 100;
   align-items: center;
   bottom: 50px;
   left: 40px;
   display: flex;
   flex-direction: column;
 }
-
 .gnb .gnb-sns.active {
   display: block;
 }
-
 .gnb .gnb-sns li {
   margin-top: 20px;
   font-size: 0.8em;
   color: #fff;
 }
-
 .gnb .gnb-sns li:first-child {
   font-size: 0.5em;
   font-weight: 400;
@@ -499,7 +463,6 @@ a.btn-page::before {
   opacity: 1;
   transition: opacity 0.2s;
 }
-
 .gnb .gnb-sns li:first-child::before {
   content: "";
   opacity: 0.7;
@@ -510,7 +473,6 @@ a.btn-page::before {
   height: 100px;
   background: #fff;
 }
-
 @media screen and (max-width: 600px) {
   .gnb .gnb-sns li:first-child {
     opacity: 0;
@@ -528,7 +490,6 @@ a.btn-page::before {
     background-position: 300px;
   }
 }
-
 /* -------------------------------------------- */
 .section-video-intro {
   position: relative;
@@ -536,7 +497,6 @@ a.btn-page::before {
   height: 100%;
   background: #fff;
 }
-
 .section-video-intro video {
   position: absolute;
   width: 100%;
@@ -546,7 +506,6 @@ a.btn-page::before {
   object-fit: cover;
   object-position: center center;
 }
-
 .section-video-intro .video-mask-img {
   position: absolute;
   width: 100%;
@@ -554,25 +513,21 @@ a.btn-page::before {
   left: 0;
   top: 0;
 }
-
 .section-video-intro h6 {
   font-family: "ele";
   mix-blend-mode: difference;
   color: #fff;
 }
-
 @media screen and (min-width: 1200px) {
   .section-video-intro h6 {
     font-size: 55px;
   }
 }
-
 @media screen and (max-width: 1200px) {
   .section-video-intro h6 {
     font-size: 4.5vw;
   }
 }
-
 .section-video-intro h6 span {
   display: block;
 }
