@@ -110,10 +110,10 @@
           </li>
           <li>
             <h4>contact</h4>
-            <p>
-              emmaroberts@myportfolio.com
+            <address>
+              emmaroberts@myportfolio.com <br>
               +44 20 7946 0614
-            </p>
+            </address>
           </li>
         </ul>
       </div><!-- education content -->
