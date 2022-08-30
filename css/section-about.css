@@ -84,6 +84,9 @@
     box-sizing: border-box;
     text-align: right;
   }
+  .section-about .ha-section-about-1 section.main-content div.experience-content h3::after {
+    right: 0;
+  }
   .section-about .ha-section-about-1 section.main-content div.experience-content ul li::after {
     content: "";
     display: block;
@@ -125,6 +128,9 @@
     content: "";
     position: absolute;
     background-color: #ccc;
+    height: 2px;
+    bottom: 0;
+    left: 0;
     width: 70%;
     height: 2px;
     bottom: 0;
@@ -148,6 +154,18 @@
     max-width: 500px;
   }
 }
+.section-about .ha-section-about-1 section.main-content div h3 {
+  position: relative;
+}
+.section-about .ha-section-about-1 section.main-content div h3::after {
+  content: "";
+  position: absolute;
+  background-color: #ccc;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+}
 .section-about .ha-section-about-1 section.main-content div.experience-content > h3::before {
   content: "\f083";
   display: inline-block;
@@ -159,7 +177,7 @@
   font-weight: 900;
 }
 .section-about .ha-section-about-1 section.main-content div.experience-content > h3::before {
-  color: #ccc;
+  color: #666;
 }
 .section-about .ha-section-about-1 section.main-content div h3 {
   font-size: 1.5em;
@@ -201,7 +219,7 @@
   font-weight: 900;
 }
 .section-about .ha-section-about-1 section.main-content div.education-content > h3::before {
-  color: #ccc;
+  color: #666;
 }
 .section-about .ha-section-about-1 section.main-content div.education-content ul li {
   margin-bottom: 30px;
@@ -232,16 +250,16 @@
   font-weight: 900;
 }
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief h4::before {
-  color: #ccc;
+  color: #666;
 }
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief h4::after {
   content: "";
   position: absolute;
-  width: 70%;
-  height: 2px;
   background-color: #ccc;
+  height: 2px;
   bottom: 0;
   left: 0;
+  width: 70%;
 }
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief ul li {
   display: flex;
@@ -305,16 +323,16 @@
   font-weight: 900;
 }
 .section-about .ha-section-about-1 section.main-content div.education-content ul li:last-child h4::before {
-  color: #ccc;
+  color: #666;
 }
 .section-about .ha-section-about-1 section.main-content div.education-content ul li:last-child h4::after {
   content: "";
   position: absolute;
-  width: 70%;
-  height: 2px;
   background-color: #ccc;
+  height: 2px;
   bottom: 0;
   left: 0;
+  width: 70%;
 }
 .section-about .ha-section-about-1 section.main-content div.education-content ul li p {
   font-family: "Montserrat";

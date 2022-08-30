@@ -15,6 +15,9 @@
   content: '';
   position: absolute;
   background-color: #ccc; 
+  height: 2px;
+  bottom: 0;
+  left: 0;
 }
 .section-about {
   .section-video-intro {
@@ -92,6 +95,9 @@
           padding-right: 40px;
           box-sizing: border-box;
           text-align: right;
+          h3::after{
+            right: 0;
+          }
           ul{
             li{
               &::after{
@@ -172,10 +178,17 @@
         }//education content      
       }//main-content sm
       div{
+        h3{
+          position: relative;
+          &::after{
+            @include underLine();
+            width: 70%;;
+          }
+        }
         &.experience-content{
           >h3{
             @include icon-font(before,'\f083' );
-            &::before{color: #ccc;}
+            &::before{color: #666;}
           }
         }//experience content
         h3{
@@ -215,7 +228,7 @@
       div.education-content{
         >h3{
           @include icon-font(before,'\f19d' );
-          &::before{color: #ccc;}
+          &::before{color: #666;}
         }
         ul{
           li{
@@ -236,15 +249,10 @@
                 font-weight: 700;
                 text-transform: uppercase;
                 @include icon-font(before,'\f6e3');
-                &::before{color: #ccc;}
+                &::before{color: #666;}
                 &::after{
-                  content: '';
-                  position: absolute;
-                  width: 70%;
-                  height: 2px;
-                  background-color: #ccc;
-                  bottom: 0;
-                  left: 0;
+                  @include underLine();
+                  width: 70%;;
                 }
               }//h4
               ul{
@@ -288,15 +296,10 @@
                 font-weight: 700;
                 text-transform: uppercase;
                 @include icon-font(before,'\f4ad');
-                &::before{color: #ccc;}
+                &::before{color: #666;}
                 &::after{
-                  content: '';
-                  position: absolute;
-                  width: 70%;
-                  height: 2px;
-                  background-color: #ccc;
-                  bottom: 0;
-                  left: 0;
+                  @include underLine();
+                  width: 70%;;
                 }
               }
             }//contact
