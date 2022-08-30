@@ -18,7 +18,7 @@
     <div class="contact-box">
       <figure class="contact-img">
         <ul>
-          <li class="img1"><img src="./img/photo2/sub1-1.jpg" alt=""></li>
+          <li class="img1"><img src="./img/photo2/sub1-1.jpg" alt=""></li> 
           <li class="img2"><img src="./img/photo2/sub1-2.jpg" alt=""></li>
           <li class="img3"><img src="./img/photo2/sub1-3.jpg" alt=""></li>
           <li class="img4"><img src="./img/photo2/sub1-4.jpg" alt=""></li>
