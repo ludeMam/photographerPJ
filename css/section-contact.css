@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* 
 짙은갈색 #211E18
 갈색 #403A2F
@@ -17,17 +16,6 @@
 .section-contact .section-contact-1 {
   position: relative;
   padding: 100px 0;
-}
-.section-contact .section-contact-1::after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: url(../img/photo2/sub1-1.jpg) no-repeat center;
-  background-size: cover;
-  filter: blur(50px);
-  z-index: -1;
 }
 .section-contact .section-contact-1 .contact-box {
   display: flex;
@@ -49,7 +37,13 @@
     display: none;
   }
 }
+@media screen and (min-width: 1000px) {
+  .section-contact .section-contact-1 .contact-box .contact-img {
+    display: flex;
+  }
+}
 .section-contact .section-contact-1 .contact-box .contact-img ul {
+  overflow: hidden;
   position: relative;
 }
 .section-contact .section-contact-1 .contact-box .contact-img ul li {
@@ -124,4 +118,15 @@
 }
 .section-contact .section-contact-1 .contact-box .contact-textbox .contact-form button.active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.section-contact .section-contact-1 .contact-box .contact-textbox .contact-form button::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../img/photo2/sub1-1.jpg) no-repeat center;
+  background-size: cover;
+  filter: blur(50px);
+  z-index: -1;
 }
