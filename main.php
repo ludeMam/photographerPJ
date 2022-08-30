@@ -1,4 +1,6 @@
+<link rel="stylesheet" href="./css/preloader.css">
 <script src="./js/main&gnb.js"></script>
+<?php include "preloader.php"?>
 <main id="style-4">
   <?php include "particle.php" ?>
   <?php include "gnb.php" ?>

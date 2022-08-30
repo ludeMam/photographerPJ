@@ -11,6 +11,16 @@
       li.content-container {
         position: relative;
         box-sizing: border-box;
+        img.img-zoom-sm{
+          display: none;
+          position: absolute;
+          width: 200%;
+        }
+        &.active{
+          img.img-zoom-sm{
+            display: block;
+          }
+        }
         @media screen and (min-width: 800px) {
           float: left;
           &::before {
@@ -25,14 +35,20 @@
             width: 100%;
             height: 100%;
             > div {
+              position: relative;
               width: 100%;
               height: 100%;
+              overflow: hidden;
               img.img-org {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
               } //img
-              img.img-zoom-sm{display: none;}
+              img.img-zoom-sm{
+                width: 200%;
+                height: 200%;
+                object-fit: cover;
+              }
             } //div
             figcaption {
               pointer-events: none;
@@ -65,18 +81,21 @@
           &.active {
             figcaption {
               left: 0 !important;
+              right: auto !important;
+              top : 0 !important; 
+              bottom : auto !important;
               div {
                 transform: translate(0, 0) rotate(0) !important ;
-                left: 5%;
-                bottom: 5%;
-                width: 90%;
+                left: 5% !important;right:auto !important;
+                bottom: 5%;top:auto !important;
+                width: 90% !important;
                 height: auto !important;
                 writing-mode: horizontal-tb !important;
                 background: rgba(#fff, 0.5);
               }
             }
             figure.zoom-lg {
-              display: block !important;
+              display: block !important; 
             }
           } //li.active
         } //li 800px over
@@ -199,12 +218,7 @@
               img {
                 width: 100%;
               }
-              img.img-zoom-sm{
-                display: none;
-                position: absolute;
-                width: 200%;
-                top:0;
-              }
+
             }
             figcaption {
               padding: 10px;

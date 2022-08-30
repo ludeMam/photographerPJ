@@ -15,7 +15,6 @@
   <script src="http://code.jquery.com/jquery-latest.js"></script> 
   <script src="./js/windowOfElement.js"></script> 
   <script src="./js/smoothScrollOfElement.js"></script>
-  
   <title>Document</title>
 </head>
-<body id="style-3">
+<body>

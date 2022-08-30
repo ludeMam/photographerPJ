@@ -11,10 +11,12 @@
   top: 10%;
   left: 10%;
 }
+
 .section-about .section-svg-camera {
   padding: 50px 0;
   background: #fff;
 }
+
 .section-about .section-svg-camera > div {
   position: relative;
   max-width: 800px;
@@ -22,35 +24,42 @@
   opacity: 0.5;
   mix-blend-mode: multiply;
 }
+
 .section-about .section-svg-camera > div svg {
   display: block;
   width: 100%;
 }
+
 .section-about .section-svg-camera > div svg:first-child path {
   stroke: #ccc;
   stroke-width: 1px;
   stroke-dasharray: 0.0005px;
 }
+
 .section-about .section-svg-camera > div svg:last-child {
   position: absolute;
   top: 0;
 }
+
 .section-about .section-svg-camera > div svg:last-child path {
   stroke: #c9a15b;
   stroke-width: 2px;
   stroke-dasharray: 1px;
   stroke-dashoffset: 1px;
 }
+
 .section-about .ha-section-about-1 {
   width: 100%;
   font-family: "ele";
 }
+
 .section-about .ha-section-about-1 section.introduce {
   width: 95%;
   max-width: 1400px;
   margin: 0 auto 30px auto;
   padding-top: 30px;
 }
+
 .section-about .ha-section-about-1 section.introduce h3 {
   width: 100%;
   max-width: 800px;
@@ -61,32 +70,38 @@
   text-align: center;
   text-transform: uppercase;
 }
+
 @media screen and (min-width: 800px) {
   .section-about .ha-section-about-1 section.introduce h3 {
     border: 5px solid #211E18;
     font-size: 5em;
   }
 }
+
 @media screen and (max-width: 800px) {
   .section-about .ha-section-about-1 section.introduce h3 {
     border-bottom: 5px solid #211E18;
     font-size: 4em;
   }
 }
+
 .section-about .ha-section-about-1 section.introduce p {
   text-align: center;
   font-size: 1.5em;
   margin-bottom: 30px;
 }
+
 .section-about .ha-section-about-1 section.introduce figure {
   margin: 0 auto;
   width: 100%;
   max-width: 350px;
   border-radius: 50%;
 }
+
 .section-about .ha-section-about-1 section.introduce figure img {
   width: 100%;
 }
+
 .section-about .ha-section-about-1 section.main-content {
   width: 95%;
   max-width: 1200px;
@@ -94,6 +109,7 @@
   padding-top: 30px;
   display: flex;
 }
+
 @media screen and (min-width: 1000px) {
   .section-about .ha-section-about-1 section.main-content div {
     flex: 1;
@@ -141,6 +157,7 @@
     width: 75%;
   }
 }
+
 @media screen and (max-width: 1000px) {
   .section-about .ha-section-about-1 section.main-content {
     flex-direction: column;
@@ -183,9 +200,11 @@
     max-width: 500px;
   }
 }
+
 .section-about .ha-section-about-1 section.main-content div h3 {
   position: relative;
 }
+
 .section-about .ha-section-about-1 section.main-content div h3::after {
   content: "";
   position: absolute;
@@ -195,8 +214,9 @@
   left: 0;
   width: 70%;
 }
+
 .section-about .ha-section-about-1 section.main-content div.experience-content > h3::before {
-  content: "\f083";
+  content: "";
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -205,40 +225,47 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
+
 .section-about .ha-section-about-1 section.main-content div.experience-content > h3::before {
   color: #666;
 }
+
 .section-about .ha-section-about-1 section.main-content div h3 {
   font-size: 1.5em;
   margin-bottom: 20px;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .section-about .ha-section-about-1 section.main-content div ul li h4 {
   font-family: "Montserrat";
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 1.2em;
 }
+
 .section-about .ha-section-about-1 section.main-content div ul li h5 {
   text-transform: capitalize;
   margin-bottom: 10px;
   font-size: 1.2em;
   word-spacing: 4px;
 }
+
 .section-about .ha-section-about-1 section.main-content div ul li div {
   font-family: "Montserrat";
   font-weight: 400;
   position: relative;
   margin-bottom: 20px;
 }
+
 .section-about .ha-section-about-1 section.main-content div ul li div span {
   display: block;
   font-style: italic;
   margin-bottom: 5px;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content > h3::before {
-  content: "\f19d";
+  content: "";
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -247,12 +274,15 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content > h3::before {
   color: #666;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li {
   margin-bottom: 30px;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li address {
   font-family: "Montserrat";
   font-size: 1em;
@@ -260,6 +290,7 @@
   padding: 0;
   margin-bottom: 0px;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief h4 {
   position: relative;
   font-family: "ele";
@@ -268,8 +299,9 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief h4::before {
-  content: "\f6e3";
+  content: "";
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -278,9 +310,11 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief h4::before {
   color: #666;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief h4::after {
   content: "";
   position: absolute;
@@ -290,10 +324,12 @@
   left: 0;
   width: 70%;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief ul li {
   display: flex;
   margin-bottom: 10px;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief ul li h5 {
   font-family: "Montserrat";
   font-size: 1em;
@@ -301,38 +337,48 @@
   padding: 0;
   margin-bottom: 0px;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief ul li div {
   background-color: #ccc;
   height: 10px;
   margin: auto 0;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief ul li div::before {
   content: "";
   display: block;
   height: 10px;
   background-color: black;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief ul li:nth-child(1) div::before {
   width: 85%;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief ul li:nth-child(2) div::before {
   width: 97%;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief ul li:nth-child(3) div::before {
   width: 92%;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief ul li:nth-child(4) div::before {
   width: 70%;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief ul li:nth-child(5) div::before {
   width: 65%;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief ul li:nth-child(6) div::before {
   width: 60%;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li.skills-brief ul li:nth-child(7) div::before {
   width: 64%;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li:last-child h4 {
   position: relative;
   font-family: "ele";
@@ -341,8 +387,9 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li:last-child h4::before {
-  content: "\f4ad";
+  content: "";
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -351,9 +398,11 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li:last-child h4::before {
   color: #666;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li:last-child h4::after {
   content: "";
   position: absolute;
@@ -363,6 +412,7 @@
   left: 0;
   width: 70%;
 }
+
 .section-about .ha-section-about-1 section.main-content div.education-content ul li p {
   font-family: "Montserrat";
   text-transform: capitalize;
