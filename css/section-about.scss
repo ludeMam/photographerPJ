@@ -1,20 +1,20 @@
 @import "./common";
-@mixin icon-font($pseudo, $code){
-  &::#{$pseudo}{
-    content:$code;
+@mixin icon-font($pseudo, $code) {
+  &::#{$pseudo} {
+    content: $code;
     display: inline-block;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
   }
 }
-@mixin underLine{
-  content: '';
+@mixin underLine {
+  content: "";
   position: absolute;
-  background-color: #ccc; 
+  background-color: #ccc;
   height: 2px;
   bottom: 0;
   left: 0;
@@ -26,17 +26,52 @@
       top: 10%;
       left: 10%;
     } //h6
-  } //section-video-intro 
-  .ha-section-about-1{
+  } //section-video-intro
+
+  .section-svg-camera {
+    padding: 50px 0;
+    background: #fff;
+
+    > div {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      opacity: 0.5;
+      mix-blend-mode: multiply;
+      svg {
+        display: block;
+        width: 100%;
+        &:first-child {
+          path {
+            stroke: #ccc;
+            stroke-width: 1px;
+            stroke-dasharray: 0.0005px;
+          }
+        } //svg first
+        &:last-child {
+          position: absolute;
+          top:0;
+          path { 
+            stroke: #c9a15b;
+            stroke-width: 2px;
+            stroke-dasharray: 1px;
+            stroke-dashoffset: 1px;
+          }
+        } //svg last
+      }
+    } //div
+  }
+  .ha-section-about-1 {
+
     width: 100%;
-    background-color: white;
-    font-family: 'ele';
-    section.introduce{
+ 
+    font-family: "ele";
+    section.introduce {
       width: 95%;
       max-width: 1400px;
       margin: 0 auto 30px auto;
       padding-top: 30px;
-      h3{
+      h3 {
         width: 100%;
         max-width: 800px;
         margin: 30px auto;
@@ -45,102 +80,110 @@
         font-weight: 900;
         text-align: center;
         text-transform: uppercase;
-        @media screen and (min-width:800px){
+        @media screen and (min-width: 800px) {
           border: 5px solid $darkbrown-color;
           font-size: 5em;
-        }//h3 lg
-        @media screen and (max-width:800px){
+        } //h3 lg
+        @media screen and (max-width: 800px) {
           border-bottom: 5px solid $darkbrown-color;
           font-size: 4em;
-        }//h3 sm
-      }//h3
-      p{
+        } //h3 sm
+      } //h3
+      p {
         text-align: center;
         font-size: 1.5em;
         margin-bottom: 30px;
-      }//p
-      figure{
+      } //p
+      figure {
         margin: 0 auto;
         width: 100%;
         max-width: 350px;
         border-radius: 50%;
-        img{
+        img {
           width: 100%;
-        }//img
-      }//figure
-    }//section-introduce
-    section.main-content{
+        } //img
+      } //figure
+    } //section-introduce
+    section.main-content {
       width: 95%;
       max-width: 1200px;
       margin: 0 auto;
       padding-top: 30px;
       display: flex;
-      @media screen and (min-width:1000px) {
-        div{
-          flex:1;
-          h3::before{margin-right: 5px;}
-          ul{
-            li{
-              span{
+      @media screen and (min-width: 1000px) {
+        div {
+          flex: 1;
+          h3::before {
+            margin-right: 5px;
+          }
+          ul {
+            li {
+              span {
                 text-align: right;
-              }//span
-              p{
+              } //span
+              p {
                 width: 55%;
-              }//p
-            }//li
-          }//ul
-        }//div
-        div.experience-content{
-          border-right: 4px solid rgba(#ccc,.7);
+              } //p
+            } //li
+          } //ul
+        } //div
+        div.experience-content {
+          border-right: 4px solid rgba(#ccc, 0.7);
           padding-right: 40px;
           box-sizing: border-box;
           text-align: right;
-          h3::after{
+          h3::after {
             right: 0;
           }
-          ul{
-            li{
-              &::after{
-                content: '';
+          ul {
+            li {
+              &::after {
+                content: "";
                 display: block;
                 padding-top: 10%;
               }
-              p{
+              p {
                 position: absolute;
                 right: 0;
               }
             }
           }
-        }//experience content        
-        div.education-content{
+        } //experience content
+        div.education-content {
           padding-left: 40px;
-          li:last-child{h4::before{margin-right: 5px;}}
-          li.skills-brief{
-            h4::before{margin-right: 5px;}
-            ul{
-              li{
-                h5{
+          li:last-child {
+            h4::before {
+              margin-right: 5px;
+            }
+          }
+          li.skills-brief {
+            h4::before {
+              margin-right: 5px;
+            }
+            ul {
+              li {
+                h5 {
                   width: 25%;
-                }//h5
-                div{
+                } //h5
+                div {
                   width: 75%;
-                }//div
+                } //div
               }
             }
           }
         }
-      }//main-content lg
-      @media screen and (max-width:1000px){
+      } //main-content lg
+      @media screen and (max-width: 1000px) {
         flex-direction: column;
-        div{
-          h3{
+        div {
+          h3 {
             position: relative;
-            &::before{
+            &::before {
               position: absolute;
               right: 30%;
               bottom: 2px;
             }
-            &::after{
+            &::after {
               @include underLine();
               width: 70%;
               height: 2px;
@@ -149,168 +192,204 @@
             }
           }
         }
-        div.education-content{
-          ul{
-            li:last-child{
-              h4{
-                &::before{
+        div.education-content {
+          ul {
+            li:last-child {
+              h4 {
+                &::before {
                   position: absolute;
                   right: 30%;
                   bottom: 2px;
                 }
               }
             }
-            li.skills-brief{
-              h4::before{
+            li.skills-brief {
+              h4::before {
                 position: absolute;
                 right: 30%;
                 bottom: 2px;
-                }
-              h5{
+              }
+              h5 {
                 width: 30%;
               }
-              div{
+              div {
                 width: 70%;
                 max-width: 500px;
               }
-            }//li
-          }//ul
-        }//education content      
-      }//main-content sm
-      div{
-        h3{
+            } //li
+          } //ul
+        } //education content
+      } //main-content sm
+      div {
+        h3 {
           position: relative;
-          &::after{
+          &::after {
             @include underLine();
-            width: 70%;;
+            width: 70%;
           }
         }
-        &.experience-content{
-          >h3{
-            @include icon-font(before,'\f083' );
-            &::before{color: #666;}
+        &.experience-content {
+          > h3 {
+            @include icon-font(before, "\f083");
+            &::before {
+              color: #666;
+            }
           }
-        }//experience content
-        h3{
+        } //experience content
+        h3 {
           font-size: 1.5em;
           margin-bottom: 20px;
           font-weight: 700;
           text-transform: uppercase;
         }
-        ul{
-          li{
-            h4{
-              font-family: 'Montserrat';
+        ul {
+          li {
+            h4 {
+              font-family: "Montserrat";
               margin-bottom: 20px;
               font-weight: 500;
               font-size: 1.2em;
-            }//h4
-            h5{
+            } //h4
+            h5 {
               text-transform: capitalize;
               margin-bottom: 10px;
               font-size: 1.2em;
               word-spacing: 4px;
-            }//h5
-            div{
-              font-family: 'Montserrat';
+            } //h5
+            div {
+              font-family: "Montserrat";
               font-weight: 400;
               position: relative;
               margin-bottom: 20px;
-              span{
+              span {
                 display: block;
                 font-style: italic;
                 margin-bottom: 5px;
-              }//span
-            }//div
-          }//li
-        }//ul
-      }//div
-      div.education-content{
-        >h3{
-          @include icon-font(before,'\f19d' );
-          &::before{color: #666;}
+              } //span
+            } //div
+          } //li
+        } //ul
+      } //div
+      div.education-content {
+        > h3 {
+          @include icon-font(before, "\f19d");
+          &::before {
+            color: #666;
+          }
         }
-        ul{
-          li{
+        ul {
+          li {
             margin-bottom: 30px;
-            address{
-              font-family: 'Montserrat';
+            address {
+              font-family: "Montserrat";
               font-size: 1em;
               font-weight: 400;
               padding: 0;
               margin-bottom: 0px;
             }
-            &.skills-brief{
-              h4{
+            &.skills-brief {
+              h4 {
                 position: relative;
-                font-family: 'ele';
+                font-family: "ele";
                 margin-bottom: 20px;
                 font-size: 1.5em;
                 font-weight: 700;
                 text-transform: uppercase;
-                @include icon-font(before,'\f6e3');
-                &::before{color: #666;}
-                &::after{
-                  @include underLine();
-                  width: 70%;;
+                @include icon-font(before, "\f6e3");
+                &::before {
+                  color: #666;
                 }
-              }//h4
-              ul{
-                li{
+                &::after {
+                  @include underLine();
+                  width: 70%;
+                }
+              } //h4
+              ul {
+                li {
                   display: flex;
                   margin-bottom: 10px;
-                  h5{
-                    font-family: 'Montserrat';
+                  h5 {
+                    font-family: "Montserrat";
                     font-size: 1em;
                     font-weight: 400;
                     padding: 0;
                     margin-bottom: 0px;
-                  }//h5
-                  div{
+                  } //h5
+                  div {
                     background-color: #ccc;
                     height: 10px;
                     margin: auto 0;
-                    &::before{
-                      content: '';
+                    &::before {
+                      content: "";
                       display: block;
                       height: 10px;
                       background-color: black;
                     }
-                  }//div
-                  &:nth-child(1){div::before{width: 85%;}}
-                  &:nth-child(2){div::before{width: 97%;}}
-                  &:nth-child(3){div::before{width: 92%;}}
-                  &:nth-child(4){div::before{width: 70%;}}
-                  &:nth-child(5){div::before{width: 65%;}}
-                  &:nth-child(6){div::before{width: 60%;}}
-                  &:nth-child(7){div::before{width: 64%;}}
-                }//2deps li
-              }//2deps ul
-            }//skill brief
-            &:last-child{
-              h4{
+                  } //div
+                  &:nth-child(1) {
+                    div::before {
+                      width: 85%;
+                    }
+                  }
+                  &:nth-child(2) {
+                    div::before {
+                      width: 97%;
+                    }
+                  }
+                  &:nth-child(3) {
+                    div::before {
+                      width: 92%;
+                    }
+                  }
+                  &:nth-child(4) {
+                    div::before {
+                      width: 70%;
+                    }
+                  }
+                  &:nth-child(5) {
+                    div::before {
+                      width: 65%;
+                    }
+                  }
+                  &:nth-child(6) {
+                    div::before {
+                      width: 60%;
+                    }
+                  }
+                  &:nth-child(7) {
+                    div::before {
+                      width: 64%;
+                    }
+                  }
+                } //2deps li
+              } //2deps ul
+            } //skill brief
+            &:last-child {
+              h4 {
                 position: relative;
-                font-family: 'ele';
+                font-family: "ele";
                 margin-bottom: 20px;
                 font-size: 1.5em;
                 font-weight: 700;
                 text-transform: uppercase;
-                @include icon-font(before,'\f4ad');
-                &::before{color: #666;}
-                &::after{
+                @include icon-font(before, "\f4ad");
+                &::before {
+                  color: #666;
+                }
+                &::after {
                   @include underLine();
-                  width: 70%;;
+                  width: 70%;
                 }
               }
-            }//contact
-            p{
-              font-family: 'Montserrat';
+            } //contact
+            p {
+              font-family: "Montserrat";
               text-transform: capitalize;
               font-weight: 400;
-            }//p
-          }//li
-        }//ul
-      }//education
-    }//section-main-content
+            } //p
+          } //li
+        } //ul
+      } //education
+    } //section-main-content
   } //section-about-1
 } //section-about

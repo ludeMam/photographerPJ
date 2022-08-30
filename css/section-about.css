@@ -11,9 +11,38 @@
   top: 10%;
   left: 10%;
 }
+.section-about .section-svg-camera {
+  padding: 50px 0;
+  background: #fff;
+}
+.section-about .section-svg-camera > div {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+}
+.section-about .section-svg-camera > div svg {
+  display: block;
+  width: 100%;
+}
+.section-about .section-svg-camera > div svg:first-child path {
+  stroke: #ccc;
+  stroke-width: 1px;
+  stroke-dasharray: 0.0005px;
+}
+.section-about .section-svg-camera > div svg:last-child {
+  position: absolute;
+  top: 0;
+}
+.section-about .section-svg-camera > div svg:last-child path {
+  stroke: #c9a15b;
+  stroke-width: 2px;
+  stroke-dasharray: 1px;
+  stroke-dashoffset: 1px;
+}
 .section-about .ha-section-about-1 {
   width: 100%;
-  background-color: white;
   font-family: "ele";
 }
 .section-about .ha-section-about-1 section.introduce {

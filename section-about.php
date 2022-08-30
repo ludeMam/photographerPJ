@@ -14,6 +14,11 @@
       </span>
     </h6>
   </section>
+  <section class="section-svg-camera">
+    <div>
+      <?php include "svg-camera.php" ?>
+    </div>
+  </section>
   <!--about-section-1--------------------------------------------------------------->
   <section class="ha-section-about-1">
     <h2 class="hidden">about me</h2>

@@ -1,9 +1,8 @@
-<link rel="stylesheet" href="./css/section-photo1-1.css">
-<link rel="stylesheet" href="./css/section-photo1-2.css">
+<link rel="stylesheet" href="./css/section-photo1.css"> 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<script src="./js/section-photo1-2.js"></script>
+<script src="./js/section-photo1.js"></script>
 <!--section-container-------------------------------------------------------------->
 <section class="section-photo1 section-container section-container3" data-section-number="3">
   <a class="btn-page" href="#photo1" data-section=".section-photo1" data-section-number="3">Bright Moody</a>
@@ -19,16 +18,14 @@
     </h6>
   </section>
   <!-- yj-section-photo1-1 ------------------------------------------------------------------------------------->
-  <section class="yj-section-photo1-1">
-
-  </section>
-  <section class="yj-section-photo1-2">
+  <section class="yj-section-photo1">
     <h2 class="hidden">bright moody section2</h2>
     <ul class="main-content clearfix">
       <li class="content-container content-container-1" data-n="1">
         <figure class="original">
           <div>
             <img class="img-org" src="./img/photo1/img1.jpg" alt="">
+            <img class="img-zoom-sm" src="./img/photo1/img1.jpg" alt="">
           </div>
           <figcaption>
             <div>
@@ -40,13 +37,16 @@
             </div>
           </figcaption>
         </figure>
-        <figure class="zoom-lg"></figure>
+        <figure class="zoom-lg">
+          <img class="img-org" src="./img/photo1/img1.jpg" alt="">
+        </figure>
       </li>
 
       <li class="content-container content-container-2" data-n="2">
         <figure class="original">
           <div>
             <img class="img-org" src="./img/photo1/img2.jpg" alt="">
+            <img class="img-zoom-sm" src="./img/photo1/img2.jpg" alt="">
           </div>
           <figcaption>
             <div>
@@ -58,12 +58,16 @@
             </div>
           </figcaption>
         </figure>
-        <figure class="zoom-lg"></figure>
+        <figure class="zoom-lg">
+          <img class="img-org" src="./img/photo1/img2.jpg" alt="">
+        </figure>
       </li>
+
       <li class="content-container content-container-3" data-n="3">
         <figure class="original" class="original">
           <div>
             <img class="img-org" src="./img/photo1/img3.jpg" alt="">
+            <img class="img-zoom-sm" src="./img/photo1/img3.jpg" alt="">
           </div>
           <figcaption>
             <div>
@@ -75,12 +79,16 @@
             </div>
           </figcaption>
         </figure>
-        <figure class="zoom-lg"></figure>
+        <figure class="zoom-lg">
+          <img class="img-org" src="./img/photo1/img3.jpg" alt="">
+        </figure>
       </li>
+
       <li class="content-container content-container-4" data-n="4">
         <figure class="original">
           <div>
             <img class="img-org" src="./img/photo1/img4.png" alt="">
+            <img class="img-zoom-sm" src="./img/photo1/img4.png" alt="">
           </div>
           <figcaption>
             <div>
@@ -92,12 +100,16 @@
             </div>
           </figcaption>
         </figure>
-        <figure class="zoom-lg"></figure>
+        <figure class="zoom-lg">
+          <img class="img-org" src="./img/photo1/img4.png" alt="">
+        </figure>
       </li>
+
       <li class="content-container content-container-5" data-n="5">
         <figure class="original">
           <div>
             <img class="img-org" src="./img/photo1/img5.jpg" alt="">
+            <img class="img-zoom-sm" src="./img/photo1/img5.jpg" alt="">
           </div>
           <figcaption>
             <div>
@@ -109,12 +121,17 @@
             </div>
           </figcaption>
         </figure>
-        <figure class="zoom-lg"></figure>
+        <figure class="zoom-lg">
+          <img class="img-org" src="./img/photo1/img5.jpg" alt="">
+          <img class="img-zoom-sm" src="./img/photo1/img5.jpg" alt="">
+        </figure>
       </li>
+
       <li class="content-container content-container-6" data-n="6">
         <figure class="original">
           <div>
             <img class="img-org" src="./img/photo1/img6.jpg" alt="">
+            <img class="img-zoom-sm" src="./img/photo1/img6.jpg" alt="">
           </div>
           <figcaption>
             <div>
@@ -126,12 +143,16 @@
             </div>
           </figcaption>
         </figure>
-        <figure class="zoom-lg"></figure>
+        <figure class="zoom-lg">
+          <img class="img-org" src="./img/photo1/img6.jpg" alt="">
+          <img class="img-zoom-sm" src="./img/photo1/img6.jpg" alt="">
+        </figure>
       </li>
       <li class="content-container content-container-7" data-n="7">
         <figure class="original">
           <div>
             <img class="img-org" src="./img/photo1/img7.jpg" alt="">
+            <img class="img-zoom-sm" src="./img/photo1/img7.jpg" alt="">
           </div>
           <figcaption>
             <div>
@@ -143,12 +164,16 @@
             </div>
           </figcaption>
         </figure>
-        <figure class="zoom-lg"></figure>
+        <figure class="zoom-lg">
+          <img class="img-org" src="./img/photo1/img7.jpg" alt="">
+        </figure>
       </li>
+
       <li class="content-container content-container-8" data-n="8">
         <figure class="original">
           <div>
             <img class="img-org" src="./img/photo1/img8.png" alt="">
+            <img class="img-zoom-sm" src="./img/photo1/img8.png" alt="">
           </div>
           <figcaption>
             <div>
@@ -160,12 +185,16 @@
             </div>
           </figcaption>
         </figure>
-        <figure class="zoom-lg"></figure>
+        <figure class="zoom-lg">
+          <img class="img-org" src="./img/photo1/img8.png" alt="">
+        </figure>
       </li>
+
       <li class="content-container content-container-9" data-n="9">
         <figure class="original">
           <div>
             <img class="img-org" src="./img/photo1/img9.png" alt="">
+            <img class="img-zoom-sm" src="./img/photo1/img9.png" alt="">
           </div>
           <figcaption>
             <div>
@@ -177,12 +206,16 @@
             </div>
           </figcaption>
         </figure>
-        <figure class="zoom-lg"></figure>
+        <figure class="zoom-lg">
+          <img class="img-org" src="./img/photo1/img9.png" alt="">
+        </figure>
       </li>
+
       <li class="content-container content-container-10" data-n="10">
         <figure class="original">
           <div>
             <img class="img-org" src="./img/photo1/img10.png" alt="">
+            <img class="img-zoom-sm" src="./img/photo1/img10.png" alt="">
           </div>
           <figcaption>
             <div>
@@ -194,12 +227,15 @@
             </div>
           </figcaption>
         </figure>
-        <figure class="zoom-lg"></figure>
+        <figure class="zoom-lg">
+          <img class="img-org" src="./img/photo1/img10.png" alt="">
+        </figure>
       </li>
       <li class="content-container content-container-11" data-n="11">
         <figure class="original">
           <div>
             <img class="img-org" src="./img/photo1/img11.jpg" alt="">
+            <img class="img-zoom-sm" src="./img/photo1/img11.jpg" alt="">
           </div>
           <figcaption>
             <div>
@@ -211,12 +247,16 @@
             </div>
           </figcaption>
         </figure>
-        <figure class="zoom-lg"></figure>
+        <figure class="zoom-lg">
+          <img class="img-org" src="./img/photo1/img11.jpg" alt="">
+        </figure>
       </li>
+
       <li class="content-container content-container-12" data-n="12">
         <figure class="original">
           <div>
             <img class="img-org" src="./img/photo1/img12.png" alt="">
+            <img class="img-zoom-sm" src="./img/photo1/img12.png" alt="">
           </div>
           <figcaption>
             <div>
@@ -228,7 +268,9 @@
             </div>
           </figcaption>
         </figure>
-        <figure class="zoom-lg"></figure>
+        <figure class="zoom-lg">
+          <img class="img-org" src="./img/photo1/img12.png" alt="">
+        </figure>
       </li>
     </ul>
 
