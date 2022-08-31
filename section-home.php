@@ -1,7 +1,3 @@
-<link rel="stylesheet" href="./css/section-home-1.css">
-<link rel="stylesheet" href="./css/section-home-2.css">
-<script src="./js/section-home-1.js"></script>
-<script src="./js/section-home-2.js"></script>
 <!--section-container------------------------------------------------------------------------>
 <section class="section-home section-container section-container1" data-section-number="1">
   <a class="btn-page" href="#home" data-section=".section-home" data-section-number="1">home</a>

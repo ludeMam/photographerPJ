@@ -114,7 +114,7 @@
     text-align: right;
   }
   .section-about .ha-section-about-1 section.main-content div.experience-content h3::after {
-    right: 0;
+    left: 30%;
   }
   .section-about .ha-section-about-1 section.main-content div.experience-content ul li::after {
     content: "";

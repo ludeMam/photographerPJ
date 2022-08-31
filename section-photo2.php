@@ -1,6 +1,3 @@
-<link rel="stylesheet" href="./css/section-photo2.css">
-<script src="./js/section-photo2.js"></script>
-<script src="./js/windowOfElement.js"></script>
 <!--section-container------------------------------------------------------------------------>
 <section class="section-photo2 section-container section-container4" data-section-number="4">
   <a class="btn-page" href="#photo2" data-section=".section-photo2" data-section-number="4">Dark Moody</a>

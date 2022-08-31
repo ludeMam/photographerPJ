@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="./css/section-contact.css">
-<script src="./js/section-contact.js"></script>
 <!--section-container------------------------------------------------------------------------>
 <section class="section-contact section-container section-container5" data-section-number="5">
   <a class="btn-page" href="#contact" data-section=".section-contact" data-section-number="5">Contact</a>

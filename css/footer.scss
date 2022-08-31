@@ -1,3 +1,10 @@
 footer{
   background: #CCC;
+  display: flex;
+  width: 100%;
+  div{
+    border: 1px solid red;
+    flex:1;
+    min-height: 300px;
+  }
 }

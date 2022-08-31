@@ -1,8 +1,3 @@
-<link rel="stylesheet" href="./css/section-photo1.css"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<script src="./js/section-photo1.js"></script>
 <!--section-container-------------------------------------------------------------->
 <section class="section-photo1 section-container section-container3" data-section-number="3">
   <a class="btn-page" href="#photo1" data-section=".section-photo1" data-section-number="3">Bright Moody</a>
