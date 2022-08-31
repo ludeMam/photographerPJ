@@ -18,7 +18,7 @@
     <ul class="bg-img">
       <li class="img1"><img src="./img/home/img1-3.png" alt=""></li>
       <li class="img2"><img src="./img/photo1/img2.jpg" alt=""></li> 
-      <li class="img3"><img src="./img/photo1/img6.jpg" alt=""></li>
+      <li class="img3"><img src="./img/photo1/img10.png" alt=""></li>
       <li class="img4"><img src="./img/home/img1-1.jpg" alt=""></li>
       <li class="img5"><img src="./img/photo2/sub1-2.jpg" alt=""></li>
     </ul>
@@ -27,7 +27,7 @@
         <ul>
           <li class="img1"><img src="./img/home/img1-3.png" alt=""></li>
           <li class="img2"><img src="./img/photo1/img2.jpg" alt=""></li> 
-          <li class="img3"><img src="./img/photo1/img6.jpg" alt=""></li>
+          <li class="img3"><img src="./img/photo1/img10.png" alt=""></li>
           <li class="img4"><img src="./img/home/img1-1.jpg" alt=""></li>
           <li class="img5"><img src="./img/photo2/sub1-2.jpg" alt=""></li>
         </ul>
