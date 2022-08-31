@@ -273,8 +273,6 @@
         </figure>
       </li>
     </ul>
-
-
-
   </section><!-- yj-section-photo1-2 -->
+  <?php include "footer.php" ?>
 </section><!-- section-photo1 -->

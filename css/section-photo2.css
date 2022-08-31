@@ -9,7 +9,6 @@
 .ys-section-1 {
   position: relative;
 }
-
 .ys-section-1 .photo2-bg-line {
   position: absolute;
   opacity: 1;
@@ -18,13 +17,12 @@
   object-fit: cover;
   object-position: top center;
 }
-
 .ys-section-1 h6 {
   position: absolute;
   top: 50%;
   left: 7%;
   transform: translateY(-50%);
-  font-family: 'ele';
+  font-family: "ele";
   mix-blend-mode: difference;
   color: #FFF;
 }
@@ -33,26 +31,22 @@
 .ys-section-2 {
   margin: 0 auto;
 }
-
 @media screen and (min-width: 800px) {
   .ys-section-2 {
     padding: 100px 0;
   }
 }
-
 @media screen and (max-width: 800px) {
   .ys-section-2 {
     padding: 50px 0;
   }
 }
-
 .ys-section-2 figure {
   position: relative;
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .ys-section-2 figure h6 {
   position: relative;
   pointer-events: none;
@@ -63,7 +57,6 @@
   color: #F2F2F2;
   z-index: 1;
 }
-
 @media screen and (max-width: 800px) {
   .ys-section-2 figure h6 {
     font-size: 6vw;
@@ -71,7 +64,6 @@
     transform: translate(3%, 150%);
   }
 }
-
 .ys-section-2 figure .box1 {
   width: 90%;
   padding: 5px;
@@ -79,54 +71,45 @@
   margin-bottom: 25%;
   border: 1px solid #211E18;
 }
-
 .ys-section-2 figure .box1 .box1-1 {
   padding: 23% 0;
   box-sizing: border-box;
   background-color: #211E18;
 }
-
 .ys-section-2 figure .ys-imgcontainer1 li {
   position: absolute;
   overflow: hidden;
 }
-
 .ys-section-2 figure .ys-imgcontainer1 li img {
   width: 100%;
 }
-
 .ys-section-2 figure .ys-imgcontainer1 .img1-1 {
   width: 65%;
   left: 50%;
   transform: translate(-50%, -165%);
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-2 figure .ys-imgcontainer1 .img1-1 {
     width: 75%;
     transform: translate(-45%, -165%);
   }
 }
-
 .ys-section-2 figure .ys-imgcontainer1 .img1-2 {
   width: 35%;
   left: 17.5%;
   transform: translate(-50%, -110%);
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-2 figure .ys-imgcontainer1 .img1-2 {
     width: 42%;
     transform: translate(-40%, -105%);
   }
 }
-
 .ys-section-2 figure .ys-imgcontainer1 .img1-3 {
   width: 40%;
   right: 4%;
   transform: translateY(-130%);
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-2 figure .ys-imgcontainer1 .img1-3 {
     width: 45%;
@@ -134,19 +117,16 @@
     transform: translateY(-95%);
   }
 }
-
 .ys-section-2 figure .ys-imgcontainer1 .img1-4 {
   width: 12%;
   right: 4%;
   transform: translateY(-70%);
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-2 figure .ys-imgcontainer1 .img1-4 {
     display: none;
   }
 }
-
 .ys-section-2 figure div.decorbar-1 {
   position: absolute;
   left: 7%;
@@ -155,14 +135,12 @@
   transform: translateY(-80%);
   background-color: #211E18;
 }
-
 .ys-section-2 figure div.textbox-1 {
   width: 85%;
   max-width: 550px;
   padding: 30px;
   margin: 0 15%;
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-2 figure div.textbox-1 {
     letter-spacing: -0.01em;
@@ -171,7 +149,6 @@
     padding: 15% 0;
   }
 }
-
 .ys-section-2 figure div.textbox-1 strong {
   position: relative;
   display: inline-block;
@@ -179,16 +156,14 @@
   padding-bottom: 20px;
   transform: translate(0);
   font-size: 1.9em;
-  font-family: 'NanumSquareExtraBold';
+  font-family: "NanumSquareExtraBold";
   color: #211E18;
 }
-
 @media screen and (min-width: 1100px) {
   .ys-section-2 figure div.textbox-1 strong {
     font-size: 1.7em;
   }
 }
-
 .ys-section-2 figure div.textbox-1 strong::before {
   content: "";
   position: absolute;
@@ -201,61 +176,51 @@
   background: #A8BFAA;
   transform: skew(-30deg);
 }
-
 .ys-section-2 figure p {
   position: relative;
   font-size: 1.2em;
-  font-family: 'NanumSquare';
+  font-family: "NanumSquare";
   line-height: 145%;
   color: #211E18;
 }
-
 @media screen and (min-width: 600px) and (max-width: 1100px) {
   .ys-section-2 figure p {
     font-size: 1.1em;
   }
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-2 figure p {
     font-size: 1em;
   }
 }
-
 .ys-section-2 figure p::before, .ys-section-2 figure p::after {
   position: absolute;
   color: rgba(0, 0, 0, 0.08);
 }
-
 @media screen and (min-width: 1100px) {
   .ys-section-2 figure p::before, .ys-section-2 figure p::after {
     font-size: 70px;
   }
 }
-
 @media screen and (max-width: 1100px) {
   .ys-section-2 figure p::before, .ys-section-2 figure p::after {
     font-size: 3.5em;
   }
 }
-
 .ys-section-2 figure p::before {
-  content: "\275D";
+  content: "❝";
   transform: translateX(-30px);
 }
-
 @media screen and (min-width: 1100px) {
   .ys-section-2 figure p::before {
     transform: translate(0);
     left: -8%;
   }
 }
-
 .ys-section-2 figure p::after {
-  content: "\275E";
+  content: "❞";
   transform: translateY(30px);
 }
-
 @media screen and (min-width: 1100px) {
   .ys-section-2 figure p::after {
     transform: translate(10%, 180%);
@@ -266,30 +231,25 @@
 .ys-section-3 {
   margin: 0 auto;
 }
-
 @media screen and (min-width: 800px) {
   .ys-section-3 {
     padding: 100px 0;
   }
 }
-
 @media screen and (max-width: 800px) {
   .ys-section-3 {
     padding: 50px 0;
   }
 }
-
 .ys-section-3 figure {
   position: relative;
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .ys-section-3 figure div.textcontainer-2 {
   position: relative;
 }
-
 .ys-section-3 figure div.textcontainer-2 div.decorbar-2 {
   position: absolute;
   width: 0.4%;
@@ -297,20 +257,17 @@
   transform: translateX(6500%);
   background-color: #211E18;
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-3 figure div.textcontainer-2 div.decorbar-2 {
     display: none;
   }
 }
-
 .ys-section-3 figure div.textcontainer-2 div.textbox-2 {
   width: 60%;
   max-width: 680px;
   padding: 3% 0;
   transform: translateX(65%);
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-3 figure div.textcontainer-2 div.textbox-2 {
     width: 90%;
@@ -319,7 +276,6 @@
     transform: translate(0);
   }
 }
-
 .ys-section-3 figure div.textcontainer-2 div.textbox-2 strong {
   position: relative;
   display: inline-block;
@@ -327,16 +283,14 @@
   padding-bottom: 20px;
   transform: translate(0);
   font-size: 1.9em;
-  font-family: 'NanumSquareExtraBold';
+  font-family: "NanumSquareExtraBold";
   color: #211E18;
 }
-
 @media screen and (min-width: 1100px) {
   .ys-section-3 figure div.textcontainer-2 div.textbox-2 strong {
     font-size: 1.7em;
   }
 }
-
 .ys-section-3 figure div.textcontainer-2 div.textbox-2 strong::before {
   content: "";
   position: absolute;
@@ -349,101 +303,84 @@
   background: #A8BFAA;
   transform: skew(-30deg);
 }
-
 .ys-section-3 figure div.textcontainer-2 div.textbox-2 p {
   position: relative;
   font-size: 1.2em;
-  font-family: 'NanumSquare';
+  font-family: "NanumSquare";
   line-height: 145%;
   color: #211E18;
 }
-
 @media screen and (min-width: 600px) and (max-width: 1100px) {
   .ys-section-3 figure div.textcontainer-2 div.textbox-2 p {
     font-size: 1.1em;
   }
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-3 figure div.textcontainer-2 div.textbox-2 p {
     font-size: 1em;
   }
 }
-
 .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::before, .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::after {
   position: absolute;
   color: rgba(0, 0, 0, 0.08);
 }
-
 @media screen and (min-width: 1100px) {
   .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::before, .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::after {
     font-size: 70px;
   }
 }
-
 @media screen and (max-width: 1100px) {
   .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::before, .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::after {
     font-size: 3.5em;
   }
 }
-
 .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::before {
-  content: "\275D";
+  content: "❝";
   transform: translateX(-30px);
 }
-
 @media screen and (min-width: 1100px) {
   .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::before {
     transform: translate(0);
     left: -8%;
   }
 }
-
 .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::after {
-  content: "\275E";
+  content: "❞";
   transform: translateY(30px);
 }
-
 @media screen and (min-width: 1100px) {
   .ys-section-3 figure div.textcontainer-2 div.textbox-2 p::after {
     transform: translate(10%, 180%);
   }
 }
-
 .ys-section-3 figure .ys-imgcontainer2 {
   position: relative;
   padding: 5% 2%;
 }
-
 .ys-section-3 figure .ys-imgcontainer2 li {
   position: absolute;
   overflow: hidden;
 }
-
 .ys-section-3 figure .ys-imgcontainer2 li img {
   width: 100%;
 }
-
 .ys-section-3 figure .ys-imgcontainer2 .img2-1 {
   width: 40%;
   top: 100%;
   left: 13%;
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-3 figure .ys-imgcontainer2 .img2-1 {
     width: 50%;
     left: -2%;
   }
 }
-
 .ys-section-3 figure .ys-imgcontainer2 .img2-2 {
   width: 45%;
   left: 55%;
   top: 180%;
   transform: translateX(-50%);
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-3 figure .ys-imgcontainer2 .img2-2 {
     width: 57%;
@@ -451,40 +388,34 @@
     top: 225%;
   }
 }
-
 .ys-section-3 figure .ys-imgcontainer2 .img2-3 {
   width: 35%;
   right: -2%;
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-3 figure .ys-imgcontainer2 .img2-3 {
     width: 45%;
   }
 }
-
 @media screen and (min-width: 600px) {
   .ys-section-3 figure .ys-imgcontainer2 {
     padding: 5% 7%;
   }
 }
-
 .ys-section-3 figure .decortext {
   writing-mode: tb-rl;
   text-orientation: upright;
   font-size: 8vw;
-  font-family: 'NanumSquareExtraBold';
+  font-family: "NanumSquareExtraBold";
   transform: translate(-40%, -20%);
   color: rgba(0, 0, 0, 0.2);
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-3 figure .decortext {
     font-size: 12vw;
     transform: translateX(-10000%);
   }
 }
-
 .ys-section-3 figure .decorbox {
   position: absolute;
   width: 40%;
@@ -492,7 +423,6 @@
   transform: translate(103%, 65%);
   border: 2px solid #211E18;
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-3 figure .decorbox {
     transform: translate(105%, 100%);
@@ -503,49 +433,41 @@
 .ys-section-4 {
   margin: 0 auto;
 }
-
 @media screen and (min-width: 800px) {
   .ys-section-4 {
     padding: 100px 0;
   }
 }
-
 @media screen and (max-width: 800px) {
   .ys-section-4 {
     padding: 50px 0;
   }
 }
-
 .ys-section-4 figure {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .ys-section-4 figure div.textcontainer-3 {
   position: relative;
 }
-
 .ys-section-4 figure div.textcontainer-3 div.decorbar-3 {
   position: absolute;
   width: 0.4%;
   height: 100%;
   background-color: #211E18;
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-4 figure div.textcontainer-3 div.decorbar-3 {
     display: none;
   }
 }
-
 .ys-section-4 figure div.textcontainer-3 div.textbox-3 {
   width: 60%;
   max-width: 680px;
   padding: 3% 0;
   transform: translateX(20%);
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-4 figure div.textcontainer-3 div.textbox-3 {
     width: 90%;
@@ -554,7 +476,6 @@
     transform: translate(0);
   }
 }
-
 .ys-section-4 figure div.textcontainer-3 div.textbox-3 strong {
   position: relative;
   display: inline-block;
@@ -562,16 +483,14 @@
   padding-bottom: 20px;
   transform: translate(0);
   font-size: 1.9em;
-  font-family: 'NanumSquareExtraBold';
+  font-family: "NanumSquareExtraBold";
   color: #211E18;
 }
-
 @media screen and (min-width: 1100px) {
   .ys-section-4 figure div.textcontainer-3 div.textbox-3 strong {
     font-size: 1.7em;
   }
 }
-
 .ys-section-4 figure div.textcontainer-3 div.textbox-3 strong::before {
   content: "";
   position: absolute;
@@ -584,85 +503,71 @@
   background: #A8BFAA;
   transform: skew(-30deg);
 }
-
 .ys-section-4 figure div.textcontainer-3 div.textbox-3 p {
   position: relative;
   font-size: 1.2em;
-  font-family: 'NanumSquare';
+  font-family: "NanumSquare";
   line-height: 145%;
   color: #211E18;
 }
-
 @media screen and (min-width: 600px) and (max-width: 1100px) {
   .ys-section-4 figure div.textcontainer-3 div.textbox-3 p {
     font-size: 1.1em;
   }
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-4 figure div.textcontainer-3 div.textbox-3 p {
     font-size: 1em;
   }
 }
-
 .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::before, .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::after {
   position: absolute;
   color: rgba(0, 0, 0, 0.08);
 }
-
 @media screen and (min-width: 1100px) {
   .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::before, .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::after {
     font-size: 70px;
   }
 }
-
 @media screen and (max-width: 1100px) {
   .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::before, .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::after {
     font-size: 3.5em;
   }
 }
-
 .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::before {
-  content: "\275D";
+  content: "❝";
   transform: translateX(-30px);
 }
-
 @media screen and (min-width: 1100px) {
   .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::before {
     transform: translate(0);
     left: -8%;
   }
 }
-
 .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::after {
-  content: "\275E";
+  content: "❞";
   transform: translateY(30px);
 }
-
 @media screen and (min-width: 1100px) {
   .ys-section-4 figure div.textcontainer-3 div.textbox-3 p::after {
     transform: translate(10%, 180%);
   }
 }
-
 .ys-section-4 figure .decorcontainer {
   position: relative;
   width: 55%;
 }
-
 @media screen and (min-width: 600px) {
   .ys-section-4 figure .decorcontainer {
     margin: 5% auto 0 auto;
   }
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-4 figure .decorcontainer {
     transform: rotate(90deg) scale(1.35) translateX(82%);
     left: 63%;
   }
 }
-
 .ys-section-4 figure .decorcontainer div {
   position: absolute;
   width: 30%;
@@ -670,104 +575,87 @@
   transform: skew(-10deg);
   border: 1.5px solid #211E18;
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-4 figure .decorcontainer div {
     transform: skew(-10deg) translateY(7%);
   }
 }
-
 .ys-section-4 figure .decorcontainer .decorbox2 {
   left: 50%;
   transform: translateX(-50%) skew(-10deg);
 }
-
 .ys-section-4 figure .decorcontainer .decorbox3 {
   right: 0;
 }
-
 .ys-section-4 figure .ys-imgcontainer3 {
   display: flex;
   position: relative;
   align-items: center;
   padding: 10% 0;
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-4 figure .ys-imgcontainer3 {
     flex-wrap: wrap-reverse;
   }
 }
-
 .ys-section-4 figure .ys-imgcontainer3 li div.img3-1-1,
 .ys-section-4 figure .ys-imgcontainer3 li div.img3-3-1 {
   box-sizing: border-box;
-  font-family: 'NanumSquareLight';
+  font-family: "NanumSquareLight";
   line-height: 150%;
 }
-
 @media screen and (min-width: 1100px) {
   .ys-section-4 figure .ys-imgcontainer3 li div.img3-1-1,
-  .ys-section-4 figure .ys-imgcontainer3 li div.img3-3-1 {
+.ys-section-4 figure .ys-imgcontainer3 li div.img3-3-1 {
     font-size: 1.1em;
   }
 }
-
 @media screen and (min-width: 800px) and (max-width: 1100px) {
   .ys-section-4 figure .ys-imgcontainer3 li div.img3-1-1,
-  .ys-section-4 figure .ys-imgcontainer3 li div.img3-3-1 {
+.ys-section-4 figure .ys-imgcontainer3 li div.img3-3-1 {
     font-size: 1em;
   }
 }
-
 @media screen and (max-width: 800px) {
   .ys-section-4 figure .ys-imgcontainer3 li div.img3-1-1,
-  .ys-section-4 figure .ys-imgcontainer3 li div.img3-3-1 {
+.ys-section-4 figure .ys-imgcontainer3 li div.img3-3-1 {
     font-size: 0.9em;
   }
 }
-
 .ys-section-4 figure .ys-imgcontainer3 li div.img3-1-1::before,
 .ys-section-4 figure .ys-imgcontainer3 li div.img3-3-1::before {
   display: block;
   margin-bottom: 5%;
   line-height: 100%;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 800;
   color: rgba(0, 0, 0, 0.1);
 }
-
 @media screen and (min-width: 1100px) {
   .ys-section-4 figure .ys-imgcontainer3 li div.img3-1-1::before,
-  .ys-section-4 figure .ys-imgcontainer3 li div.img3-3-1::before {
+.ys-section-4 figure .ys-imgcontainer3 li div.img3-3-1::before {
     font-size: 50px;
   }
 }
-
 @media screen and (max-width: 1100px) {
   .ys-section-4 figure .ys-imgcontainer3 li div.img3-1-1::before,
-  .ys-section-4 figure .ys-imgcontainer3 li div.img3-3-1::before {
+.ys-section-4 figure .ys-imgcontainer3 li div.img3-3-1::before {
     font-size: 5vw;
   }
 }
-
 .ys-section-4 figure .ys-imgcontainer3 li img {
   width: 100%;
 }
-
 .ys-section-4 figure .ys-imgcontainer3 .img3-1 {
   width: 25%;
 }
-
 .ys-section-4 figure .ys-imgcontainer3 .img3-2 {
   width: 40%;
   padding: 0 8%;
 }
-
 .ys-section-4 figure .ys-imgcontainer3 .img3-3 {
   width: 25%;
 }
-
 @media screen and (min-width: 600px) {
   .ys-section-4 figure .ys-imgcontainer3 .img3-1 {
     transform: translateY(15%);
@@ -779,7 +667,6 @@
     transform: translate(229%, -15%);
   }
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-4 figure .ys-imgcontainer3 .img3-1 {
     width: 40%;
@@ -794,45 +681,37 @@
     margin: auto;
   }
 }
-
 .ys-section-4 figure .ys-imgcontainer3 .img3-1-1 {
   padding: 0 10% 10% 10%;
 }
-
 @media screen and (max-width: 1100px) {
   .ys-section-4 figure .ys-imgcontainer3 .img3-1-1 {
     padding: 0 2% 10% 2%;
   }
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-4 figure .ys-imgcontainer3 .img3-1-1 {
     text-align: center;
   }
 }
-
 .ys-section-4 figure .ys-imgcontainer3 .img3-1-1::before {
-  content: '01';
+  content: "01";
 }
-
 .ys-section-4 figure .ys-imgcontainer3 .img3-3-1 {
   padding: 10% 10% 0 10%;
 }
-
 @media screen and (max-width: 1100px) {
   .ys-section-4 figure .ys-imgcontainer3 .img3-3-1 {
     padding: 10% 2% 0 2%;
   }
 }
-
 @media screen and (max-width: 600px) {
   .ys-section-4 figure .ys-imgcontainer3 .img3-3-1 {
     text-align: center;
   }
 }
-
 .ys-section-4 figure .ys-imgcontainer3 .img3-3-1::before {
-  content: '02';
+  content: "02";
 }
 
 /* -----card motion---- */
@@ -841,7 +720,6 @@
 .ys-imgcontainer3 li:hover {
   z-index: 10;
 }
-
 .ys-imgcontainer1 li a.card,
 .ys-imgcontainer2 li a.card,
 .ys-imgcontainer3 li a.card {
@@ -851,7 +729,6 @@
   height: 100%;
   overflow: hidden;
 }
-
 .ys-imgcontainer1 li a.card .card_bg,
 .ys-imgcontainer2 li a.card .card_bg,
 .ys-imgcontainer3 li a.card .card_bg {
@@ -867,7 +744,6 @@
   animation-duration: 600ms;
   background-color: #fd4053;
 }
-
 .ys-imgcontainer1 li a.card .card_text,
 .ys-imgcontainer2 li a.card .card_text,
 .ys-imgcontainer3 li a.card .card_text {
@@ -884,29 +760,25 @@
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
 }
-
 .ys-imgcontainer1 li a.card .card_text div:first-child,
 .ys-imgcontainer2 li a.card .card_text div:first-child,
 .ys-imgcontainer3 li a.card .card_text div:first-child {
   margin-bottom: 5px;
 }
-
 @media screen and (min-width: 1100px) {
   .ys-imgcontainer1 li a.card .card_text,
-  .ys-imgcontainer2 li a.card .card_text,
-  .ys-imgcontainer3 li a.card .card_text {
+.ys-imgcontainer2 li a.card .card_text,
+.ys-imgcontainer3 li a.card .card_text {
     font-size: 14px;
   }
 }
-
 @media screen and (max-width: 1100px) {
   .ys-imgcontainer1 li a.card .card_text,
-  .ys-imgcontainer2 li a.card .card_text,
-  .ys-imgcontainer3 li a.card .card_text {
+.ys-imgcontainer2 li a.card .card_text,
+.ys-imgcontainer3 li a.card .card_text {
     font-size: 1.2vw;
   }
 }
-
 .ys-imgcontainer1 li a.card:hover .card_bg,
 .ys-imgcontainer2 li a.card:hover .card_bg,
 .ys-imgcontainer3 li a.card:hover .card_bg {
@@ -916,7 +788,6 @@
   animation-duration: 500ms;
   transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, transform 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
 }
-
 .ys-imgcontainer1 li a.card:hover .card_text,
 .ys-imgcontainer2 li a.card:hover .card_text,
 .ys-imgcontainer3 li a.card:hover .card_text {
@@ -933,7 +804,6 @@
     transform: scale(1);
   }
 }
-
 @keyframes ys-bgout {
   from {
     opacity: 0.45;
