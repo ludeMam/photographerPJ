@@ -1,4 +1,3 @@
-
 <footer class="site-footer">
   <div class="footer-container">
     <div class="footer-site-map">

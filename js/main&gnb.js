@@ -22,6 +22,7 @@ $(function () {
       history.pushState(null, null, path[0] + '#home')
     }
     $(section).css({ 'animation': 'active' + sectionNumber + ' 0s both', 'display': 'block' })
+    $('.site-footer').appendTo(section).show()
     $('.section-container:not(' + section + ')').each(function () {
       var sectionNumber = $(this).attr('data-section-number')
       $(this).css({ 'animation': 'de-active' + sectionNumber + ' 0s both', 'display': 'none' })
@@ -56,7 +57,8 @@ $(function () {
           var sectionNumber = $(this).attr('data-section-number')
           $(this).css({ 'animation': 'de-active' + sectionNumber + ' 2s both reverse' })
         })
-      }
+        
+      }//if end
       $('main')[0].scrollTo({
         top: scrt,
       })
@@ -73,6 +75,7 @@ $(function () {
 
     $('.section-container').css({ 'animation': 'none' })
     $('.section-container').css('animation')
+    $('.site-footer').appendTo(section).show()
     $(section).css({ 'animation': 'active' + sectionNumber + ' 2s both' })
     $('.section-container:not(' + section + ')').each(function () {
       var sectionNumber = $(this).attr('data-section-number')

@@ -122,5 +122,4 @@
       </div><!-- education content -->
     </section><!-- main content section -->
   </section>
-  <?php include "footer.php" ?>
 </section><!--section-about-container-->
