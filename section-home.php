@@ -156,5 +156,4 @@
 
     </div><!-- inner-center -->
   </section>
-  <?php include "footer.php" ?>
 </section>

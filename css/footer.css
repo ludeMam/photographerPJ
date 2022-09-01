@@ -45,9 +45,11 @@ footer.site-footer div.footer-container div.footer-link div.footer-contact addre
 footer.site-footer div.footer-container div.footer-link div.footer-contact button {
   position: relative;
   padding: 10px 30px;
-  margin-bottom: 20px;
+  margin: 20px 0 40px 0;
   border: 1px solid rgba(242, 242, 242, 0.5);
   overflow: hidden;
+  opacity: 0.7;
+  transition: opacity 0.3s;
 }
 footer.site-footer div.footer-container div.footer-link div.footer-contact button::before {
   content: "more info";
@@ -62,6 +64,9 @@ footer.site-footer div.footer-container div.footer-link div.footer-contact butto
   font-weight: 400;
   transition: top 0.3s;
 }
+footer.site-footer div.footer-container div.footer-link div.footer-contact button:hover {
+  opacity: 1;
+}
 footer.site-footer div.footer-container div.footer-link div.footer-contact button:hover::before {
   top: 0;
 }
@@ -71,7 +76,7 @@ footer.site-footer div.footer-container div.footer-link ul.footer-sns {
   justify-content: center;
 }
 footer.site-footer div.footer-container div.footer-link ul.footer-sns li {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 footer.site-footer div.footer-container > div {
   flex: 1;
@@ -79,6 +84,8 @@ footer.site-footer div.footer-container > div {
   text-align: center;
 }
 footer.site-footer div.footer-container > div h4 {
+  font-family: "ele";
+  letter-spacing: 3px;
   font-size: 1.7em;
   font-weight: bold;
   margin-bottom: 20px;
@@ -91,7 +98,7 @@ footer.site-footer div.footer-container > div li {
 footer.site-footer div.footer-container > div li:hover {
   text-decoration: underline;
   color: #798C7A;
-  opacity: 0.8;
+  opacity: 1;
 }
 footer.site-footer p {
   text-align: center;

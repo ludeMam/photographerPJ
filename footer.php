@@ -1,4 +1,4 @@
-<!-- <div class="footer-height"></div> -->
+
 <footer class="site-footer">
   <div class="footer-container">
     <div class="footer-site-map">
@@ -31,5 +31,3 @@
     Copyright &copy; 2022 All Rights Reserved.
   </p><!-- footer copyright -->
 </footer><!-- footer -->
-</body>
-</html>

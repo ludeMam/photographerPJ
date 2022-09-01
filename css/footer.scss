@@ -43,14 +43,16 @@ footer.site-footer{
         button{
           position: relative;
           padding: 10px 30px;
-          margin-bottom: 20px;
+          margin: 20px 0 40px 0;
           border: 1px solid rgba($gray-color,0.5);
           overflow: hidden;
-          &::before{
+          opacity: .7;
+          transition: opacity 0.3s;
+           &::before{
             content: 'more info';
             padding: 10px 30px;
             box-sizing: border-box;
-            background-color: $brown-color/* rgba($dark-mint-color,.5) */;
+            background-color: $brown-color;// rgba($dark-mint-color,.5)
             position: absolute;
             width: 100%;
             height: 100%;
@@ -60,10 +62,11 @@ footer.site-footer{
             transition: top 0.3s;
           }
           &:hover{
+            opacity: 1;
             &::before{
               top: 0;
             }
-          }
+          } 
         }
       }//contact
       ul.footer-sns{
@@ -71,7 +74,7 @@ footer.site-footer{
         width: 100%;
         justify-content: center;
         li{
-          margin: 0 10px;
+          margin: 0 15px;
         }
       }
     }//link
@@ -80,6 +83,8 @@ footer.site-footer{
       padding: 30px;
       text-align: center;
       h4{
+        font-family: 'ele';
+        letter-spacing: 3px;
         font-size: 1.7em;
         font-weight: bold;
         margin-bottom: 20px;
@@ -91,7 +96,7 @@ footer.site-footer{
         &:hover{
           text-decoration: underline;
           color: $dark-mint-color;
-          opacity: .8;
+          opacity: 1;
         }
       }
     }//site map, link

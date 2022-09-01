@@ -191,5 +191,4 @@
       </ul>
     </figure>
   </section>
-  <?php include "footer.php" ?>
 </section>
