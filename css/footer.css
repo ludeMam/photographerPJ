@@ -1,10 +1,101 @@
-footer {
-  background: #CCC;
+@charset "UTF-8";
+/* 
+짙은갈색 #211E18
+갈색 #403A2F
+진한민트#798C7A
+옅은민트#A8BFAA
+회색#F2F2F2
+ */
+footer.site-footer {
+  background: #211E18;
+  padding: 20px 0;
+}
+footer.site-footer div.footer-container {
+  display: flex;
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #F2F2F2;
+}
+@media screen and (min-width: 800px) {
+  footer.site-footer div.footer-container div.footer-site-map {
+    border-right: 1.5px solid rgba(242, 242, 242, 0.5);
+  }
+}
+@media screen and (max-width: 800px) {
+  footer.site-footer div.footer-container {
+    flex-direction: column;
+  }
+  footer.site-footer div.footer-container div.footer-site-map {
+    border-bottom: 1.5px solid rgba(242, 242, 242, 0.5);
+  }
+}
+footer.site-footer div.footer-container div.footer-site-map ul li {
+  font-size: 1em;
+}
+footer.site-footer div.footer-container div.footer-link div.footer-contact address {
+  margin-bottom: 10px;
+}
+footer.site-footer div.footer-container div.footer-link div.footer-contact address i {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.85em;
+  opacity: 0.5;
+}
+footer.site-footer div.footer-container div.footer-link div.footer-contact button {
+  position: relative;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(242, 242, 242, 0.5);
+  overflow: hidden;
+}
+footer.site-footer div.footer-container div.footer-link div.footer-contact button::before {
+  content: "more info";
+  padding: 10px 30px;
+  box-sizing: border-box;
+  background-color: #403A2F;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 100%;
+  font-weight: 400;
+  transition: top 0.3s;
+}
+footer.site-footer div.footer-container div.footer-link div.footer-contact button:hover::before {
+  top: 0;
+}
+footer.site-footer div.footer-container div.footer-link ul.footer-sns {
   display: flex;
   width: 100%;
+  justify-content: center;
 }
-footer div {
-  border: 1px solid red;
+footer.site-footer div.footer-container div.footer-link ul.footer-sns li {
+  margin: 0 10px;
+}
+footer.site-footer div.footer-container > div {
   flex: 1;
-  min-height: 300px;
+  padding: 30px;
+  text-align: center;
+}
+footer.site-footer div.footer-container > div h4 {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+footer.site-footer div.footer-container > div li {
+  font-weight: 400;
+  margin-bottom: 14px;
+  opacity: 0.5;
+}
+footer.site-footer div.footer-container > div li:hover {
+  text-decoration: underline;
+  color: #798C7A;
+  opacity: 0.8;
+}
+footer.site-footer p {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.8em;
+  color: rgba(242, 242, 242, 0.5);
 }

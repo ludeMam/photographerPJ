@@ -1,10 +1,105 @@
-footer{
-  background: #CCC;
-  display: flex;
-  width: 100%;
-  div{
-    border: 1px solid red;
-    flex:1;
-    min-height: 300px;
+@import 'common';
+footer.site-footer{
+  background: $darkbrown-color;
+  padding: 20px 0;
+  div.footer-container{
+    display: flex;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: $gray-color;
+    @media screen and (min-width:800px){
+      div.footer-site-map{
+        border-right: 1.5px solid rgba($gray-color,.5);
+      }
+    }//container lg
+    @media screen and (max-width:800px){
+      flex-direction: column;
+      div.footer-site-map{
+        border-bottom: 1.5px solid rgba($gray-color,.5);
+      }
+    }//container sm
+    div.footer-site-map{
+      ul{
+        li{
+          font-size: 1em;
+        }//li
+      }//site map ul
+    }//site map
+    div.footer-link{
+      div.footer-contact{
+        h4{
+
+        }//h4
+        address{
+          margin-bottom: 10px;
+          i{
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.85em;
+            opacity: .5;
+          }
+        }
+        button{
+          position: relative;
+          padding: 10px 30px;
+          margin-bottom: 20px;
+          border: 1px solid rgba($gray-color,0.5);
+          overflow: hidden;
+          &::before{
+            content: 'more info';
+            padding: 10px 30px;
+            box-sizing: border-box;
+            background-color: $brown-color/* rgba($dark-mint-color,.5) */;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top:100%;
+            font-weight: 400;
+            transition: top 0.3s;
+          }
+          &:hover{
+            &::before{
+              top: 0;
+            }
+          }
+        }
+      }//contact
+      ul.footer-sns{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        li{
+          margin: 0 10px;
+        }
+      }
+    }//link
+    >div{
+      flex:1;
+      padding: 30px;
+      text-align: center;
+      h4{
+        font-size: 1.7em;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }//h4
+      li{
+        font-weight: 400;
+        margin-bottom: 14px;
+        opacity: .5;
+        &:hover{
+          text-decoration: underline;
+          color: $dark-mint-color;
+          opacity: .8;
+        }
+      }
+    }//site map, link
+  }//footer container
+  p{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8em;
+    color: rgba($gray-color,0.5);
   }
-}
+}//footer
